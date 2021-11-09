@@ -9,6 +9,9 @@ module.exports = {
     "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-sass",
+    "gatsby-plugin-styled-components",
+    "gatsby-plugin-fontawesome-css",
     {
       resolve: "gatsby-source-filesystem",
       options: {

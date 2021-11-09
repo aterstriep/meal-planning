@@ -1,0 +1,43 @@
+// mixins
+
+@mixin bgImage($position: center) {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: $position;
+}
+
+@mixin clearList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+// responsive breakpoints
+@mixin breakpoint($breakpoint) {
+
+  @if $breakpoint == "sm" {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "md" {
+    @media (max-width: 992px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "lg" {
+    @media (min-width: 993px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint == "xl" {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+
+}

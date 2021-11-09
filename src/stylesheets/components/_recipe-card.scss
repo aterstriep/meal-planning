@@ -1,0 +1,39 @@
+$card-radius: 10px;
+
+.recipe-card {
+    max-height: 40px;
+    overflow: hidden;
+    transition: .5s ease all;
+    background-color: $neutral;
+    border-radius: $card-radius;
+
+    h3.recipe_card-title {
+        color: white;
+        background-color: $dark;
+        border-top-left-radius: $card-radius;
+        border-top-right-radius: $card-radius;
+        margin: 0;
+        padding: 5px 30px;
+    }
+
+    .recipe_sub-title {
+        margin: 0;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    .recipe_instructions ol {
+        padding-left: 16px;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+
+    &.show {
+        max-height: 5000px;
+    }
+    
+}
