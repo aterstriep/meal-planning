@@ -1,5 +1,5 @@
 import React from 'react'
-import useSaveRecipe from '../hooks/useSaveRecipe';
+import useCheckSavedRecipe from '../hooks/useCheckSavedRecipe';
 import { Link } from "gatsby";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -10,7 +10,7 @@ import Badge from "./Badge";
 
 export default function RecipeContainer({ recipe, savedRecipes, updateSavedRecipes }) {
 
-    const savedRecipe = useSaveRecipe(recipe.id, savedRecipes) ? "saved-recipe" : "";
+    const savedRecipe = useCheckSavedRecipe(recipe.id, savedRecipes) ? "saved-recipe" : "";
 
     return (
         <div

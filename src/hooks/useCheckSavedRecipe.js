@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-const useSaveRecipe = (id, savedRecipes) => {
+const useCheckSavedRecipe = (id, savedRecipes) => {
 
     const [isSaved, setIsSaved] = useState(false);
 
@@ -16,4 +16,4 @@ const useSaveRecipe = (id, savedRecipes) => {
 
 }
 
-export default useSaveRecipe
+export default useCheckSavedRecipe

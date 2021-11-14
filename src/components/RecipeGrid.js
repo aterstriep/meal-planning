@@ -18,17 +18,6 @@ const RecipeGrid = ({updateSavedRecipes, savedRecipes}) => {
     const [isLoaded, setIsLoaded] = useState(false);
     const [activeRecipe, setActiveRecipe] = useState(false);
 
-    // const isSaved = (id) => {
-    //     const index = savedRecipes.findIndex((item) => item.id === id);
-
-    //     if (index >= 0) {
-    //         return 'saved-recipe';
-    //     } else {
-    //         return null;
-    //     }
-
-    // }
-
     useEffect(() => {
         
         // fetch('https://api.spoonacular.com/recipes/complexSearch?apiKey=9446603e12154b3c983025231a0ee10e&addRecipeInformation=true')
