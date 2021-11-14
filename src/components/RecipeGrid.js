@@ -2,6 +2,8 @@ import * as React from "react"
 import { useEffect, useState } from "react"
 import { Link } from "gatsby";
 
+import useSaveRecipe from "../hooks/useSaveRecipe"
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
@@ -17,16 +19,47 @@ const RecipeGrid = ({updateSavedRecipes, savedRecipes}) => {
     const [isLoaded, setIsLoaded] = useState(false);
     const [activeRecipe, setActiveRecipe] = useState(false);
 
-    const isSaved = (id) => {
-        const index = savedRecipes.findIndex((item) => item.id === id);
+    // const isSaved = (id) => {
+    //     const index = savedRecipes.findIndex((item) => item.id === id);
 
-        if (index >= 0) {
-            return 'saved-recipe';
-        } else {
-            return null;
-        }
+    //     if (index >= 0) {
+    //         return 'saved-recipe';
+    //     } else {
+    //         return null;
+    //     }
+
+    // }
+
+    const RecipeClass = ({id}) => {
+        const isSaved = useSaveRecipe(id, savedRecipes);
+        return isSaved;
+    }
+
+    const RecipeContainer = ({recipe}) => {
+
+        const savedRecipe = useSaveRecipe(recipe.id, savedRecipes) ? "saved-recipe" : "";
+
+        return (
+            <div
+                className={`recipe-container ${savedRecipe}`}
+                recipe_id={recipe.id}
+                key={recipe.id}
+            >
+                <FontAwesomeIcon icon={faHeart} onClick={() => updateSavedRecipes(recipe)} />
+                <Link to={`/recipe?${recipe.id}`} state={{ activeRecipe: recipe.id }}>
+                    <img src={recipe.image} />
+                </Link>
+                <Container className="mealtypes" padding="0px">
+                    {recipe.dishTypes.map((type, index) => {
+                        return <Badge key={index}>{type}</Badge>
+                    })}
+                </Container>
+                <Link to={`/recipe?${recipe.id}`} state={{ activeRecipe: recipe.id }}><h3>{recipe.title}</h3></Link>
+            </div>
+        )
 
     }
+
 
     useEffect(() => {
         
@@ -53,22 +86,7 @@ const RecipeGrid = ({updateSavedRecipes, savedRecipes}) => {
                 <Container className="recipe-grid-wrap mw-1400">
                     {recipes.map(recipe => {
                         return (
-                            <div
-                            className={`recipe-container ${isSaved(recipe.id)}`}
-                            recipe_id={recipe.id}
-                            key={recipe.id}
-                            >
-                                <FontAwesomeIcon icon={faHeart} onClick={() => updateSavedRecipes(recipe)} />
-                                <Link to={`/recipe?${recipe.id}`} state={{activeRecipe: recipe.id}}>
-                                    <img src={recipe.image} />
-                                </Link>
-                                <Container className="mealtypes" padding="0px">
-                                    {recipe.dishTypes.map((type, index) => {
-                                        return <Badge key={index}>{type}</Badge>
-                                    })}
-                                </Container>
-                                <Link to={`/recipe?${recipe.id}`} state={{activeRecipe: recipe.id}}><h3>{recipe.title}</h3></Link>
-                            </div>
+                            <RecipeContainer key={recipe.id} recipe={recipe} />
                         );
                     })}
                 </Container>
