@@ -1,0 +1,55 @@
+.recipe-grid-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    
+    @include breakpoint(md) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpoint(sm) {
+        grid-template-columns: 1fr;
+    }
+
+    .recipe-container {
+        position: relative;
+
+        svg {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 20px;
+            color: white;
+            opacity: .75;
+            transition: .1s ease all;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+
+            h3 {
+                margin: 10px 0 0;
+                line-height: 1.25;
+            }
+
+            &:hover h3 {
+                color: $secondary;
+            }
+        }
+
+        &.saved-recipe svg {
+            color: $action;
+            opacity: 1;
+        }
+    }
+    
+}

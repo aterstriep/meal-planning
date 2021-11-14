@@ -17,12 +17,13 @@
 @import
   'components/buttons',
   'components/recipe-card',
-  'components/recipes';
+  'components/recipe-grid';
 
 // Layout
 @import
   'layout/header',
-  'layout/footer';
+  'layout/footer',
+  'layout/sidebar';
 
 // Pages
 @import

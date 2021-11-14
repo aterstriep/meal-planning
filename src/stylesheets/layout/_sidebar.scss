@@ -1,0 +1,34 @@
+.page-wrapper.has-sidebar {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+
+    .sidebar {
+        background-color: $primary;
+
+        .sidebar-inner {
+            position: fixed;
+            width: calc(100% / 6);
+        }
+
+        ul.sidebar-menu {
+            margin-top: 40px;
+
+            li.sidebar-hoverable a {
+                padding: 2px 20px;
+                width: 100%;
+                display: block;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 14px;
+                color: white;
+                letter-spacing: .5px;
+
+                &:hover {
+                    background-color: rgba($dark, .2);
+                    color: white;
+                }
+            }
+        }
+    }
+}

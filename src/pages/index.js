@@ -2,34 +2,23 @@ import * as React from "react"
 import { useState } from "react"
 import Layout from '../components/Layout'
 import RecipeGrid from '../components/RecipeGrid'
-import RecipeDetails from "../components/RecipeDetails"
 
-// markup
+
 const IndexPage = () => {
 
-  const [currentRecipe, setCurrentRecipe] = useState(false);
+  const [savedRecipes, setSavedRecipes] = useState([]);
 
-  const triggerRecipeDetails = (recipe) => {
-    setCurrentRecipe(recipe);
-    // console.log(currentRecipe);
-  }
-
-  const RecipeModal = () => {
-    if (currentRecipe) {
-      return (
-        <RecipeDetails currentRecipe={currentRecipe} />
-      )
-    } else {
-      return null;
-    }
+  const updateSavedRecipes = (recipe) => {
+    setSavedRecipes([...savedRecipes, recipe]);
+    console.log(savedRecipes);
   }
 
   return (
     <Layout>
-      <RecipeModal />
-      <RecipeGrid recipeOnClick={triggerRecipeDetails} />
+      <RecipeGrid updateSavedRecipes={updateSavedRecipes} savedRecipes={savedRecipes} />
     </Layout>
   )
+
 }
 
 export default IndexPage
