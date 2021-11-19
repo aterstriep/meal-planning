@@ -21,7 +21,7 @@ const Layout = ({ children, className, hideSidebar }) => {
                     <div className="sidebar-inner">
                         <ul className="sidebar-menu clear-list">
                             <li className="sidebar-hoverable"><Link to="/" >All Recipes</Link></li>
-                            <li className="sidebar-hoverable"><Link to="/">Saved Recipes</Link></li>
+                            <li className="sidebar-hoverable"><Link to="/saved">Saved Recipes</Link></li>
                             <li className="sidebar-hoverable"><Link to="/">Meal Plan</Link></li>
                         </ul>
                     </div>

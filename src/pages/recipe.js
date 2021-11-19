@@ -9,8 +9,11 @@ const RecipesPage = ({location}) => {
     const [isLoaded, setIsLoaded] = useState(false);
     const [recipe, setRecipe] = useState([]);
     const recipeId = location.state.activeRecipe;
+    const isSaved = location.state.saved;
 
     useEffect(() => {
+
+        console.log(isSaved);
 
         fetch(`https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=9446603e12154b3c983025231a0ee10e&addRecipeInformation=true`)
             .then(
