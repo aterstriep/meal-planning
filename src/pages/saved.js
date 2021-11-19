@@ -10,9 +10,13 @@ const PageTitle = styled.h1`
 `;
 
 export default function savedRecipesPage() {
+
+    const savedRecipes = JSON.parse(localStorage.getItem("savedRecipes"));
+
     return (
         <Layout>
             <PageTitle>Saved Recipes</PageTitle>
+            <RecipeGrid recipes={savedRecipes} />
         </Layout>
     )
 }

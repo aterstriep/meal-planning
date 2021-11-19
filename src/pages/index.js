@@ -9,7 +9,16 @@ const testRecipes = [{ "vegetarian": true, "vegan": true, "glutenFree": true, "d
 const IndexPage = () => {
 
   const [recipes, setRecipes] = useState(testRecipes);
-  const [savedRecipes, setSavedRecipes] = useState([]);
+
+  // const [savedRecipes, setSavedRecipes] = useState([]);
+
+  const [savedRecipes, setSavedRecipes] = useState(() => {
+    // getting stored value
+    const saved = localStorage.getItem("savedRecipes");
+    const initialValue = JSON.parse(saved);
+    // const initialValue = [];
+    return initialValue || [];
+  });
 
   const toggleSaveRecipe = (recipe, isSaved) => {
     if(isSaved) {
@@ -18,7 +27,7 @@ const IndexPage = () => {
     } else {
       setSavedRecipes([...savedRecipes, recipe]);
     }
-    console.log(savedRecipes);
+    // console.log(savedRecipes);
   }
 
   useEffect(() => {
@@ -34,7 +43,10 @@ const IndexPage = () => {
     //         }
     //     );
 
-  }, [])
+    localStorage.setItem("savedRecipes", JSON.stringify(savedRecipes));
+    // console.log(JSON.parse(localStorage.getItem("savedRecipes")));
+
+  }, [savedRecipes])
 
   if(recipes) {
     return (

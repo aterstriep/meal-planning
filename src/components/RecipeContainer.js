@@ -8,17 +8,15 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import Container from "./Container";
 import Badge from "./Badge";
 
-export default function RecipeContainer({ recipe, savedRecipes, toggleSaveRecipe }) {
+export default function RecipeContainer({ recipe, toggleSaveRecipe }) {
     
-    const [activeRecipe, setActiveRecipe] = useState(false);
+    let savedRecipes = JSON.parse(localStorage.getItem("savedRecipes"));
+    let isSaved = useCheckSavedRecipe(recipe, savedRecipes);
+    let recipeClass = isSaved ? "saved-recipe" : "";
 
-    const isSaved = useCheckSavedRecipe(recipe, savedRecipes);
-    const [saved, setSaved] = useState(isSaved);
-    const recipeClass = saved ? "saved-recipe" : "";
-
-    const handleClick = (recipe) => {
-        toggleSaveRecipe(recipe, saved);
-        setSaved(!saved);
+    const handleClick = (event, recipe) => {
+        toggleSaveRecipe(recipe, isSaved);
+        event.currentTarget.parentElement.classList.toggle("saved-recipe");
     }
 
     return (
@@ -27,7 +25,7 @@ export default function RecipeContainer({ recipe, savedRecipes, toggleSaveRecipe
             recipe_id={recipe.id}
             key={recipe.id}
         >
-            <FontAwesomeIcon icon={faHeart} onClick={() => handleClick(recipe)} />
+            <FontAwesomeIcon icon={faHeart} onClick={(event) => handleClick(event, recipe)} />
             <Link to={`/recipe?${recipe.id}`} state={{ activeRecipe: recipe.id }}>
                 <img src={recipe.image} />
             </Link>
@@ -36,7 +34,7 @@ export default function RecipeContainer({ recipe, savedRecipes, toggleSaveRecipe
                     return <Badge key={index}>{type}</Badge>
                 })}
             </Container>
-            <Link to={`/recipe?${recipe.id}`} state={{ activeRecipe: recipe.id, saved: saved }}><h3>{recipe.title}</h3></Link>
+            <Link to={`/recipe?${recipe.id}`} state={{ activeRecipe: recipe.id, saved: isSaved }}><h3>{recipe.title}</h3></Link>
         </div>
     )
 }
