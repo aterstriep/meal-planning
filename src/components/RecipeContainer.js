@@ -9,14 +9,14 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import Container from "./Container";
 import Badge from "./Badge";
 
-export default function RecipeContainer({ recipe, toggleSaveRecipe }) {
+export default function RecipeContainer({ recipe, setSavedRecipes }) {
     
-    let savedRecipes = JSON.parse(localStorage.getItem("savedRecipes"));
+    // let savedRecipes = JSON.parse(localStorage.getItem("savedRecipes"));
     let isSaved = useCheckSavedRecipe(recipe);
     let recipeClass = isSaved ? "saved-recipe" : "";
 
     const handleClick = (event, recipe) => {
-        toggleSaveRecipe(recipe, isSaved);
+        setSavedRecipes(recipe);
         event.currentTarget.parentElement.classList.toggle("saved-recipe");
     }
 

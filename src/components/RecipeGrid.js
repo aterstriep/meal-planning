@@ -9,17 +9,24 @@ import Container from "./Container";
 import Badge from "./Badge";
 import RecipeContainer from "./RecipeContainer";
 
+import useSaveRecipe from "../hooks/useSaveRecipe";
 
-const RecipeGrid = ({toggleSaveRecipe, recipes}) => {
+
+const RecipeGrid = ({recipes}) => {
 
     const [activeRecipe, setActiveRecipe] = useState(false);
+    const [saved, setSaved] = useSaveRecipe([]);
+
+    const setSavedRecipes = (recipe) => {
+        setSaved(recipe);
+    }
 
     return (
         <div className="recipe-grid">
             <Container className="recipe-grid-wrap mw-1400">
                 {recipes.map(recipe => {
                     return (
-                        <RecipeContainer key={recipe.id} recipe={recipe} toggleSaveRecipe={toggleSaveRecipe} />
+                        <RecipeContainer key={recipe.id} recipe={recipe} setSavedRecipes={setSavedRecipes} />
                     );
                 })}
             </Container>

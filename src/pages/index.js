@@ -10,23 +10,6 @@ const IndexPage = () => {
 
   const [recipes, setRecipes] = useState(testRecipes);
 
-  const [savedRecipes, setSavedRecipes] = useState(() => {
-    // getting stored value
-    const saved = localStorage.getItem("savedRecipes");
-    const initialValue = JSON.parse(saved);
-    // const initialValue = [];
-    return initialValue || [];
-  });
-
-  const toggleSaveRecipe = (recipe, isSaved) => {
-    if(isSaved) {
-      const recipes = savedRecipes.filter(item => item.id !== recipe.id)
-      setSavedRecipes(recipes);
-    } else {
-      setSavedRecipes([...savedRecipes, recipe]);
-    }
-  }
-
   useEffect(() => {
 
     // fetch('https://api.spoonacular.com/recipes/complexSearch?apiKey=9446603e12154b3c983025231a0ee10e&addRecipeInformation=true')
@@ -40,15 +23,15 @@ const IndexPage = () => {
     //         }
     //     );
 
-    localStorage.setItem("savedRecipes", JSON.stringify(savedRecipes));
+    // localStorage.setItem("savedRecipes", JSON.stringify(savedRecipes));
     // console.log(JSON.parse(localStorage.getItem("savedRecipes")));
 
-  }, [savedRecipes])
+  }, [])
 
   if(recipes) {
     return (
       <Layout>
-        <RecipeGrid toggleSaveRecipe={toggleSaveRecipe} savedRecipes={savedRecipes} recipes={recipes} />
+        <RecipeGrid recipes={recipes} />
       </Layout>
     )
   } else {

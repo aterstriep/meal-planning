@@ -3,7 +3,11 @@ import React, { useState, useEffect } from 'react'
 const useCheckSavedRecipe = (recipe) => {
 
     const [isSaved, setIsSaved] = useState(false);
-    const savedRecipes = JSON.parse(localStorage.getItem("savedRecipes"));
+    const [savedRecipes, setSavedRecipes] = useState(() => {
+        const initialSaved = JSON.parse(localStorage.getItem("savedRecipes"));
+        // const initialSaved = [];
+        return initialSaved || [];
+    });
 
     useEffect(() => {
         if(savedRecipes.length > 0) {
