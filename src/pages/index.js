@@ -10,8 +10,6 @@ const IndexPage = () => {
 
   const [recipes, setRecipes] = useState(testRecipes);
 
-  // const [savedRecipes, setSavedRecipes] = useState([]);
-
   const [savedRecipes, setSavedRecipes] = useState(() => {
     // getting stored value
     const saved = localStorage.getItem("savedRecipes");
@@ -27,7 +25,6 @@ const IndexPage = () => {
     } else {
       setSavedRecipes([...savedRecipes, recipe]);
     }
-    // console.log(savedRecipes);
   }
 
   useEffect(() => {
