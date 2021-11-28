@@ -1,13 +1,10 @@
 import React, { useState, useEffect } from 'react'
+import useSavedRecipes from './useSavedRecipes';
 
 const useCheckSavedRecipe = (recipe) => {
 
     const [isSaved, setIsSaved] = useState(false);
-    const [savedRecipes, setSavedRecipes] = useState(() => {
-        const initialSaved = JSON.parse(localStorage.getItem("savedRecipes"));
-        // const initialSaved = [];
-        return initialSaved || [];
-    });
+    const [savedRecipes, setSavedRecipes] = useSavedRecipes([]);
 
     useEffect(() => {
         if(savedRecipes.length > 0) {
