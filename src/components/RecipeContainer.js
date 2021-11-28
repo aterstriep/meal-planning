@@ -10,7 +10,6 @@ import Badge from "./Badge";
 
 export default function RecipeContainer({ recipe, setSavedRecipes }) {
     
-    // let savedRecipes = JSON.parse(localStorage.getItem("savedRecipes"));
     let isSaved = useCheckSavedRecipe(recipe);
     let recipeClass = isSaved ? "saved-recipe" : "";
 

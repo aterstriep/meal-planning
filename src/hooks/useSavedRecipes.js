@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-export default function useSavedRecipes(recipe = null) {
+export default function useSavedRecipes(recipe) {
     
     const [savedRecipes, setSavedRecipes] = useState(() => {
         const initialSaved = JSON.parse(localStorage.getItem("savedRecipes"));

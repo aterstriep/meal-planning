@@ -5,18 +5,28 @@ import Layout from '../components/Layout'
 import Container from '../components/Container'
 import RecipeGrid from '../components/RecipeGrid';
 
+import useSavedRecipes from '../hooks/useSavedRecipes';
+
 const PageTitle = styled.h1`
     margin-top: 0;
 `;
 
-export default function savedRecipesPage() {
+const SavedRecipesPage = () => {
 
-    const savedRecipes = JSON.parse(localStorage.getItem("savedRecipes"));
+    const [saved, setSaved] = useSavedRecipes([]);
+
+    const setSavedRecipes = (recipe) => {
+        setSaved(recipe);
+    }
 
     return (
         <Layout>
-            <PageTitle>Saved Recipes</PageTitle>
-            <RecipeGrid recipes={savedRecipes} />
+            <Container>
+                <PageTitle>Saved Recipes</PageTitle>
+                <RecipeGrid recipes={saved} setSavedRecipes={setSavedRecipes} />
+            </Container>
         </Layout>
     )
 }
+
+export default SavedRecipesPage
