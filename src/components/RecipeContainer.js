@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import useCheckSavedRecipe from '../hooks/useCheckSavedRecipe';
-import useSaveRecipe from '../hooks/useSaveRecipe';
 import { Link } from "gatsby";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

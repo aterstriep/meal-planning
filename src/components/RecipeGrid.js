@@ -9,13 +9,13 @@ import Container from "./Container";
 import Badge from "./Badge";
 import RecipeContainer from "./RecipeContainer";
 
-import useSaveRecipe from "../hooks/useSaveRecipe";
+import useSavedRecipes from "../hooks/useSavedRecipes";
 
 
 const RecipeGrid = ({recipes}) => {
 
     const [activeRecipe, setActiveRecipe] = useState(false);
-    const [saved, setSaved] = useSaveRecipe([]);
+    const [saved, setSaved] = useSavedRecipes([]);
 
     const setSavedRecipes = (recipe) => {
         setSaved(recipe);

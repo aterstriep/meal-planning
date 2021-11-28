@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
-import useCheckSavedRecipe from './useCheckSavedRecipe';
 
-export default function useSaveRecipe(recipe) {
+export default function useSavedRecipes(recipe = null) {
     
     const [savedRecipes, setSavedRecipes] = useState(() => {
         const initialSaved = JSON.parse(localStorage.getItem("savedRecipes"));
