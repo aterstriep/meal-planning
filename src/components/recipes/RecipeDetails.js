@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import Container from './Container'
-import Columns from './Columns'
+import Container from '../Container'
+import Columns from '../Columns'
 
 const RecipeDetails = ({recipe}) => {
 
@@ -44,11 +44,6 @@ const RecipeDetails = ({recipe}) => {
 
     return (
         <Container padding="0">
-            <Container>
-                <img src={recipe.image} />
-                <h1>{recipe.title}</h1>
-                <p dangerouslySetInnerHTML={{ __html: recipe.summary }} />
-            </Container>
             <RecipeCard />
         </Container>
     )

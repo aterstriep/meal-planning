@@ -16,6 +16,8 @@
 // Components
 @import
   'components/buttons',
+  'components/forms',
+  'components/modal',
   'components/recipe-card',
   'components/recipe-grid';
 
@@ -28,4 +30,6 @@
 // Pages
 @import
   'pages/home',
-  'pages/about';
+  'pages/about',
+  'pages/meal-plan',
+  'pages/recipe';

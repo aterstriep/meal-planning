@@ -13,43 +13,71 @@
     .recipe-container {
         position: relative;
 
-        svg {
+        .recipe-grid-actions {
             position: absolute;
-            right: 10px;
-            top: 10px;
-            font-size: 20px;
-            color: white;
-            opacity: .75;
-            transition: .1s ease all;
-            cursor: pointer;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
 
-            &:hover {
+            svg {
+                margin-left: 5px;
+                padding: 8px;
+                width: 26px;
+                height: 26px;
+                border-radius: 100%;
+                background-color: $neutral;
+                color: $primary;
+                opacity: .75;
+                transition: .1s ease all;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 1;
+                    transform: scale(1.1);
+                }
+            }
+        }
+
+        &.saved-recipe .fa-heart {
+            background-color: $action;
+            color: white;
+            opacity: 1;
+        }
+
+        .fa-check {
+            display: none;
+        }
+        &.active-meal-plan {
+            .fa-check {
+                display: block;
+                background-color: $primary;
+                color: white;
                 opacity: 1;
-                transform: scale(1.1);
+                // pointer-events: none;
+            }
+            .fa-plus {
+                display: none;
             }
         }
 
         img {
             width: 100%;
         }
+    }
+}
 
-        a {
-            text-decoration: none;
+.recipe-container {
+    a {
+        text-decoration: none;
 
-            h3 {
-                margin: 10px 0 0;
-                line-height: 1.25;
-            }
-
-            &:hover h3 {
-                color: $secondary;
-            }
+        h3 {
+            margin: 10px 0 0;
+            line-height: 1.25;
         }
 
-        &.saved-recipe svg {
-            color: $action;
-            opacity: 1;
+        &:hover h3 {
+            color: $secondary;
         }
     }
-    
 }

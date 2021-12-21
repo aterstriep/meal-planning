@@ -1,14 +1,14 @@
 .page-wrapper.has-sidebar {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 15% 1fr;
 
     .sidebar {
-        background-color: $primary;
+        background-color: $dark;
         min-height: 100vh;
 
         .sidebar-inner {
             position: fixed;
-            width: calc(100% / 6);
+            width: 15%;
         }
 
         ul.sidebar-menu {
@@ -26,7 +26,7 @@
                 letter-spacing: .5px;
 
                 &:hover {
-                    background-color: rgba($dark, .2);
+                    background-color: rgba(white, .05);
                     color: white;
                 }
             }

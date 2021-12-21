@@ -1,0 +1,51 @@
+.modal-wrapper {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 15%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    .modal-inner {
+        min-width: 500px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #00000085;
+        position: relative;
+        z-index: 3;
+
+        @include breakpoint(sm) {
+            min-width: 0px;
+        }
+        
+        h3 {
+            margin: -30px -30px 30px -30px;
+            border-top-left-radius: 9px;
+            border-top-right-radius: 9px;
+            color: white;
+            background-color: $primary;
+            padding: 10px 30px;
+        }
+
+         p {
+            margin-top: 0;
+        }
+    }
+
+    .modal-overlay {
+        background-color: rgba(48, 51, 57, 0.5);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+}
+
+.meal-plan-modal button {
+    margin-left: 5px;
+}

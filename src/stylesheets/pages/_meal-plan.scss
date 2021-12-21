@@ -1,0 +1,17 @@
+.meal-plan .recipe {
+
+    .recipe-title {
+        margin: 0;
+    }
+
+    span#delete-recipe {
+        color: red;
+        font-size: 12px;
+        cursor: pointer;
+        visibility: hidden;
+    }
+
+    &:hover #delete-recipe {
+        visibility: visible;
+    }
+}

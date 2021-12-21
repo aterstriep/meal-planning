@@ -1,0 +1,10 @@
+select {
+    padding: 4px;
+    border: 2px solid $secondary;
+    border-radius: 6px;
+    min-width: 200px;
+
+    &:focus-visible {
+        outline-color: $action;
+    }
+}
