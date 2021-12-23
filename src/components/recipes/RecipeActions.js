@@ -17,6 +17,7 @@ export default function RecipeActions({recipe, saveRecipe, addRecipe, labels}) {
     let isAdded = useCheckMealPlan(recipe) ? true : false;
 
     const handleAddRecipe = (recipe, day) => {
+        console.log(recipe);
         addRecipe(recipe, day);
         setAdded(true);
     }
@@ -28,15 +29,9 @@ export default function RecipeActions({recipe, saveRecipe, addRecipe, labels}) {
             setSaved(!saved);
         }
 
-        let icon = <FontAwesomeIcon icon={faHeart} />;
-        let text = "Save Recipe";
-        let buttonClass = "";
-
-        if (active) {
-            icon = <FontAwesomeIcon icon={faCheck} />;
-            text = "Recipe Saved";
-            buttonClass = "active";
-        }
+        let icon = (active && labels) ? <FontAwesomeIcon icon={faCheck} /> : <FontAwesomeIcon icon={faHeart} />;
+        let text = active ? "Recipe Saved" : "Save Recipe";
+        let buttonClass = active ? "active" : "";
 
         const Label = () => {
             if (labels) {
@@ -61,15 +56,10 @@ export default function RecipeActions({recipe, saveRecipe, addRecipe, labels}) {
             document.getElementById("meal-plan-modal").style.display = "flex";
         }
 
-        let icon = <FontAwesomeIcon icon={faPlus} />;
-        let text = "Add to Meal Plan";
-        let buttonClass = "";
+        let icon = active ? <FontAwesomeIcon icon={faCheck} /> : <FontAwesomeIcon icon={faPlus} />;
+        let text = active ? "Added to Meal Plan" : "Add to Meal Plan";
+        let buttonClass = active ? "active" : "";
 
-        if (active) {
-            icon = <FontAwesomeIcon icon={faCheck} />;
-            text = "Added to Meal Plan";
-            buttonClass = "active";
-        }
 
         const Label = () => {
             if (labels) {

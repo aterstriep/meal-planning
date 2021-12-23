@@ -12,9 +12,11 @@ const PageTitle = styled.h1`
     margin-top: 0;
 `;
 
+const testRecipes = JSON.parse(localStorage.getItem("recipes"));
+
 const IndexPage = () => {
 
-  const [recipes, setRecipes] = useState([]);
+  const [recipes, setRecipes] = useState(testRecipes);
   const [saved, setSaved] = useSavedRecipes([]);
   const [mealPlan, setMealPlan] = useMealPlan([]);
 
@@ -24,20 +26,21 @@ const IndexPage = () => {
 
   const addRecipe = (recipe, day) => {
     setMealPlan(recipe, day);
-    console.log(JSON.parse(localStorage.getItem("mealPlan")));
+    // console.log(JSON.parse(localStorage.getItem("mealPlan")));
   }
 
   useEffect(() => {
 
-    fetch('https://api.spoonacular.com/recipes/complexSearch?apiKey=9446603e12154b3c983025231a0ee10e&addRecipeInformation=true')
-        .then(
-            response => response.json()
-        )
-        .then(
-            data => {
-                setRecipes(data.results);
-            }
-        );
+    // fetch('https://api.spoonacular.com/recipes/complexSearch?apiKey=9446603e12154b3c983025231a0ee10e&addRecipeInformation=true')
+    //     .then(
+    //         response => response.json()
+    //     )
+    //     .then(
+    //         data => {
+    //             setRecipes(data.results);
+    //             localStorage.setItem("recipes", JSON.stringify(data.results));
+    //         }
+    //     );
 
   }, [])
 

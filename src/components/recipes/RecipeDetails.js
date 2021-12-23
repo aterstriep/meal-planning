@@ -8,6 +8,19 @@ const RecipeDetails = ({recipe}) => {
     const ingredients = recipe.extendedIngredients;
 
     const RecipeCard = () => {
+        
+        const Ingredients = () => {
+            if(ingredients) {
+                return (
+                    <ul className="recipe_ingredients clear-list">
+                        {ingredients.map((item, index) => {
+                            return <li key={index}>{item.originalString}</li>
+                        })}
+                    </ul>
+                )
+            }
+            return null;
+        }
 
         return (
             <Container className="recipe-card" padding="0 40px 40px">
@@ -27,11 +40,7 @@ const RecipeDetails = ({recipe}) => {
                 <hr />
 
                 <h4 className="recipe_sub-title">Ingredients</h4>
-                <ul className="recipe_ingredients clear-list">
-                    {ingredients.map((item, index) => {
-                        return <li key={index}>{item.originalString}</li>
-                    })}
-                </ul>
+                <Ingredients />
 
                 <hr />
 

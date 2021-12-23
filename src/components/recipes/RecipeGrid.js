@@ -16,6 +16,7 @@ const RecipeGrid = ({recipes, setSavedRecipes, addRecipe}) => {
     const [modalRecipe, setModalRecipe] = useState([]);
 
     const triggerMealPlanModal = (recipe) => {
+        console.log(recipe);
         setModalRecipe(recipe);
         document.getElementById("meal-plan-modal").style.display = "flex";
     }
@@ -34,7 +35,7 @@ const RecipeGrid = ({recipes, setSavedRecipes, addRecipe}) => {
 
     return (
         <>
-            <MealPlanModal recipe={modalRecipe} addRecipe={addRecipe} />
+            <MealPlanModal recipe={modalRecipe} addRecipe={addRecipe}  />
             <Grid />
         </>
     )
