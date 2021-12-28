@@ -2,6 +2,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Helmet from "react-helmet";
 
+import config from "../../config.json";
+
 import useSavedRecipes from "../hooks/useSavedRecipes";
 import useMealPlan from "../hooks/useMealPlan";
 
@@ -31,7 +33,7 @@ const RecipesPage = ({location}) => {
 
     useEffect(() => {
         if(!isLoaded) {
-            fetch(`https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=9446603e12154b3c983025231a0ee10e&addRecipeInformation=true`)
+            fetch(`https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${config.keys.spoonacular}&addRecipeInformation=true`)
                 .then(
                     response => response.json()
                 )
