@@ -17,7 +17,7 @@ const SavedRecipesPage = () => {
     const [saved, setSaved] = useSavedRecipes([]);
     const [mealPlan, setMealPlan] = useMealPlan([]);
 
-    const setSavedRecipes = (recipe) => {
+    const saveRecipe = (recipe) => {
         setSaved(recipe);
     }
 
@@ -29,7 +29,7 @@ const SavedRecipesPage = () => {
         <Layout>
             <Container>
                 <PageTitle>Saved Recipes</PageTitle>
-                <RecipeGrid recipes={saved} actions={['save']} setSavedRecipes={setSavedRecipes} addRecipe={addRecipe} />
+                <RecipeGrid recipes={saved} actions={['save']} saveRecipe={saveRecipe} addRecipe={addRecipe} />
             </Container>
         </Layout>
     )

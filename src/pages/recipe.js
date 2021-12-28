@@ -54,7 +54,7 @@ const RecipesPage = ({location}) => {
                     <Container>
                         <img src={recipe.image} />
                         <h1 className="recipe-title">{recipe.title}</h1>
-                        <RecipeActions recipe={recipe} saveRecipe={saveRecipe} addRecipe={addRecipe} labels="true" />
+                        <RecipeActions recipe={recipe} saveRecipe={saveRecipe} addRecipe={addRecipe} labels={true} />
                         <p dangerouslySetInnerHTML={{ __html: recipe.summary }} />
                     </Container>
                     <RecipeDetails recipe={recipe} />

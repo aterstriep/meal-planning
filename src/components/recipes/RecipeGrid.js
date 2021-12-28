@@ -11,12 +11,11 @@ import RecipeContainer from "./RecipeContainer";
 import MealPlanModal from "./MealPlanModal";
 
 
-const RecipeGrid = ({ recipes, actions = ['add', 'save'], setSavedRecipes, addRecipe}) => {
+const RecipeGrid = ({ recipes, actions = ['add', 'save'], saveRecipe, addRecipe}) => {
 
     const [modalRecipe, setModalRecipe] = useState([]);
 
     const triggerMealPlanModal = (recipe) => {
-        console.log(recipe);
         setModalRecipe(recipe);
         document.getElementById("meal-plan-modal").style.display = "flex";
     }
@@ -26,7 +25,7 @@ const RecipeGrid = ({ recipes, actions = ['add', 'save'], setSavedRecipes, addRe
             <div className="recipe-grid">
                 {recipes.map(recipe => {
                     return (
-                        <RecipeContainer key={recipe.id} recipe={recipe} actions={actions} setSavedRecipes={setSavedRecipes} addRecipe={triggerMealPlanModal}  />
+                        <RecipeContainer key={recipe.id} recipe={recipe} actions={actions} saveRecipe={saveRecipe} addRecipe={triggerMealPlanModal}  />
                     );
                 })}
             </div>

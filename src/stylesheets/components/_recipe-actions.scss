@@ -17,7 +17,8 @@
         span.action-icon {
             padding: 5px;
             background-color: rgba(black, .1);
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
             border-top-left-radius: inherit;
             border-bottom-left-radius: inherit;
         }
@@ -48,8 +49,12 @@
                 color: white;
             }
             
-            &:hover span.action-icon {
-                color: white;
+            &:hover {
+                background-color: darken($action, 4%);
+
+                span.action-icon {
+                    color: white;
+                }
             }
         }
     }
