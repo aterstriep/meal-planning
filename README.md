@@ -4,4 +4,4 @@ This app utilizes the [Spoonacular](https://spoonacular.com/food-api) recipe API
 
 Created with React and Gatsby.
 
-*This project is currently in progress*
+*This project is currently in progress.*
