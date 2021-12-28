@@ -12,7 +12,7 @@ import RecipeActions from './RecipeActions'
 import Container from "../Container"
 import Badge from "../Badge"
 
-export default function RecipeContainer({ recipe, addRecipe }) {
+export default function RecipeContainer({ recipe, actions = ['add', 'save'], addRecipe }) {
 
     const [savedRecipes, setSavedRecipes] = useSavedRecipes([]);
     const [added, setAdded] = useState('');
@@ -23,23 +23,8 @@ export default function RecipeContainer({ recipe, addRecipe }) {
         setSavedRecipes(recipe);
     }
 
-    // const addToMealPlan = () => {
-    //     addRecipe(recipe);
-    // }
-
-    const RecipeIcons = () => {
-        return (
-            <>
-                <FontAwesomeIcon icon={faHeart} onClick={(event) => saveRecipe(event, recipe)} />
-                {/* <FontAwesomeIcon icon={faPlus} onClick={(event) => addToMealPlan(event, recipe)} /> */}
-                <FontAwesomeIcon icon={faCheck} />
-            </>
-        )
-    }
-
     useEffect(() => {
         setAdded(isAdded);
-        // console.log('RecipeContainer useEffect: ' + isAdded);
     }, [isAdded])
 
     return (
@@ -48,9 +33,7 @@ export default function RecipeContainer({ recipe, addRecipe }) {
             recipe_id={recipe.id}
             key={recipe.id}
         >
-            <div className="recipe-grid-actions">
-                <RecipeActions recipe={recipe} saveRecipe={saveRecipe} addRecipe={() => addRecipe(recipe)} />
-            </div>
+            <RecipeActions recipe={recipe} actions={actions} saveRecipe={saveRecipe} addRecipe={() => addRecipe(recipe)} />
             <Link to={`/recipe?${recipe.id}`} state={{ activeRecipe: recipe.id }}>
                 <img src={recipe.image} />
             </Link>

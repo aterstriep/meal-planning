@@ -29,7 +29,7 @@ const SavedRecipesPage = () => {
         <Layout>
             <Container>
                 <PageTitle>Saved Recipes</PageTitle>
-                <RecipeGrid recipes={saved} setSavedRecipes={setSavedRecipes} addRecipe={addRecipe} />
+                <RecipeGrid recipes={saved} actions={['save']} setSavedRecipes={setSavedRecipes} addRecipe={addRecipe} />
             </Container>
         </Layout>
     )

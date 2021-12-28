@@ -8,7 +8,7 @@ import MealPlanModal from './MealPlanModal'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHeart, faPlus, faCheck } from '@fortawesome/free-solid-svg-icons'
 
-export default function RecipeActions({recipe, saveRecipe, addRecipe, labels}) {
+export default function RecipeActions({ recipe, actions = ['add', 'save'], saveRecipe, addRecipe, labels}) {
 
     const [saved, setSaved] = useState(false);
     const [added, setAdded] = useState(false);
@@ -17,7 +17,6 @@ export default function RecipeActions({recipe, saveRecipe, addRecipe, labels}) {
     let isAdded = useCheckMealPlan(recipe) ? true : false;
 
     const handleAddRecipe = (recipe, day) => {
-        console.log(recipe);
         addRecipe(recipe, day);
         setAdded(true);
     }
@@ -42,12 +41,15 @@ export default function RecipeActions({recipe, saveRecipe, addRecipe, labels}) {
             return null;
         }
 
-        return (
-            <button id="save-recipe" className={`recipe-action ${buttonClass}`} onClick={handleClick}>
-                <span className="action-icon">{icon}</span>
-                <Label />
-            </button>
-        )
+        if(actions.includes('save')) {
+            return (
+                <button id="save-recipe" className={`recipe-action ${buttonClass}`} onClick={handleClick}>
+                    <span className="action-icon">{icon}</span>
+                    <Label />
+                </button>
+            )
+        }
+        return null;
     }
 
     const ActionAddRecipe = ({active}) => {
@@ -70,12 +72,15 @@ export default function RecipeActions({recipe, saveRecipe, addRecipe, labels}) {
             return null;
         }
 
-        return (
-            <button id="add-recipe" className={`recipe-action ${buttonClass}`} onClick={handleClick}>
-                <span className="action-icon">{icon}</span>
-                <Label />
-            </button>
-        )
+        if (actions.includes('add')) {
+            return (
+                <button id="add-recipe" className={`recipe-action ${buttonClass}`} onClick={handleClick}>
+                    <span className="action-icon">{icon}</span>
+                    <Label />
+                </button>
+            )
+        }
+        return null;
     }
 
     useEffect(() => {
@@ -83,14 +88,18 @@ export default function RecipeActions({recipe, saveRecipe, addRecipe, labels}) {
         setAdded(isAdded);
     }, [isSaved, isAdded])
 
-    return (
-        <div className="recipe-actions-container">
-            
-            <MealPlanModal recipe={recipe} addRecipe={handleAddRecipe} />
+    if(actions) {
+        return (
+            <div className="recipe-actions-container">
 
-            <ActionSaveRecipe active={saved} />
-            <ActionAddRecipe active={added} />
+                <MealPlanModal recipe={recipe} addRecipe={handleAddRecipe} />
 
-        </div>
-    )
+                <ActionSaveRecipe active={saved} />
+                <ActionAddRecipe active={added} />
+
+            </div>
+        )
+    }
+    return null;
+    
 }

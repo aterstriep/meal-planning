@@ -1,5 +1,6 @@
-import React from "react"
-import { useEffect, useState } from "react"
+import React from "react";
+import { useEffect, useState } from "react";
+import Helmet from "react-helmet";
 
 import useSavedRecipes from "../hooks/useSavedRecipes";
 import useMealPlan from "../hooks/useMealPlan";
@@ -45,15 +46,20 @@ const RecipesPage = ({location}) => {
 
     if (isLoaded) {
         return (
-            <Layout>
-                <Container>
-                    <img src={recipe.image} />
-                    <h1 className="recipe-title">{recipe.title}</h1>
-                    <RecipeActions recipe={recipe} saveRecipe={saveRecipe} addRecipe={addRecipe} labels="true" />
-                    <p dangerouslySetInnerHTML={{ __html: recipe.summary }} />
-                </Container>
-                <RecipeDetails recipe={recipe} />
-            </Layout>
+            <>
+                <Helmet>
+                    <body className="single-recipe" />
+                </Helmet>
+                <Layout>
+                    <Container>
+                        <img src={recipe.image} />
+                        <h1 className="recipe-title">{recipe.title}</h1>
+                        <RecipeActions recipe={recipe} saveRecipe={saveRecipe} addRecipe={addRecipe} labels="true" />
+                        <p dangerouslySetInnerHTML={{ __html: recipe.summary }} />
+                    </Container>
+                    <RecipeDetails recipe={recipe} />
+                </Layout>
+            </>
         )
     } else {
         return null;

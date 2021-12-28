@@ -11,7 +11,7 @@ import RecipeContainer from "./RecipeContainer";
 import MealPlanModal from "./MealPlanModal";
 
 
-const RecipeGrid = ({recipes, setSavedRecipes, addRecipe}) => {
+const RecipeGrid = ({ recipes, actions = ['add', 'save'], setSavedRecipes, addRecipe}) => {
 
     const [modalRecipe, setModalRecipe] = useState([]);
 
@@ -26,7 +26,7 @@ const RecipeGrid = ({recipes, setSavedRecipes, addRecipe}) => {
             <div className="recipe-grid">
                 {recipes.map(recipe => {
                     return (
-                        <RecipeContainer key={recipe.id} recipe={recipe} setSavedRecipes={setSavedRecipes} addRecipe={triggerMealPlanModal}  />
+                        <RecipeContainer key={recipe.id} recipe={recipe} actions={actions} setSavedRecipes={setSavedRecipes} addRecipe={triggerMealPlanModal}  />
                     );
                 })}
             </div>

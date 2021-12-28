@@ -49,7 +49,7 @@ const IndexPage = () => {
       <Layout>
         <Container className="recipe-grid-wrap">
           <PageTitle>Recipes</PageTitle>
-          <RecipeGrid recipes={recipes} setSavedRecipes={setSavedRecipes} addRecipe={addRecipe} />
+          <RecipeGrid recipes={recipes} actions={false} setSavedRecipes={setSavedRecipes} addRecipe={addRecipe} />
         </Container>
       </Layout>
     )
