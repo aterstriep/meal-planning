@@ -1,26 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from "gatsby"
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart, faPlus, faCheck } from '@fortawesome/free-solid-svg-icons'
-
-import useSavedRecipes from '../../hooks/useSavedRecipes'
-
-import useCheckMealPlan from '../../hooks/useCheckMealPlan'
-
 import RecipeActions from './RecipeActions'
 import Container from "../Container"
 import Badge from "../Badge"
 
 export default function RecipeContainer({ recipe, actions = ['add', 'save'], addRecipe, saveRecipe }) {
-
-    const [added, setAdded] = useState('');
-
-    let isAdded = useCheckMealPlan(recipe) ? true : false;
-
-    useEffect(() => {
-        setAdded(isAdded);
-    }, [isAdded])
 
     return (
         <div className="recipe-container" recipe_id={recipe.id} >

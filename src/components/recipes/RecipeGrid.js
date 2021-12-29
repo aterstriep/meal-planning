@@ -1,12 +1,6 @@
 import * as React from "react"
-import { useEffect, useState } from "react"
-import { Link } from "gatsby";
+import { useState } from "react"
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
-
-import Container from "../Container";
-import Badge from "../Badge";
 import RecipeContainer from "./RecipeContainer";
 import MealPlanModal from "./MealPlanModal";
 

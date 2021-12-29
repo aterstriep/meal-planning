@@ -14,12 +14,8 @@ const PageTitle = styled.h1`
 
 const SavedRecipesPage = () => {
 
-    const [saved, setSaved] = useSavedRecipes([]);
+    const [savedRecipes, setSavedRecipes] = useSavedRecipes([]);
     const [mealPlan, setMealPlan] = useMealPlan([]);
-
-    const saveRecipe = (recipe) => {
-        setSaved(recipe);
-    }
 
     const addRecipe = (recipe) => {
         setMealPlan(recipe);
@@ -29,7 +25,7 @@ const SavedRecipesPage = () => {
         <Layout>
             <Container>
                 <PageTitle>Saved Recipes</PageTitle>
-                <RecipeGrid recipes={saved} actions={['save']} saveRecipe={saveRecipe} addRecipe={addRecipe} />
+                <RecipeGrid recipes={savedRecipes} actions={['save']} saveRecipe={setSavedRecipes} addRecipe={addRecipe} />
             </Container>
         </Layout>
     )

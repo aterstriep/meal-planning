@@ -1,32 +1,29 @@
-import { useState, useEffect } from "react";
+import { useEffect, useReducer, useState } from "react";
 
-const isBrowser = typeof window !== "undefined";
-
-export default function useSavedRecipes(recipe) {
+export default function useSavedRecipes() {
     
-    const [savedRecipes, setSavedRecipes] = useState(() => {
-        const initialPlan = isBrowser ? JSON.parse(localStorage.getItem("savedRecipes")) : [];
-        return initialPlan || [];
+    const [initialState, setInitialState] = useState(() => {
+        return localStorage.getItem("savedRecipes") ? JSON.parse(localStorage.getItem("savedRecipes")) : [];
     });
-    const [recipeOutput, setRecipeOutput] = useState(savedRecipes);
+    const [savedRecipes, setSavedRecipes] = useReducer(reducer, initialState);
 
-    const handleClick = (recipe) => {
+    function reducer(savedRecipes, recipe) {
 
         const index = savedRecipes.findIndex((item) => item.id === recipe.id);
 
         if (index < 0) {
-            setSavedRecipes([...savedRecipes, recipe]);
-        } else {
-            const remainingRecipes = savedRecipes.filter(item => recipe.id != item.id);
-            setSavedRecipes(remainingRecipes);
+            return [...savedRecipes, recipe];
+        } else if (index >= 0) {
+            return savedRecipes.filter(item => recipe.id != item.id);
         }
+        return savedRecipes;
+
     }
 
     useEffect(() => {
         localStorage.setItem("savedRecipes", JSON.stringify(savedRecipes));
-        setRecipeOutput(JSON.parse(localStorage.getItem("savedRecipes")));
     }, [savedRecipes])
 
-    return [recipeOutput, handleClick]
+    return [savedRecipes, setSavedRecipes]
 
 }

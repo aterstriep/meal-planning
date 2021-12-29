@@ -21,10 +21,6 @@ const RecipesPage = ({location}) => {
 
     const recipeId = location.state.activeRecipe;
 
-    const saveRecipe = (recipe) => {
-        setSavedRecipes(recipe);
-    }
-
     const addRecipe = (recipe, day) => {
         setMealPlan(recipe, day);
     }
@@ -54,7 +50,7 @@ const RecipesPage = ({location}) => {
                     <Container>
                         <img src={recipe.image} />
                         <h1 className="recipe-title">{recipe.title}</h1>
-                        <RecipeActions recipe={recipe} saveRecipe={saveRecipe} addRecipe={addRecipe} labels={true} />
+                        <RecipeActions recipe={recipe} saveRecipe={setSavedRecipes} addRecipe={addRecipe} labels={true} />
                         <p dangerouslySetInnerHTML={{ __html: recipe.summary }} />
                     </Container>
                     <RecipeDetails recipe={recipe} />
