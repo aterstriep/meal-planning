@@ -1,5 +1,5 @@
 import * as React from "react"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useReducer } from "react"
 import styled from "styled-components"
 import Layout from '../components/Layout'
 import Container from '../components/Container'
@@ -12,21 +12,52 @@ const PageTitle = styled.h1`
     margin-top: 0;
 `;
 
-const testRecipes = JSON.parse(localStorage.getItem("recipes"));
+const isBrowser = typeof window !== "undefined";
+let initialState = isBrowser ? JSON.parse(localStorage.getItem("savedRecipes")) : [];
+
+function reducer(savedRecipes, action) {
+  switch (action.type) {
+    case "add":
+      return [...savedRecipes, action.recipe];
+    case "remove":
+      return savedRecipes.filter(recipe => action.recipe.id != recipe.id);
+    default:
+      return savedRecipes;
+  }
+
+  // const index = savedRecipes.findIndex((recipe) => recipe.id === action.recipe.id);
+
+  // if (index < 0) {
+  //   return [...savedRecipes, action.recipe];
+  // } else if (index >= 0) {
+  //   return savedRecipes.filter(recipe => action.recipe.id != recipe.id);
+  // }
+  // return savedRecipes;
+
+}
 
 const IndexPage = () => {
 
-  const [recipes, setRecipes] = useState(testRecipes);
-  const [saved, setSaved] = useSavedRecipes([]);
+  const [recipes, setRecipes] = useState([]);
+  const [savedRecipes, setSavedRecipes] = useReducer(reducer, initialState);
   const [mealPlan, setMealPlan] = useMealPlan([]);
 
-  const setSavedRecipes = (recipe) => {
-    setSaved(recipe);
+  const saveRecipe = (recipe) => {
+
+    const index = savedRecipes.findIndex((item) => item.id === recipe.id);
+    let type = "";
+
+    if (index < 0) {
+      type = "add";
+    } else if (index >= 0) {
+      type = "remove";
+    }
+
+    setSavedRecipes({ type: type, recipe: recipe });
   }
 
   const addRecipe = (recipe, day) => {
     setMealPlan(recipe, day);
-    // console.log(JSON.parse(localStorage.getItem("mealPlan")));
   }
 
   useEffect(() => {
@@ -42,19 +73,26 @@ const IndexPage = () => {
     //         }
     //     );
 
+    const testRecipes = JSON.parse(localStorage.getItem("recipes"));
+    setRecipes(testRecipes);
+
   }, [])
+
+  useEffect(() => {
+    localStorage.setItem("savedRecipes", JSON.stringify(savedRecipes));
+  }, [savedRecipes])
 
   if(recipes) {
     return (
       <Layout>
         <Container className="recipe-grid-wrap">
           <PageTitle>Recipes</PageTitle>
-          <RecipeGrid recipes={recipes} actions={false} setSavedRecipes={setSavedRecipes} addRecipe={addRecipe} />
+          <RecipeGrid recipes={recipes} actions={['save']} saveRecipe={saveRecipe} addRecipe={addRecipe} />
         </Container>
       </Layout>
     )
   } else {
-    return null;
+    return <h1>Test</h1>;
   }
 
 }

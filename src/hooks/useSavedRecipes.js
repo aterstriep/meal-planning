@@ -1,12 +1,15 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from "react";
+
+const isBrowser = typeof window !== "undefined";
 
 export default function useSavedRecipes(recipe) {
     
     const [savedRecipes, setSavedRecipes] = useState(() => {
-        const initialSaved = JSON.parse(localStorage.getItem("savedRecipes"));
-        return initialSaved || [];
+        const initialPlan = isBrowser ? JSON.parse(localStorage.getItem("savedRecipes")) : [];
+        return initialPlan || [];
     });
-    
+    const [recipeOutput, setRecipeOutput] = useState(savedRecipes);
+
     const handleClick = (recipe) => {
 
         const index = savedRecipes.findIndex((item) => item.id === recipe.id);
@@ -21,8 +24,9 @@ export default function useSavedRecipes(recipe) {
 
     useEffect(() => {
         localStorage.setItem("savedRecipes", JSON.stringify(savedRecipes));
+        setRecipeOutput(JSON.parse(localStorage.getItem("savedRecipes")));
     }, [savedRecipes])
 
-    return [savedRecipes, handleClick]
+    return [recipeOutput, handleClick]
 
 }

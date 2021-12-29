@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
 
+const isBrowser = typeof window !== "undefined";
+
 export default function useMealPlan(recipe) {
     
     const [mealPlan, setMealPlan] = useState(() => {
-        const initialPlan = JSON.parse(localStorage.getItem("mealPlan"));
+        const initialPlan = isBrowser ? JSON.parse(localStorage.getItem("mealPlan")) : [];
         return initialPlan || [];
     });
     
