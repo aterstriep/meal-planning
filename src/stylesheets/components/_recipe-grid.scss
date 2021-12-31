@@ -12,6 +12,8 @@
 
     .recipe-container {
         position: relative;
+        display: flex;
+        flex-direction: column;
 
         .recipe-actions-container {
             position: absolute;
@@ -20,8 +22,19 @@
             padding: 10px;
         }
 
-        img {
+        .image-wrapper {
             width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .dish-types {
+            margin-top: 10px;
         }
     }
 }

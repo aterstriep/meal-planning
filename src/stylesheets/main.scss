@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+// Normalize
+@import 'base/normalize';
+
 // Abstracts
 @import
   'abstracts/variables',
@@ -10,7 +13,6 @@
   'base/base',
   'base/fonts',
   'base/typography',
-  'base/normalize',
   'base/helpers';
 
 // Components
@@ -18,8 +20,10 @@
   'components/buttons',
   'components/forms',
   'components/modal',
+  'components/pagination',
   'components/recipe-actions',
   'components/recipe-card',
+  'components/recipe-filters',
   'components/recipe-grid';
 
 // Layout

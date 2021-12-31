@@ -1,0 +1,32 @@
+ul.pagination {
+    margin-top: 40px;
+    display: inline-flex;
+    background-color: $neutral;
+
+    li {
+        height: 26px;
+        width: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        line-height: 1;
+        font-weight: 600;
+        cursor: pointer;
+
+        &.active {
+            background-color: $secondary;
+            pointer-events: none;
+        }
+
+        &.disabled {
+            pointer-events: none;
+            opacity: .5;
+        }
+
+        &:not(.active):not(.disabled):hover {
+            background-color: $primary;
+            color: white;
+        }
+    }
+}

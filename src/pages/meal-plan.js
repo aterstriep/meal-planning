@@ -5,6 +5,7 @@ import { Link } from 'gatsby';
 import Layout from '../components/Layout'
 import Container from '../components/Container'
 import Badge from '../components/Badge';
+import RecipeContainer from '../components/recipes/RecipeContainer';
 
 import useCheckSavedRecipe from '../hooks/useCheckSavedRecipe';
 import useSavedRecipes from '../hooks/useSavedRecipes';
@@ -22,51 +23,27 @@ const MealPlanPage = () => {
         setMealPlan(recipe, day, "delete");
     }
 
-    const RecipeContainer = ({recipe}) => {
-
-        return (
-            <div
-                className={`recipe-container`}
-                recipe_id={recipe.id}
-                key={recipe.id}
-            >
-                <div className="recipe-grid-actions">
-                </div>
-                <Link to={`/recipe?${recipe.id}`} state={{ activeRecipe: recipe.id }}>
-                    <img src={recipe.image} />
-                </Link>
-                <Container className="mealtypes" padding="0px">
-                    {recipe.dishTypes.map((type, index) => {
-                        return <Badge key={index}>{type}</Badge>
-                    })}
-                </Container>
-                <Link to={`/recipe?${recipe.id}`} state={{ activeRecipe: recipe.id }}><h3>{recipe.title}</h3></Link>
-            </div>
-        )
-    }
-
     const MealPlanGrid = () => {
         
         const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
-        return days.map((day, index) => {
+        return days.map(day => {
             if (mealPlan[day]) {
                 return (
-                    <div key={index}>
+                    <div key={day} className="day-container">
                         <h2>{day}</h2>
-                        {mealPlan[day].map((recipe, index) => {
+                        {mealPlan[day].map(recipe => {
                             return (
-                                <div key={index} className="recipe">
-                                    <p className="recipe-title">{recipe.title}</p>
+                                <RecipeContainer actions={false} recipe={recipe} key={recipe.id} >
                                     <span id="delete-recipe" onClick={(e) => deleteRecipe(recipe, day)}>Delete</span>
-                                </div>
+                                </RecipeContainer>
                             )
                         })}
                     </div>
                 )
             } else {
                 return (
-                    <div key={index}>
+                    <div key={day} className="day-container">
                         <h2>{day}</h2>
                     </div>
                 )
@@ -79,7 +56,9 @@ const MealPlanPage = () => {
         <Layout>
             <Container className="meal-plan">
                 <PageTitle>Meal Plan</PageTitle>
-                <MealPlanGrid />
+                <div className="meal-plan-container">
+                    <MealPlanGrid />
+                </div>
             </Container>
         </Layout>
     )

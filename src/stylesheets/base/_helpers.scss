@@ -19,10 +19,6 @@
     @include maxwidth(1400px);
 }
 
-img {
-    max-width: 100%;
-}
-
 .clear-list {
     @include clearList;
 }

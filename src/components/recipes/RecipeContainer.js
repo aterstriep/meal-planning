@@ -5,7 +5,7 @@ import RecipeActions from './RecipeActions'
 import Container from "../Container"
 import Badge from "../Badge"
 
-export default function RecipeContainer({ recipe, actions = ['add', 'save'], addRecipe, saveRecipe }) {
+export default function RecipeContainer({ recipe, children, actions = ['add', 'save'], addRecipe, saveRecipe }) {
 
     return (
         <div className="recipe-container" recipe_id={recipe.id} >
@@ -18,16 +18,23 @@ export default function RecipeContainer({ recipe, actions = ['add', 'save'], add
             />
 
             <Link to={`/recipe?${recipe.id}`} state={{ activeRecipe: recipe.id }}>
-                <img src={recipe.image} />
+                <div className="image-wrapper">
+                    <img src={recipe.image} />
+                </div>
             </Link>
 
-            <Container className="mealtypes" padding="0px">
-                {recipe.dishTypes.map((type, index) => {
-                    return <Badge key={index}>{type}</Badge>
-                })}
-            </Container>
+            <div className="recipe-details" padding="0">
+                <div className="dish-types">
+                    {recipe.dishTypes.map((type, index) => {
+                        return <Badge key={index}>{type}</Badge>
+                    })}
+                </div>
 
-            <Link to={`/recipe?${recipe.id}`} state={{ activeRecipe: recipe.id }}><h3>{recipe.title}</h3></Link>
+                <Link to={`/recipe?${recipe.id}`} state={{ activeRecipe: recipe.id }}><h3>{recipe.title}</h3></Link>
+
+                {children}
+                
+            </div>
 
         </div>
     )

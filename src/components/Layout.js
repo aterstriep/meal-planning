@@ -2,9 +2,15 @@ import * as React from "react"
 import { useState, useEffect } from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
-import "../stylesheets/main.scss"
+
 import "normalize.css"
+import "../stylesheets/main.scss"
+
 import Footer from "./Footer"
+
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faLeaf, faHeart, faClock, faPiggyBank, faStar, faRandom, faSearch, faAngleLeft, faAngleRight  } from '@fortawesome/free-solid-svg-icons'
+library.add(faLeaf, faHeart, faClock, faPiggyBank, faStar, faRandom, faSearch, faAngleLeft, faAngleRight )
 
 const Layout = ({ children, className, hideSidebar }) => {
 

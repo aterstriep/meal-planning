@@ -46,6 +46,15 @@
     }
 }
 
-.meal-plan-modal button {
-    margin-left: 5px;
+.meal-plan-modal form {
+    flex-direction: row;
+    gap: 5px;
+
+    select {
+        min-width: 220px;
+    }
+
+    button {
+        font-size: 12px;
+    }
 }

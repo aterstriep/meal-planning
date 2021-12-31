@@ -1,0 +1,30 @@
+footer {
+    grid-column: 2 / span 1;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 40px;
+    background-color: $primary;
+    color: white;
+
+    svg.svg-inline--fa.fa-heart.fa-w-16 {
+        margin-top: 1px;
+        color: $dark;
+        height: 14px;
+        width: 14px;
+    }
+
+    p {
+        margin: 0;
+        font-size: 12px;
+
+        a {
+            color: white;
+            font-weight: 600;
+
+            &:hover {
+                color: $dark;
+            }
+        }
+    }
+}

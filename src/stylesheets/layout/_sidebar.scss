@@ -1,10 +1,12 @@
 .page-wrapper.has-sidebar {
     display: grid;
     grid-template-columns: 15% 1fr;
+    grid-template-rows: 1fr auto;
 
     .sidebar {
         background-color: $dark;
         min-height: 100vh;
+        grid-row: 1 / span 2;
 
         .sidebar-inner {
             position: fixed;
@@ -12,7 +14,7 @@
         }
 
         ul.sidebar-menu {
-            margin-top: 40px;
+            margin-top: 10px;
 
             li.sidebar-hoverable a {
                 padding: 2px 20px;

@@ -8,8 +8,9 @@ import useMealPlan from "../hooks/useMealPlan";
 import Layout from "../components/Layout";
 import RecipeDetails from '../components/recipes/RecipeDetails'
 import Container from "../components/Container";
-
 import RecipeActions from "../components/recipes/RecipeActions";
+
+import config from "../../config.json";
 
 const RecipesPage = ({location}) => {
 
@@ -27,7 +28,7 @@ const RecipesPage = ({location}) => {
 
     useEffect(() => {
         if(!isLoaded) {
-            fetch(`https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=9446603e12154b3c983025231a0ee10e&addRecipeInformation=true`)
+            fetch(`https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${config.keys.spoonacular}&addRecipeInformation=true`)
                 .then(
                     response => response.json()
                 )
