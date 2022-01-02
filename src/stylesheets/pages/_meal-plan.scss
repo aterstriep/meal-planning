@@ -1,9 +1,11 @@
 .meal-plan .meal-plan-container {
     border: 1px solid $secondary;
+    max-width: 1000px;
 
     .day-container {
         background-color: $neutral;
         padding-bottom: 20px;
+        min-height: 125px;
 
         h2 {
             margin: 0 0 20px;
@@ -18,6 +20,10 @@
             grid-template-columns: 150px 1fr;
             grid-gap: 15px;
             padding: 0 40px 20px;
+
+            > a {
+                pointer-events: none;
+            }
 
             .image-wrapper {
                 height: 100%;

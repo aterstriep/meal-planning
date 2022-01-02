@@ -21,4 +21,7 @@ module.exports = {
       __key: "images",
     },
   ],
+  flags: {
+    DEV_SSR: false
+  }
 };

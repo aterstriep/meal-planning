@@ -5,10 +5,10 @@ import RecipeActions from './RecipeActions'
 import Container from "../Container"
 import Badge from "../Badge"
 
-export default function RecipeContainer({ recipe, children, actions = ['add', 'save'], addRecipe, saveRecipe }) {
+export default function RecipeContainer({ recipe, day, draggable = false, onDragStart = "", children, actions = ['add', 'save'], addRecipe, saveRecipe }) {
 
     return (
-        <div className="recipe-container" recipe_id={recipe.id} >
+        <div draggable={draggable} onDragStart={(e) => onDragStart(e, recipe, day)} className="recipe-container" recipe_id={recipe.id} id={recipe.id} >
 
             <RecipeActions
                 recipe={recipe}

@@ -19,9 +19,28 @@ const MealPlanPage = () => {
 
     const [mealPlan, setMealPlan] = useMealPlan([]);
 
-    const deleteRecipe = (recipe, day) => {
-        setMealPlan(recipe, day, "delete");
+    console.log(mealPlan);
+
+    const allowDrop = (e) => {
+        e.preventDefault();
     }
+
+    const drag = (e, recipe, day) => {
+        e.dataTransfer.setData("recipe", JSON.stringify(recipe));
+        e.dataTransfer.setData("day", day);
+    }
+
+    const drop = (e) => {
+
+        e.preventDefault();
+        const recipe = JSON.parse(e.dataTransfer.getData("recipe"));
+        const day = e.dataTransfer.getData("day");
+        const newDay = e.currentTarget.getAttribute("day");
+        e.currentTarget.append(document.getElementById(recipe.id));
+
+        setMealPlan(recipe, { previous: day, new: newDay }, "update");
+
+    } 
 
     const MealPlanGrid = () => {
         
@@ -30,12 +49,12 @@ const MealPlanPage = () => {
         return days.map(day => {
             if (mealPlan[day]) {
                 return (
-                    <div key={day} className="day-container">
+                    <div key={day} day={day} className="day-container" onDrop={(e) => drop(e)} onDragOver={(e) => allowDrop(e)}>
                         <h2>{day}</h2>
                         {mealPlan[day].map(recipe => {
                             return (
-                                <RecipeContainer actions={false} recipe={recipe} key={recipe.id} >
-                                    <span id="delete-recipe" onClick={(e) => deleteRecipe(recipe, day)}>Delete</span>
+                                <RecipeContainer draggable={true} day={day} onDragStart={drag} actions={false} recipe={recipe} key={recipe.id} >
+                                    <span id="delete-recipe" onClick={(e) => setMealPlan(recipe, day, "delete")}>Delete</span>
                                 </RecipeContainer>
                             )
                         })}
@@ -43,7 +62,7 @@ const MealPlanPage = () => {
                 )
             } else {
                 return (
-                    <div key={day} className="day-container">
+                    <div key={day} day={day} className="day-container" onDrop={(e) => drop(e)} onDragOver={(e) => allowDrop(e)}>
                         <h2>{day}</h2>
                     </div>
                 )
