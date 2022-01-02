@@ -3,13 +3,13 @@
     max-width: 1000px;
 
     .day-container {
+        overflow: hidden;
         background-color: $neutral;
-        padding-bottom: 20px;
         min-height: 125px;
 
         h2 {
             margin: 0 0 20px;
-            padding: 5px 40px;
+            padding: 5px 20px;
             background-color: $secondary;
             color: $dark;
             font-size: 14px;
@@ -19,7 +19,9 @@
             display: grid;
             grid-template-columns: 150px 1fr;
             grid-gap: 15px;
-            padding: 0 40px 20px;
+            padding: 0 20px;
+            margin-bottom: 20px;
+            cursor: move;
 
             > a {
                 pointer-events: none;
