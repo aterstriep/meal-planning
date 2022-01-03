@@ -25,5 +25,12 @@
             margin-bottom: 10px;
         }
     }
+
+    @include breakpoint(sm) {
+        
+        .recipe_info {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
     
 }

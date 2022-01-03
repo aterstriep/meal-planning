@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import { Helmet } from 'react-helmet';
 
 import Layout from '../components/Layout'
 import Container from '../components/Container'
@@ -23,7 +24,12 @@ const SavedRecipesPage = () => {
 
     return (
         <Layout>
-            <Container>
+            <Helmet>
+                <body className="saved-recipes" />
+                <title>Saved Recipes</title>
+                <meta name="icon" href="../images/favicon.png" />
+            </Helmet>
+            <Container padding="20px 40px 40px">
                 <PageTitle>Saved Recipes</PageTitle>
                 <RecipeGrid recipes={savedRecipes} actions={['save']} saveRecipe={setSavedRecipes} addRecipe={addRecipe} />
             </Container>

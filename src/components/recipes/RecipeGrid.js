@@ -10,7 +10,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const RecipeGrid = ({ recipes, actions = ['add', 'save'], saveRecipe, addRecipe}) => {
 
     const [modalRecipe, setModalRecipe] = useState([]);
-    const [page, setPage] = useState(1);
 
     const triggerMealPlanModal = (recipe) => {
         setModalRecipe(recipe);
@@ -35,7 +34,7 @@ const RecipeGrid = ({ recipes, actions = ['add', 'save'], saveRecipe, addRecipe}
                         numbers.push(i);
                     }
                 } else {
-                    if (page == 1) {
+                    if (page === 1) {
                         numbers = [1, 2, 3, "...", pages];
                     } else if (page > (pages - 3)) {
                         numbers = [1, "...", pages - 2, pages - 1, pages];
@@ -45,19 +44,19 @@ const RecipeGrid = ({ recipes, actions = ['add', 'save'], saveRecipe, addRecipe}
                 }
 
                 return numbers.map(number => {
-                    let active = number == page ? "active" : "";
-                    let disabled = number == "..." ? "disabled" : "";
-                    return <li key={number} className={`${active} ${disabled}`} onClick={() => setPage(number)}>{number}</li>
+                    let active = number === page ? "active" : "";
+                    let disabled = number === "..." ? "disabled" : "";
+                    return <li role="tab" key={number} className={`${active} ${disabled}`} onClick={() => setPage(number)}>{number}</li>
                 });
 
             }
 
             if(perPage) {
                 return (
-                    <ul className="pagination clearList">
-                        <li className={page == 1 ? "disabled" : ""} onClick={() => setPage(page - 1)}><FontAwesomeIcon icon="angle-left" /></li>
+                    <ul className="pagination clearList" role="tablist">
+                        <li role="tab" className={page === 1 ? "disabled" : ""} onClick={() => setPage(page - 1)}><FontAwesomeIcon icon="angle-left" /></li>
                         <Numbers />
-                        <li className={page == pages ? "disabled" : ""} onClick={() => setPage(page + 1)}><FontAwesomeIcon icon="angle-right" /></li>
+                        <li role="tab" className={page === pages ? "disabled" : ""} onClick={() => setPage(page + 1)}><FontAwesomeIcon icon="angle-right" /></li>
                     </ul>
                 )
             }

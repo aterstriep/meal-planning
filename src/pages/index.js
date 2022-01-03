@@ -1,9 +1,10 @@
 import * as React from "react"
-import { useState, useEffect, useReducer } from "react"
+import { useState, useEffect } from "react"
 import Layout from '../components/Layout'
 import Container from '../components/Container'
 import RecipeGrid from '../components/recipes/RecipeGrid'
 import RecipeFilters from "../components/recipes/RecipeFilters"
+import { Helmet } from "react-helmet"
 
 import config from "../../config.json";
 
@@ -14,15 +15,15 @@ const IndexPage = () => {
   const [recipes, setRecipes] = useState([]);
   const [mealPlan, setMealPlan] = useMealPlan([]);
   const [query, setQuery] = useState({
-    parameters: {},
+    parameters: {
+      sort: "popularity",
+    },
     filters: {},
   });
-  
-  console.log(query);
 
   const updateQuery = (newQuery, action) => {
 
-    if(newQuery && action == "add") {
+    if(newQuery && action === "add") {
 
       // Add parameters
       let parameters = Object.assign(query.parameters, newQuery.parameters);
@@ -34,7 +35,7 @@ const IndexPage = () => {
 
       setQuery(newQuery);
 
-    } else if (newQuery && action == "remove") {
+    } else if (newQuery && action === "remove") {
 
       // Remove query
       let updatedQuery = {...query};
@@ -45,7 +46,9 @@ const IndexPage = () => {
 
       // Clear recipe query
       setQuery({
-        parameters: { },
+        parameters: {
+          sort: "popularity",
+        },
         filters: { },
       });
 
@@ -61,10 +64,10 @@ const IndexPage = () => {
     
     filters.forEach((item, index) => {
       recipes = recipes.filter(recipe => {
-        if ( item[0] == "readyInMinutes" ) {
+        if ( item[0] === "readyInMinutes" ) {
           return recipe[item[0]] <= item[1];
         } else {
-          return recipe[item[0]] == item[1];
+          return recipe[item[0]] === item[1];
         }
       })
     });
@@ -80,7 +83,7 @@ const IndexPage = () => {
       return <RecipeGrid recipes={recipes} actions={false} addRecipe={addRecipe} />
     } else if ( !recipes.length && (Object.keys(query.filters).length || Object.keys(query.parameters).length) ) {
       // If no recipes but query has been set, return
-      return <p>No recipes found. Please <span className="clear-filters" onClick={() => updateQuery(null, "clear")}>clear filters</span> or try a new search.</p>;
+      return <p>No recipes found. Please <span role="button" className="clear-filters" onClick={() => updateQuery(null, "clear")}>clear filters</span> or try a new search.</p>;
     }
 
     // If no recipes or query, return
@@ -96,31 +99,27 @@ const IndexPage = () => {
       queryParams = queryParams.concat(`&${key}=${value}`);
     }
 
-    // fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${config.keys.spoonacular}&addRecipeInformation=true${queryParams}`)
-    //     .then(
-    //         response => response.json()
-    //     )
-    //     .then(
-    //         data => {
-    //             setRecipes(data.results);
-    //             localStorage.setItem("recipes", JSON.stringify(data.results));
-    //         }
-    //     );
+    fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${config.keys.spoonacular}&addRecipeInformation=true&instructionsRequired=true&number=24${queryParams}`)
+        .then(
+            response => response.json()
+        )
+        .then(
+            data => {
+              const filters = Object.entries(query.filters);
+              const filteredRecipes = filters.length ? filterRecipes(filters, data.results) : data.results;
+              setRecipes(filteredRecipes);
+            }
+        );
 
-
-    // TEST VALUES - REMOVE BEFORE LIVE
-    let testRecipes = JSON.parse(localStorage.getItem("recipes"));
-
-    // Filter recipes - MOVE TO FETCH REQUEST
-    const filters = Object.entries(query.filters);
-    testRecipes = filters.length ? filterRecipes(filters, testRecipes) : testRecipes;
-
-    setRecipes(testRecipes);
-    
   }, [query])
 
   return (
     <Layout>
+      <Helmet>
+        <body className="index" />
+        <title>Meal Planning App</title>
+        <meta name="icon" href="../images/favicon.png" />
+      </Helmet>
       <RecipeFilters setQuery={updateQuery} query={query} />
       <Container className="recipe-grid-wrap">
         <RecipeResults recipes={recipes} pagination={true} />

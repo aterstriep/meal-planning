@@ -14,7 +14,7 @@ export default function useSavedRecipes() {
         if (index < 0) {
             return [...savedRecipes, recipe];
         } else if (index >= 0) {
-            return savedRecipes.filter(item => recipe.id != item.id);
+            return savedRecipes.filter(item => recipe.id !== item.id);
         }
         return savedRecipes;
 

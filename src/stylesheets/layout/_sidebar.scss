@@ -7,16 +7,14 @@
         background-color: $dark;
         min-height: 100vh;
         grid-row: 1 / span 2;
+        padding: 10px 0 40px;
+        z-index: 999;
 
         .sidebar-inner {
             position: fixed;
             width: 15%;
-        }
 
-        ul.sidebar-menu {
-            margin-top: 10px;
-
-            li.sidebar-hoverable a {
+            ul.sidebar-menu li.sidebar-hoverable a {
                 padding: 2px 20px;
                 width: 100%;
                 display: block;
@@ -27,11 +25,106 @@
                 color: white;
                 letter-spacing: .5px;
 
+                svg {
+                    display: none;
+                }
+
                 &:hover {
                     background-color: rgba(white, .05);
                     color: white;
                 }
             }
         }
+
+        .menu-toggle {
+            color: white;
+            padding: 0 20px;
+            font-size: 22px;
+            line-height: 1.5;
+            position: relative;
+            z-index: 2;
+            position: fixed;
+            display: none;
+             
+            svg {
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    @include breakpoint(md) {
+
+        grid-template-columns: 60px 1fr;
+
+        .sidebar .menu-toggle {
+            display: block;
+        }
+
+        .sidebar .sidebar-inner {
+            width: auto;
+            position: unset;
+            transition: .25s ease all;
+
+            &:before {
+                content: "";
+                @include cover;
+                background-color: rgba($dark, 50%);
+                opacity: 0;
+                pointer-events: none;
+                transition: .25s ease all;
+            }
+
+            ul.sidebar-menu {
+                padding-top: 52px;
+                background-color: $dark;
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                width: 60px;
+                transition: .25s ease all;
+                overflow: hidden;
+
+                li.sidebar-hoverable {
+                    margin-bottom: 10px;
+
+                    a {
+                        display: grid;
+                        align-items: center;
+                        grid-template-columns: 18px 1fr;
+                        grid-gap: 10px;
+
+                        svg {
+                            font-size: 18px;
+                            display: block;
+                        }
+
+                        span.menu-item-text {
+                            transition: .25s ease all;
+                            white-space: nowrap;
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+
+            &.active {
+                pointer-events: auto;
+                background-color: rgba($dark, 50%);
+
+                &:before {
+                    opacity: 1;
+                }
+
+                ul.sidebar-menu {
+                    width: 200px;
+
+                    li.sidebar-hoverable a span.menu-item-text {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
     }
 }

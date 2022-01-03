@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer>
             <FontAwesomeIcon icon="heart" />
-            <p>Created by <a href="https://ashleyterstriep.com" target="_blank">Ashley Terstriep</a> using React, Gatsby, and Spoonacular API</p>
+            <p>Created by <a href="https://ashleyterstriep.com" target="_blank" rel="noreferrer">Ashley Terstriep</a></p>
         </footer>
     )
 }

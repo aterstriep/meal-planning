@@ -19,18 +19,18 @@ export default function useMealPlan(recipe) {
     
     const updateMealPlan = (recipe, day, action = "add") => {
 
-        if( action == "add" ) {
+        if( action === "add" ) {
 
             addRecipe(recipe, day, mealPlan);
 
-        } else if( action == "delete" ) {
+        } else if( action === "delete" ) {
 
-            const updatedMealPlan = mealPlan[day].filter(item => item.id != recipe.id);
+            const updatedMealPlan = mealPlan[day].filter(item => item.id !== recipe.id);
             setMealPlan({ ...mealPlan, [day]: [...updatedMealPlan] });
 
-        } else if( action == "update" ) {
+        } else if( action === "update" ) {
 
-            let updatedMealPlan = mealPlan[day.previous].filter(item => item.id != recipe.id);
+            let updatedMealPlan = mealPlan[day.previous].filter(item => item.id !== recipe.id);
             updatedMealPlan = { ...mealPlan, [day.previous]: [...updatedMealPlan] };
             addRecipe(recipe, day.new, updatedMealPlan);
 

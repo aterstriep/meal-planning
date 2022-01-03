@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
+import { useMediaQuery } from 'react-responsive'
 
 export default function RecipeFilters({setQuery, query}) {
 
@@ -9,49 +9,79 @@ export default function RecipeFilters({setQuery, query}) {
         filters: {},
     };
 
-    // console.log(query);
-
     const FilterIcons = ({query}) => {
 
+        const [active, setActive] = useState(false);
+        const isHidden = useMediaQuery({
+            query: '(max-width: 992px)'
+        });
+
         const checkIfActive = (filter) => {
-            return query[filter.type][filter.name] ? true : false;
+            return (query[filter.type][filter.name] === filter.value) ? true : false;
         }
 
         const handleClick = (e, filterQuery) => {
 
-            // if(checkIfActive(filterQuery) && !filterQuery.value == "random") {
-            if(checkIfActive(filterQuery)) {
-                console.log("remove");
+            if(checkIfActive(filterQuery) && filterQuery.value !== "random") {
                 setQuery({ name: filterQuery.name, type: filterQuery.type }, "remove");
             } else {
-                console.log("add");
                 newQuery[filterQuery.type][filterQuery.name] = filterQuery.value;
                 setQuery(newQuery, "add");
             }
 
         }
 
+        const FilterToggle = () => {
+
+            const icon = active ? "times" : "filter";
+            
+            const handleClick = () => {
+
+                setActive(!active);
+
+                const filterIcons = document.getElementById("filter-icons");
+                filterIcons.classList.toggle("active");
+
+            }
+
+            return (
+                <span className="filters-toggle" onClick={handleClick} role="button"><FontAwesomeIcon icon={icon} /> Recipe Filters</span>
+            )
+
+        }
+
         const filters = [
-            { label: "Shuffle Recipes", icon: "random", filterQuery: { name: "sort", value: "random", compare: "&", type: "parameters" } },
-            { label: "Vegetarian", icon: "leaf", filterQuery: { name: "diet", value: "vegetarian", compare: "&", type: "parameters" } },
-            { label: "Healthy", icon: "heart", filterQuery: { name: "veryHealthy", value: true, compare: "==", type: "filters" } },
-            { label: "Quick & Easy", icon: "clock", filterQuery: { name: 'readyInMinutes', value: 30, compare: "<=", type: "filters" } },
-            { label: "Cheap", icon: "piggy-bank", filterQuery: { name: "cheap", value: true, compare: "==", type: "filters" } },
-            { label: "Popular", icon: "star", filterQuery: { name: "veryPopular", value: true, compare: "==", type: "filters" } },
+            { label: "Shuffle Recipes", icon: "random", filterQuery: { name: "sort", value: "random", type: "parameters" } },
+            { label: "Vegetarian", icon: "leaf", filterQuery: { name: "diet", value: "vegetarian", type: "parameters" } },
+            { label: "Healthy", icon: "heart", filterQuery: { name: "veryHealthy", value: true, type: "filters" } },
+            { label: "Quick & Easy", icon: "clock", filterQuery: { name: 'readyInMinutes', value: 30, type: "filters" } },
+            { label: "Cheap", icon: "piggy-bank", filterQuery: { name: "cheap", value: true, type: "filters" } },
+            { label: "Popular", icon: "star", filterQuery: { name: "veryPopular", value: true, type: "filters" } },
         ]
 
+        useEffect(() => {
+
+            const margin = (isHidden && active) ? document.getElementById("filter-icons").offsetHeight : 0;
+            document.getElementById("recipe-filters").style.marginBottom = margin + "px";
+            document.getElementById("filter-icons").style.bottom = -margin + "px";
+
+        }, [isHidden, active])
+
         return (
-            <ul className="filter-icons clear-list">
-                {filters.map(item => {
-                    let active = checkIfActive(item.filterQuery) ? "active" : "";
-                    return (
-                        <li className={active} key={item.icon} onClick={ (e) => handleClick( e, item.filterQuery ) } >
-                            <FontAwesomeIcon icon={item.icon} />
-                            <span>{item.label}</span>
-                        </li>
-                    )
-                })}
-            </ul>
+            <>
+                <FilterToggle />
+                <ul className="filter-icons clear-list" id="filter-icons">
+                    {filters.map(item => {
+                        let active = (checkIfActive(item.filterQuery) && item.filterQuery.value !== "random") ? "active" : "";
+                        return (
+                            <li className={active} key={item.icon} onClick={ (e) => handleClick( e, item.filterQuery ) } role="button" >
+                                <FontAwesomeIcon icon={item.icon} />
+                                <span>{item.label}</span>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </>
         )
     }
 
@@ -71,10 +101,13 @@ export default function RecipeFilters({setQuery, query}) {
         }
 
         const filterFormSubmit = (e) => {
+
             e.preventDefault();
+
             newQuery.parameters.query = search || "";
             newQuery.parameters.type = type || "";
-            setQuery(newQuery);
+            setQuery(newQuery, "add");
+
         }
 
         const FormButtons = () => {
@@ -134,7 +167,7 @@ export default function RecipeFilters({setQuery, query}) {
                 </div>
 
                 <div className="field-wrapper">
-                    <label htmlFor="dish-type">Filter by Dish Type</label>
+                    <label htmlFor="dish-type">Dish Types</label>
                     <select
                         name="dish-type"
                         onChange={(e) => handleTypeChange(e)}
@@ -156,7 +189,7 @@ export default function RecipeFilters({setQuery, query}) {
     }
 
     return (
-        <div className="recipe-filters">
+        <div className="recipe-filters" id="recipe-filters">
             <FilterForm query={query} />
             <FilterIcons query={query} />
         </div>

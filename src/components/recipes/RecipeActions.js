@@ -91,12 +91,9 @@ export default function RecipeActions({ recipe, actions = ['add', 'save'], saveR
     if(actions) {
         return (
             <div className="recipe-actions-container">
-
                 <MealPlanModal recipe={recipe} addRecipe={handleAddRecipe} />
-
                 <ActionSaveRecipe active={saved} />
                 <ActionAddRecipe active={added} />
-
             </div>
         )
     }

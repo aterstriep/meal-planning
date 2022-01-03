@@ -1,14 +1,28 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { Link } from "gatsby"
 
 import RecipeActions from './RecipeActions'
-import Container from "../Container"
 import Badge from "../Badge"
 
 export default function RecipeContainer({ recipe, day, draggable = false, onDragStart = "", children, actions = ['add', 'save'], addRecipe, saveRecipe }) {
 
+    const RecipeContainerDiv = ({children}) => {
+        if(draggable) {
+            return (
+                <div draggable={draggable} onDragStart={(e) => onDragStart(e, recipe, day)} className="recipe-container" recipe_id={recipe.id} id={recipe.id} >
+                    {children}
+                </div>
+            )
+        }
+        return (
+            <div className="recipe-container" recipe_id={recipe.id} id={recipe.id} >
+                {children}
+            </div>
+        )
+    }
+
     return (
-        <div draggable={draggable} onDragStart={(e) => onDragStart(e, recipe, day)} className="recipe-container" recipe_id={recipe.id} id={recipe.id} >
+        <RecipeContainerDiv>
 
             <RecipeActions
                 recipe={recipe}
@@ -19,7 +33,7 @@ export default function RecipeContainer({ recipe, day, draggable = false, onDrag
 
             <Link to={`/recipe?${recipe.id}`} state={{ activeRecipe: recipe.id }}>
                 <div className="image-wrapper">
-                    <img src={recipe.image} />
+                    <img src={recipe.image} alt={recipe.title} />
                 </div>
             </Link>
 
@@ -36,6 +50,6 @@ export default function RecipeContainer({ recipe, day, draggable = false, onDrag
                 
             </div>
 
-        </div>
+        </RecipeContainerDiv>
     )
 }

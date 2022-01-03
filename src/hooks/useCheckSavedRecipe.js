@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import useSavedRecipes from './useSavedRecipes';
 
 const useCheckSavedRecipe = (recipe) => {
@@ -13,7 +13,7 @@ const useCheckSavedRecipe = (recipe) => {
                 setIsSaved(true);
             }
         }
-    });
+    }, [savedRecipes, recipe.id]);
 
     return isSaved;
 

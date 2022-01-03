@@ -1,14 +1,11 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Link } from 'gatsby';
+import { Helmet } from 'react-helmet';
 
 import Layout from '../components/Layout'
 import Container from '../components/Container'
-import Badge from '../components/Badge';
 import RecipeContainer from '../components/recipes/RecipeContainer';
 
-import useCheckSavedRecipe from '../hooks/useCheckSavedRecipe';
-import useSavedRecipes from '../hooks/useSavedRecipes';
 import useMealPlan from '../hooks/useMealPlan';
 
 const PageTitle = styled.h1`
@@ -18,8 +15,6 @@ const PageTitle = styled.h1`
 const MealPlanPage = () => {
 
     const [mealPlan, setMealPlan] = useMealPlan([]);
-
-    console.log(mealPlan);
 
     const allowDrop = (e) => {
         e.preventDefault();
@@ -54,7 +49,7 @@ const MealPlanPage = () => {
                         {mealPlan[day].map(recipe => {
                             return (
                                 <RecipeContainer draggable={true} day={day} onDragStart={drag} actions={false} recipe={recipe} key={recipe.id} >
-                                    <span id="delete-recipe" onClick={(e) => setMealPlan(recipe, day, "delete")}>Delete</span>
+                                    <span role="button" id="delete-recipe" onClick={(e) => setMealPlan(recipe, day, "delete")}>Delete</span>
                                 </RecipeContainer>
                             )
                         })}
@@ -73,7 +68,12 @@ const MealPlanPage = () => {
 
     return (
         <Layout>
-            <Container className="meal-plan">
+            <Helmet>
+                <body className="meal-plan" />
+                <title>Meal Plan</title>
+                <meta name="icon" href="../images/favicon.png" />
+            </Helmet>
+            <Container padding="20px 40px 40px">
                 <PageTitle>Meal Plan</PageTitle>
                 <div className="meal-plan-container">
                     <MealPlanGrid />

@@ -1,6 +1,8 @@
 .recipe-filters {
     background-color: $neutral;
     width: 100%;
+    position: relative;
+    transition: .25s ease all;
 
     form.filter-form {
         display: grid;
@@ -8,6 +10,9 @@
         flex-grow: 2;
         gap: 15px;
         padding: 10px 40px 20px;
+        position: relative;
+        background-color: $neutral;
+        z-index: 1;
 
         label {
             text-transform: uppercase;
@@ -36,11 +41,18 @@
         }
     }
 
+    .filters-toggle {
+        display: none;
+        position: relative;
+        z-index: 1;
+    }
+
     ul.filter-icons {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         background-color: $secondary;
         padding: 0 40px;
+        transition: .25s ease all;
 
         li {
             display: flex;
@@ -71,6 +83,68 @@
                 width: 15px;
                 height: 15px;
             }
+        }
+    }
+
+     @include breakpoint(md) {
+
+        form.filter-form {
+            padding: 15px 20px 20px;
+        }
+
+        .filters-toggle {
+            display: grid;
+            grid-template-columns: 16px 1fr;
+            align-items: center;
+            grid-gap: 4px;
+            cursor: pointer;
+            background-color: $primary;
+            color: white;
+            padding: 8px 20px;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 12px;
+            letter-spacing: .5px;
+
+            svg {
+                width: 15px;
+                height: 15px;
+            }
+
+            &:hover {
+                background-color: darken($primary, 5%);
+            }
+        }
+         
+        ul.filter-icons {
+            grid-template-columns: 1fr;
+            padding: 0;
+            z-index: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transition: .25s ease all;
+
+            li {
+                justify-content: flex-start;
+                padding: 8px 20px;
+
+                &.active {
+                    background-color: darken($secondary, 5%);
+
+                    &:hover {
+                        background-color: darken($secondary, 10%);
+                    }
+                }
+            }
+        }
+    }
+
+    @include breakpoint(sm) {
+        
+        form.filter-form {
+            grid-template-columns: 1fr;
         }
     }
 }

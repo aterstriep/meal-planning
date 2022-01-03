@@ -46,10 +46,12 @@ const RecipesPage = ({location}) => {
             <>
                 <Helmet>
                     <body className="single-recipe" />
+                    <title>{recipe.title}</title>
+                    <meta name="icon" href="../images/favicon.png" />
                 </Helmet>
                 <Layout>
                     <Container>
-                        <img src={recipe.image} />
+                        <img src={recipe.image} alt={recipe.title} />
                         <h1 className="recipe-title">{recipe.title}</h1>
                         <RecipeActions recipe={recipe} saveRecipe={setSavedRecipes} addRecipe={addRecipe} labels={true} />
                         <p dangerouslySetInnerHTML={{ __html: recipe.summary }} />

@@ -16,4 +16,16 @@ div[draggable="true"]{
     &:hover:before {
         opacity: 1;
     }
+
+    @include breakpoint(md) {
+        &:before {
+            opacity: 1;
+        }
+    }
+
+    @include breakpoint(sm) {
+        &:before {
+            border-width: 2px;
+        }
+    }
 }

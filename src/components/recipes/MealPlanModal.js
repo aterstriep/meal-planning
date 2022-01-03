@@ -25,7 +25,7 @@ export default function MealPlanModal({recipe, addRecipe, active}) {
     }
 
     const ModalContent = () => {
-        if(added == true) {
+        if(added === true) {
             return (
                 <>
                     <p><strong>{recipe.title}</strong> has been added to your meal plan.</p>
@@ -48,10 +48,7 @@ export default function MealPlanModal({recipe, addRecipe, active}) {
         event.preventDefault();
         addRecipe(recipe, day);
         setDay("Monday");
-
         setAdded(true);
-
-        // document.getElementById("meal-plan-modal").style.display = "none";
     }
 
     return (

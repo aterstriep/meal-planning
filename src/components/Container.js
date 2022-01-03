@@ -7,10 +7,8 @@ const Div = styled.div`
 
 const Container = ({ children, className, padding }) => {
 
-    const containerPadding = padding ? padding : "40px";
-
     return (
-        <Div className={className} padding={containerPadding}>
+        <Div className={`container ${className || ""}`} padding={padding || "40px"}>
             {children}
         </Div>
     )

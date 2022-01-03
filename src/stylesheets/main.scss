@@ -17,7 +17,9 @@
 
 // Components
 @import
+  'components/badges',
   'components/buttons',
+  'components/container',
   'components/draggable',
   'components/forms',
   'components/modal',
@@ -35,7 +37,5 @@
 
 // Pages
 @import
-  'pages/home',
-  'pages/about',
   'pages/meal-plan',
   'pages/recipe';
