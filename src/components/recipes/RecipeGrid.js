@@ -87,11 +87,16 @@ const RecipeGrid = ({ recipes, actions = ['add', 'save'], saveRecipe, addRecipe}
         )
     }
 
+    if(recipes.length) {
+        return (
+            <>
+                <MealPlanModal recipe={modalRecipe} addRecipe={addRecipe} />
+                <Grid perPage={6} />
+            </>
+        )
+    }
     return (
-        <>
-            <MealPlanModal recipe={modalRecipe} addRecipe={addRecipe}  />
-            <Grid perPage={6} />
-        </>
+        <p>You have not saved any recipes.</p>
     )
 }
 

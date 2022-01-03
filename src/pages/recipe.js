@@ -20,14 +20,15 @@ const RecipesPage = ({location}) => {
     const [savedRecipes, setSavedRecipes] = useSavedRecipes([]);
     const [mealPlan, setMealPlan] = useMealPlan([]);
 
-    const recipeId = location.state.activeRecipe;
-
     const addRecipe = (recipe, day) => {
         setMealPlan(recipe, day);
     }
 
     useEffect(() => {
-        if(!isLoaded) {
+
+        const recipeId = location.state.activeRecipe || false;
+
+        if(recipeId) {
             fetch(`https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=${config.keys.spoonacular}&addRecipeInformation=true`)
                 .then(
                     response => response.json()
@@ -35,11 +36,15 @@ const RecipesPage = ({location}) => {
                 .then(
                     data => {
                         setRecipe(data);
+                        localStorage.setItem("activeRecipe", JSON.stringify(data));
                         setIsLoaded(true);
                     }
                 );
+        } else {
+            setRecipe(JSON.parse(localStorage.getItem("activeRecipe")));
         }
-    });
+
+    }, []);
 
     if (isLoaded) {
         return (
@@ -60,9 +65,8 @@ const RecipesPage = ({location}) => {
                 </Layout>
             </>
         )
-    } else {
-        return null;
     }
+    return null;
 }
 
 export default RecipesPage

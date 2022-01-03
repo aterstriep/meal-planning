@@ -1,9 +1,11 @@
 import { useEffect, useReducer, useState } from "react";
 
+const isBrowser = typeof window !== "undefined";
+
 export default function useSavedRecipes() {
     
     const [initialState, setInitialState] = useState(() => {
-        return localStorage.getItem("savedRecipes") ? JSON.parse(localStorage.getItem("savedRecipes")) : [];
+        return isBrowser ? JSON.parse(localStorage.getItem("savedRecipes")) : [];
     });
     const [savedRecipes, setSavedRecipes] = useReducer(reducer, initialState);
 
