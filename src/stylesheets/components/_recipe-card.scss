@@ -1,0 +1,36 @@
+
+.recipe-card {
+    background-color: $neutral;
+
+    h2.recipe_card-title {
+        margin: 0 0 40px -40px;
+        width: calc(100% + 80px);
+        background-color: $secondary;
+        padding: 5px 40px;
+        color: $dark;
+    }
+
+    .recipe_sub-title {
+        margin: 0;
+    }
+
+    li {
+        font-size: 14px;
+    }
+
+    .recipe_instructions ol {
+        padding-left: 16px;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+
+    @include breakpoint(sm) {
+        
+        .recipe_info {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    
+}

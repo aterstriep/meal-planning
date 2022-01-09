@@ -1,0 +1,84 @@
+.meal-plan .meal-plan-container {
+    border: 1px solid $secondary;
+    max-width: 1000px;
+
+    .day-container {
+        overflow: hidden;
+        background-color: $neutral;
+        min-height: 125px;
+
+        h2 {
+            margin: 0 0 20px;
+            padding: 5px 20px;
+            background-color: $secondary;
+            color: $dark;
+            font-size: 14px;
+        }
+
+        .recipe-container {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            grid-gap: 15px;
+            padding: 0 20px;
+            margin-bottom: 20px;
+            cursor: move;
+
+            > a {
+                pointer-events: none;
+            }
+
+            .image-wrapper {
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .recipe-details {
+                padding-top: 5px;
+
+                h3 {
+                    color: $dark;
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+
+            span#delete-recipe {
+                color: red;
+                font-size: 12px;
+                cursor: pointer;
+                visibility: hidden;
+
+                @include breakpoint(md) {
+                    visibility: visible;
+                }
+            }
+
+            &:hover #delete-recipe {
+                visibility: visible;
+            }
+        }
+    }
+    
+    @include breakpoint(sm) {
+        .day-container .recipe-container {
+            grid-template-columns: 80px 1fr;
+            grid-gap: 10px;
+
+            .dish-types {
+                display: none;
+            }
+
+            h3 {
+                margin-top: 0;
+                font-size: 14px;
+            }
+        }
+    }
+}

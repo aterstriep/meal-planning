@@ -1,0 +1,32 @@
+@mixin fieldDefaults {
+    padding: 5px 10px;
+    border: 1px solid $secondary;
+    border-radius: 6px;
+    min-height: 36px;
+
+    &:focus-visible {
+        outline-color: $action;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .field-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[type="text"],
+    textarea {
+        @include fieldDefaults;
+    }
+
+    select {
+        @include fieldDefaults;
+        padding: 5px 6px;
+    }
+
+}

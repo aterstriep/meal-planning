@@ -1,0 +1,13 @@
+main > .container {
+    @include breakpoint(sm) {
+        padding: 20px 20px 40px;
+
+        &.recipe-grid-wrap {
+            padding-top: 40px;
+        }
+
+        &.recipe-card {
+            padding-top: 0;
+        }
+    }
+}

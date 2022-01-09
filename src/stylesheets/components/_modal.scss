@@ -1,0 +1,102 @@
+.modal-wrapper {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 15%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    .modal-inner {
+        min-width: 500px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #00000085;
+        position: relative;
+        z-index: 3;
+
+        @include breakpoint(sm) {
+            min-width: 0px;
+        }
+        
+        h3 {
+            margin: -30px -30px 30px -30px;
+            border-top-left-radius: 9px;
+            border-top-right-radius: 9px;
+            color: white;
+            background-color: $primary;
+            padding: 10px 30px;
+            position: relative;
+
+            span#modal-close {
+                position: absolute;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                background-color: darken($primary, 5%);
+                border-top-right-radius: inherit;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: darken($primary, 10%);
+                }
+            }
+        }
+
+         p {
+            margin-top: 0;
+        }
+    }
+
+    .modal-overlay {
+        background-color: rgba(48, 51, 57, 0.5);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    form {
+        flex-direction: row;
+        gap: 5px;
+
+        select {
+            min-width: 220px;
+        }
+
+        button {
+            font-size: 12px;
+        }
+    }
+
+    @include breakpoint(md) {
+        left: 60px;
+    }
+
+    @include breakpoint(sm) {
+        left: 0;
+        padding: 20px;
+
+        .modal-inner {
+            padding: 20px;
+
+            h3 {
+                margin: -20px -20px 20px -20px;
+            }
+        }
+
+        form {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+    }
+}

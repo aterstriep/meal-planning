@@ -1,0 +1,30 @@
+@mixin button($color: white, $bgColor: $action) {
+    background-color: $bgColor;
+    border: 1px solid darken($bgColor, 5%);
+    color: $color;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    border-radius: 6px;
+    padding: 6px 16px;
+    cursor: pointer;
+    line-height: 1.75;
+
+    &:hover {
+        background-color: $primary;
+        color: white;
+        border-color: darken($primary, 5%);
+    }
+}
+
+button,
+a.button,
+input[type="submit"] {
+    @include button;
+}
+
+.button-secondary {
+    @include button($dark, $secondary);
+}

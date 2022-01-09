@@ -1,0 +1,73 @@
+.recipe-filters {
+    background-color: $neutral;
+    width: 100%;
+    position: relative;
+    transition: .25s ease all;
+
+    form.filter-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr auto;
+        flex-grow: 2;
+        gap: 15px;
+        padding: 10px 40px 20px;
+        position: fixed;
+        left: 15%;
+        right: 0;
+        background-color: $neutral;
+        z-index: 1;
+
+        label {
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: .5px;
+            font-size: 12px;
+        }
+
+        .filter-buttons {
+            display: flex;
+            align-items: flex-end;
+            gap: 10px;
+
+            button {
+                height: 36px;
+                font-size: 12px;
+
+                svg {
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+
+     @include breakpoint(md) {
+        form.filter-form {
+            grid-template-columns: 1fr 1fr;
+            padding: 15px 20px 20px;
+            position: relative;
+            left: 0;
+            .field-wrapper:first-child {
+                grid-column: 1 / span 2;
+            }
+        }
+    }
+
+    @include breakpoint(sm) {
+        
+        form.filter-form {
+            grid-template-columns: 1fr;
+            .field-wrapper:first-child {
+                grid-column: 1 / span 1;
+            }
+        }
+    }
+}
+
+span.clear-filters {
+    cursor: pointer;
+    text-decoration: underline;
+    color: $action;
+
+    &:hover {
+        color: $primary;
+    }
+}

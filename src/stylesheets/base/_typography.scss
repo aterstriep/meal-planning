@@ -1,0 +1,47 @@
+// typography
+
+$body-font: 'Open Sans', sans-serif;
+$heading-font: 'Raleway', serif;
+
+@mixin bodyfont {
+  color: $dark;
+  font-family: $body-font;
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+@mixin headingfont($case: uppercase) {
+  color: $primary;
+  font-family: $heading-font;
+  letter-spacing: .5px;
+  text-transform: $case;
+  font-weight: 800;
+}
+
+body {
+    @include bodyfont;
+}
+
+a {
+	color: $action;
+
+	&:hover {
+		color: $secondary;
+	}
+}
+
+h1,
+h2 {
+	@include headingfont;
+}
+
+h3,
+h4,
+h5,
+h6 {
+	@include headingfont;
+}
+
+.color-white {
+  color: white;
+}
