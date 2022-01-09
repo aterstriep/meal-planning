@@ -3,7 +3,7 @@ const path = require(`path`)
 const {
   renderToString,
   renderToStaticMarkup,
-  pipeToNodeWritable,
+  renderToPipeableStream,
 } = require(`react-dom/server`)
 const { ServerLocation, Router, isRedirect } = require(`@gatsbyjs/reach-router`)
 const merge = require(`deepmerge`)
@@ -13,7 +13,7 @@ const { WritableAsPromise } = require(`./server-utils/writable-as-promise`)
 
 const { RouteAnnouncerProps } = require(`./route-announcer-props`)
 const { apiRunner, apiRunnerAsync } = require(`./api-runner-ssr`)
-const syncRequires = require(`$virtual/sync-requires`)
+const asyncRequires = require(`$virtual/async-requires`)
 const { version: gatsbyVersion } = require(`gatsby/package.json`)
 const { grabMatchParams } = require(`./find-path`)
 
@@ -209,6 +209,7 @@ export default async function staticPage({
     const pageDataUrl = getPageDataUrl(pagePath)
 
     const { componentChunkName, staticQueryHashes = [] } = pageData
+    const pageComponent = await asyncRequires.components[componentChunkName]()
 
     const staticQueryUrls = staticQueryHashes.map(getStaticQueryUrl)
 
@@ -223,10 +224,7 @@ export default async function staticPage({
           },
         }
 
-        const pageElement = createElement(
-          syncRequires.components[componentChunkName],
-          props
-        )
+        const pageElement = createElement(pageComponent.default, props)
 
         const wrappedPage = apiRunner(
           `wrapPageElement`,
@@ -281,18 +279,14 @@ export default async function staticPage({
     if (!bodyHtml) {
       try {
         // react 18 enabled
-        if (pipeToNodeWritable) {
+        if (renderToPipeableStream) {
           const writableStream = new WritableAsPromise()
-          const { startWriting } = pipeToNodeWritable(
-            bodyComponent,
-            writableStream,
-            {
-              onCompleteAll() {
-                startWriting()
-              },
-              onError() {},
-            }
-          )
+          const { pipe } = renderToPipeableStream(bodyComponent, {
+            onCompleteAll() {
+              pipe(writableStream)
+            },
+            onError() {},
+          })
 
           bodyHtml = await writableStream
         } else {
@@ -478,4 +472,8 @@ export default async function staticPage({
     e.unsafeBuiltinsUsage = global.unsafeBuiltinUsage
     throw e
   }
+}
+
+export function getPageChunk({ componentChunkName }) {
+  return asyncRequires.components[componentChunkName]()
 }

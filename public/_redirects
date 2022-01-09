@@ -1,0 +1,4 @@
+
+# @netlify/plugin-gatsby redirects start
+/api/* /.netlify/functions/gatsby 200
+# @netlify/plugin-gatsby redirects end
