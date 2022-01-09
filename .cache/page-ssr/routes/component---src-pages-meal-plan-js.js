@@ -1,25 +1,1021 @@
-"use strict";
-exports.id = 694;
-exports.ids = [694];
+exports.id = "component---src-pages-meal-plan-js";
+exports.ids = ["component---src-pages-meal-plan-js"];
 exports.modules = {
 
-/***/ 1436:
+/***/ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@fortawesome/free-solid-svg-icons/index.es.js ***!
+  \********************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "UXu": () => (/* binding */ faAngleDoubleLeft),
-/* harmony export */   "EyR": () => (/* binding */ faAngleLeft),
-/* harmony export */   "yOZ": () => (/* binding */ faAngleRight),
-/* harmony export */   "xiG": () => (/* binding */ faBars),
-/* harmony export */   "Ry6": () => (/* binding */ faCalendarCheck),
-/* harmony export */   "LEp": () => (/* binding */ faCheck),
-/* harmony export */   "G_j": () => (/* binding */ faFilter),
-/* harmony export */   "m6i": () => (/* binding */ faHeart),
-/* harmony export */   "r8p": () => (/* binding */ faPlus),
-/* harmony export */   "wn1": () => (/* binding */ faSearch),
-/* harmony export */   "NBC": () => (/* binding */ faTimes)
+/* harmony export */   "fas": () => (/* binding */ _iconsCache),
+/* harmony export */   "prefix": () => (/* binding */ prefix),
+/* harmony export */   "faAd": () => (/* binding */ faAd),
+/* harmony export */   "faAddressBook": () => (/* binding */ faAddressBook),
+/* harmony export */   "faAddressCard": () => (/* binding */ faAddressCard),
+/* harmony export */   "faAdjust": () => (/* binding */ faAdjust),
+/* harmony export */   "faAirFreshener": () => (/* binding */ faAirFreshener),
+/* harmony export */   "faAlignCenter": () => (/* binding */ faAlignCenter),
+/* harmony export */   "faAlignJustify": () => (/* binding */ faAlignJustify),
+/* harmony export */   "faAlignLeft": () => (/* binding */ faAlignLeft),
+/* harmony export */   "faAlignRight": () => (/* binding */ faAlignRight),
+/* harmony export */   "faAllergies": () => (/* binding */ faAllergies),
+/* harmony export */   "faAmbulance": () => (/* binding */ faAmbulance),
+/* harmony export */   "faAmericanSignLanguageInterpreting": () => (/* binding */ faAmericanSignLanguageInterpreting),
+/* harmony export */   "faAnchor": () => (/* binding */ faAnchor),
+/* harmony export */   "faAngleDoubleDown": () => (/* binding */ faAngleDoubleDown),
+/* harmony export */   "faAngleDoubleLeft": () => (/* binding */ faAngleDoubleLeft),
+/* harmony export */   "faAngleDoubleRight": () => (/* binding */ faAngleDoubleRight),
+/* harmony export */   "faAngleDoubleUp": () => (/* binding */ faAngleDoubleUp),
+/* harmony export */   "faAngleDown": () => (/* binding */ faAngleDown),
+/* harmony export */   "faAngleLeft": () => (/* binding */ faAngleLeft),
+/* harmony export */   "faAngleRight": () => (/* binding */ faAngleRight),
+/* harmony export */   "faAngleUp": () => (/* binding */ faAngleUp),
+/* harmony export */   "faAngry": () => (/* binding */ faAngry),
+/* harmony export */   "faAnkh": () => (/* binding */ faAnkh),
+/* harmony export */   "faAppleAlt": () => (/* binding */ faAppleAlt),
+/* harmony export */   "faArchive": () => (/* binding */ faArchive),
+/* harmony export */   "faArchway": () => (/* binding */ faArchway),
+/* harmony export */   "faArrowAltCircleDown": () => (/* binding */ faArrowAltCircleDown),
+/* harmony export */   "faArrowAltCircleLeft": () => (/* binding */ faArrowAltCircleLeft),
+/* harmony export */   "faArrowAltCircleRight": () => (/* binding */ faArrowAltCircleRight),
+/* harmony export */   "faArrowAltCircleUp": () => (/* binding */ faArrowAltCircleUp),
+/* harmony export */   "faArrowCircleDown": () => (/* binding */ faArrowCircleDown),
+/* harmony export */   "faArrowCircleLeft": () => (/* binding */ faArrowCircleLeft),
+/* harmony export */   "faArrowCircleRight": () => (/* binding */ faArrowCircleRight),
+/* harmony export */   "faArrowCircleUp": () => (/* binding */ faArrowCircleUp),
+/* harmony export */   "faArrowDown": () => (/* binding */ faArrowDown),
+/* harmony export */   "faArrowLeft": () => (/* binding */ faArrowLeft),
+/* harmony export */   "faArrowRight": () => (/* binding */ faArrowRight),
+/* harmony export */   "faArrowUp": () => (/* binding */ faArrowUp),
+/* harmony export */   "faArrowsAlt": () => (/* binding */ faArrowsAlt),
+/* harmony export */   "faArrowsAltH": () => (/* binding */ faArrowsAltH),
+/* harmony export */   "faArrowsAltV": () => (/* binding */ faArrowsAltV),
+/* harmony export */   "faAssistiveListeningSystems": () => (/* binding */ faAssistiveListeningSystems),
+/* harmony export */   "faAsterisk": () => (/* binding */ faAsterisk),
+/* harmony export */   "faAt": () => (/* binding */ faAt),
+/* harmony export */   "faAtlas": () => (/* binding */ faAtlas),
+/* harmony export */   "faAtom": () => (/* binding */ faAtom),
+/* harmony export */   "faAudioDescription": () => (/* binding */ faAudioDescription),
+/* harmony export */   "faAward": () => (/* binding */ faAward),
+/* harmony export */   "faBaby": () => (/* binding */ faBaby),
+/* harmony export */   "faBabyCarriage": () => (/* binding */ faBabyCarriage),
+/* harmony export */   "faBackspace": () => (/* binding */ faBackspace),
+/* harmony export */   "faBackward": () => (/* binding */ faBackward),
+/* harmony export */   "faBacon": () => (/* binding */ faBacon),
+/* harmony export */   "faBacteria": () => (/* binding */ faBacteria),
+/* harmony export */   "faBacterium": () => (/* binding */ faBacterium),
+/* harmony export */   "faBahai": () => (/* binding */ faBahai),
+/* harmony export */   "faBalanceScale": () => (/* binding */ faBalanceScale),
+/* harmony export */   "faBalanceScaleLeft": () => (/* binding */ faBalanceScaleLeft),
+/* harmony export */   "faBalanceScaleRight": () => (/* binding */ faBalanceScaleRight),
+/* harmony export */   "faBan": () => (/* binding */ faBan),
+/* harmony export */   "faBandAid": () => (/* binding */ faBandAid),
+/* harmony export */   "faBarcode": () => (/* binding */ faBarcode),
+/* harmony export */   "faBars": () => (/* binding */ faBars),
+/* harmony export */   "faBaseballBall": () => (/* binding */ faBaseballBall),
+/* harmony export */   "faBasketballBall": () => (/* binding */ faBasketballBall),
+/* harmony export */   "faBath": () => (/* binding */ faBath),
+/* harmony export */   "faBatteryEmpty": () => (/* binding */ faBatteryEmpty),
+/* harmony export */   "faBatteryFull": () => (/* binding */ faBatteryFull),
+/* harmony export */   "faBatteryHalf": () => (/* binding */ faBatteryHalf),
+/* harmony export */   "faBatteryQuarter": () => (/* binding */ faBatteryQuarter),
+/* harmony export */   "faBatteryThreeQuarters": () => (/* binding */ faBatteryThreeQuarters),
+/* harmony export */   "faBed": () => (/* binding */ faBed),
+/* harmony export */   "faBeer": () => (/* binding */ faBeer),
+/* harmony export */   "faBell": () => (/* binding */ faBell),
+/* harmony export */   "faBellSlash": () => (/* binding */ faBellSlash),
+/* harmony export */   "faBezierCurve": () => (/* binding */ faBezierCurve),
+/* harmony export */   "faBible": () => (/* binding */ faBible),
+/* harmony export */   "faBicycle": () => (/* binding */ faBicycle),
+/* harmony export */   "faBiking": () => (/* binding */ faBiking),
+/* harmony export */   "faBinoculars": () => (/* binding */ faBinoculars),
+/* harmony export */   "faBiohazard": () => (/* binding */ faBiohazard),
+/* harmony export */   "faBirthdayCake": () => (/* binding */ faBirthdayCake),
+/* harmony export */   "faBlender": () => (/* binding */ faBlender),
+/* harmony export */   "faBlenderPhone": () => (/* binding */ faBlenderPhone),
+/* harmony export */   "faBlind": () => (/* binding */ faBlind),
+/* harmony export */   "faBlog": () => (/* binding */ faBlog),
+/* harmony export */   "faBold": () => (/* binding */ faBold),
+/* harmony export */   "faBolt": () => (/* binding */ faBolt),
+/* harmony export */   "faBomb": () => (/* binding */ faBomb),
+/* harmony export */   "faBone": () => (/* binding */ faBone),
+/* harmony export */   "faBong": () => (/* binding */ faBong),
+/* harmony export */   "faBook": () => (/* binding */ faBook),
+/* harmony export */   "faBookDead": () => (/* binding */ faBookDead),
+/* harmony export */   "faBookMedical": () => (/* binding */ faBookMedical),
+/* harmony export */   "faBookOpen": () => (/* binding */ faBookOpen),
+/* harmony export */   "faBookReader": () => (/* binding */ faBookReader),
+/* harmony export */   "faBookmark": () => (/* binding */ faBookmark),
+/* harmony export */   "faBorderAll": () => (/* binding */ faBorderAll),
+/* harmony export */   "faBorderNone": () => (/* binding */ faBorderNone),
+/* harmony export */   "faBorderStyle": () => (/* binding */ faBorderStyle),
+/* harmony export */   "faBowlingBall": () => (/* binding */ faBowlingBall),
+/* harmony export */   "faBox": () => (/* binding */ faBox),
+/* harmony export */   "faBoxOpen": () => (/* binding */ faBoxOpen),
+/* harmony export */   "faBoxTissue": () => (/* binding */ faBoxTissue),
+/* harmony export */   "faBoxes": () => (/* binding */ faBoxes),
+/* harmony export */   "faBraille": () => (/* binding */ faBraille),
+/* harmony export */   "faBrain": () => (/* binding */ faBrain),
+/* harmony export */   "faBreadSlice": () => (/* binding */ faBreadSlice),
+/* harmony export */   "faBriefcase": () => (/* binding */ faBriefcase),
+/* harmony export */   "faBriefcaseMedical": () => (/* binding */ faBriefcaseMedical),
+/* harmony export */   "faBroadcastTower": () => (/* binding */ faBroadcastTower),
+/* harmony export */   "faBroom": () => (/* binding */ faBroom),
+/* harmony export */   "faBrush": () => (/* binding */ faBrush),
+/* harmony export */   "faBug": () => (/* binding */ faBug),
+/* harmony export */   "faBuilding": () => (/* binding */ faBuilding),
+/* harmony export */   "faBullhorn": () => (/* binding */ faBullhorn),
+/* harmony export */   "faBullseye": () => (/* binding */ faBullseye),
+/* harmony export */   "faBurn": () => (/* binding */ faBurn),
+/* harmony export */   "faBus": () => (/* binding */ faBus),
+/* harmony export */   "faBusAlt": () => (/* binding */ faBusAlt),
+/* harmony export */   "faBusinessTime": () => (/* binding */ faBusinessTime),
+/* harmony export */   "faCalculator": () => (/* binding */ faCalculator),
+/* harmony export */   "faCalendar": () => (/* binding */ faCalendar),
+/* harmony export */   "faCalendarAlt": () => (/* binding */ faCalendarAlt),
+/* harmony export */   "faCalendarCheck": () => (/* binding */ faCalendarCheck),
+/* harmony export */   "faCalendarDay": () => (/* binding */ faCalendarDay),
+/* harmony export */   "faCalendarMinus": () => (/* binding */ faCalendarMinus),
+/* harmony export */   "faCalendarPlus": () => (/* binding */ faCalendarPlus),
+/* harmony export */   "faCalendarTimes": () => (/* binding */ faCalendarTimes),
+/* harmony export */   "faCalendarWeek": () => (/* binding */ faCalendarWeek),
+/* harmony export */   "faCamera": () => (/* binding */ faCamera),
+/* harmony export */   "faCameraRetro": () => (/* binding */ faCameraRetro),
+/* harmony export */   "faCampground": () => (/* binding */ faCampground),
+/* harmony export */   "faCandyCane": () => (/* binding */ faCandyCane),
+/* harmony export */   "faCannabis": () => (/* binding */ faCannabis),
+/* harmony export */   "faCapsules": () => (/* binding */ faCapsules),
+/* harmony export */   "faCar": () => (/* binding */ faCar),
+/* harmony export */   "faCarAlt": () => (/* binding */ faCarAlt),
+/* harmony export */   "faCarBattery": () => (/* binding */ faCarBattery),
+/* harmony export */   "faCarCrash": () => (/* binding */ faCarCrash),
+/* harmony export */   "faCarSide": () => (/* binding */ faCarSide),
+/* harmony export */   "faCaravan": () => (/* binding */ faCaravan),
+/* harmony export */   "faCaretDown": () => (/* binding */ faCaretDown),
+/* harmony export */   "faCaretLeft": () => (/* binding */ faCaretLeft),
+/* harmony export */   "faCaretRight": () => (/* binding */ faCaretRight),
+/* harmony export */   "faCaretSquareDown": () => (/* binding */ faCaretSquareDown),
+/* harmony export */   "faCaretSquareLeft": () => (/* binding */ faCaretSquareLeft),
+/* harmony export */   "faCaretSquareRight": () => (/* binding */ faCaretSquareRight),
+/* harmony export */   "faCaretSquareUp": () => (/* binding */ faCaretSquareUp),
+/* harmony export */   "faCaretUp": () => (/* binding */ faCaretUp),
+/* harmony export */   "faCarrot": () => (/* binding */ faCarrot),
+/* harmony export */   "faCartArrowDown": () => (/* binding */ faCartArrowDown),
+/* harmony export */   "faCartPlus": () => (/* binding */ faCartPlus),
+/* harmony export */   "faCashRegister": () => (/* binding */ faCashRegister),
+/* harmony export */   "faCat": () => (/* binding */ faCat),
+/* harmony export */   "faCertificate": () => (/* binding */ faCertificate),
+/* harmony export */   "faChair": () => (/* binding */ faChair),
+/* harmony export */   "faChalkboard": () => (/* binding */ faChalkboard),
+/* harmony export */   "faChalkboardTeacher": () => (/* binding */ faChalkboardTeacher),
+/* harmony export */   "faChargingStation": () => (/* binding */ faChargingStation),
+/* harmony export */   "faChartArea": () => (/* binding */ faChartArea),
+/* harmony export */   "faChartBar": () => (/* binding */ faChartBar),
+/* harmony export */   "faChartLine": () => (/* binding */ faChartLine),
+/* harmony export */   "faChartPie": () => (/* binding */ faChartPie),
+/* harmony export */   "faCheck": () => (/* binding */ faCheck),
+/* harmony export */   "faCheckCircle": () => (/* binding */ faCheckCircle),
+/* harmony export */   "faCheckDouble": () => (/* binding */ faCheckDouble),
+/* harmony export */   "faCheckSquare": () => (/* binding */ faCheckSquare),
+/* harmony export */   "faCheese": () => (/* binding */ faCheese),
+/* harmony export */   "faChess": () => (/* binding */ faChess),
+/* harmony export */   "faChessBishop": () => (/* binding */ faChessBishop),
+/* harmony export */   "faChessBoard": () => (/* binding */ faChessBoard),
+/* harmony export */   "faChessKing": () => (/* binding */ faChessKing),
+/* harmony export */   "faChessKnight": () => (/* binding */ faChessKnight),
+/* harmony export */   "faChessPawn": () => (/* binding */ faChessPawn),
+/* harmony export */   "faChessQueen": () => (/* binding */ faChessQueen),
+/* harmony export */   "faChessRook": () => (/* binding */ faChessRook),
+/* harmony export */   "faChevronCircleDown": () => (/* binding */ faChevronCircleDown),
+/* harmony export */   "faChevronCircleLeft": () => (/* binding */ faChevronCircleLeft),
+/* harmony export */   "faChevronCircleRight": () => (/* binding */ faChevronCircleRight),
+/* harmony export */   "faChevronCircleUp": () => (/* binding */ faChevronCircleUp),
+/* harmony export */   "faChevronDown": () => (/* binding */ faChevronDown),
+/* harmony export */   "faChevronLeft": () => (/* binding */ faChevronLeft),
+/* harmony export */   "faChevronRight": () => (/* binding */ faChevronRight),
+/* harmony export */   "faChevronUp": () => (/* binding */ faChevronUp),
+/* harmony export */   "faChild": () => (/* binding */ faChild),
+/* harmony export */   "faChurch": () => (/* binding */ faChurch),
+/* harmony export */   "faCircle": () => (/* binding */ faCircle),
+/* harmony export */   "faCircleNotch": () => (/* binding */ faCircleNotch),
+/* harmony export */   "faCity": () => (/* binding */ faCity),
+/* harmony export */   "faClinicMedical": () => (/* binding */ faClinicMedical),
+/* harmony export */   "faClipboard": () => (/* binding */ faClipboard),
+/* harmony export */   "faClipboardCheck": () => (/* binding */ faClipboardCheck),
+/* harmony export */   "faClipboardList": () => (/* binding */ faClipboardList),
+/* harmony export */   "faClock": () => (/* binding */ faClock),
+/* harmony export */   "faClone": () => (/* binding */ faClone),
+/* harmony export */   "faClosedCaptioning": () => (/* binding */ faClosedCaptioning),
+/* harmony export */   "faCloud": () => (/* binding */ faCloud),
+/* harmony export */   "faCloudDownloadAlt": () => (/* binding */ faCloudDownloadAlt),
+/* harmony export */   "faCloudMeatball": () => (/* binding */ faCloudMeatball),
+/* harmony export */   "faCloudMoon": () => (/* binding */ faCloudMoon),
+/* harmony export */   "faCloudMoonRain": () => (/* binding */ faCloudMoonRain),
+/* harmony export */   "faCloudRain": () => (/* binding */ faCloudRain),
+/* harmony export */   "faCloudShowersHeavy": () => (/* binding */ faCloudShowersHeavy),
+/* harmony export */   "faCloudSun": () => (/* binding */ faCloudSun),
+/* harmony export */   "faCloudSunRain": () => (/* binding */ faCloudSunRain),
+/* harmony export */   "faCloudUploadAlt": () => (/* binding */ faCloudUploadAlt),
+/* harmony export */   "faCocktail": () => (/* binding */ faCocktail),
+/* harmony export */   "faCode": () => (/* binding */ faCode),
+/* harmony export */   "faCodeBranch": () => (/* binding */ faCodeBranch),
+/* harmony export */   "faCoffee": () => (/* binding */ faCoffee),
+/* harmony export */   "faCog": () => (/* binding */ faCog),
+/* harmony export */   "faCogs": () => (/* binding */ faCogs),
+/* harmony export */   "faCoins": () => (/* binding */ faCoins),
+/* harmony export */   "faColumns": () => (/* binding */ faColumns),
+/* harmony export */   "faComment": () => (/* binding */ faComment),
+/* harmony export */   "faCommentAlt": () => (/* binding */ faCommentAlt),
+/* harmony export */   "faCommentDollar": () => (/* binding */ faCommentDollar),
+/* harmony export */   "faCommentDots": () => (/* binding */ faCommentDots),
+/* harmony export */   "faCommentMedical": () => (/* binding */ faCommentMedical),
+/* harmony export */   "faCommentSlash": () => (/* binding */ faCommentSlash),
+/* harmony export */   "faComments": () => (/* binding */ faComments),
+/* harmony export */   "faCommentsDollar": () => (/* binding */ faCommentsDollar),
+/* harmony export */   "faCompactDisc": () => (/* binding */ faCompactDisc),
+/* harmony export */   "faCompass": () => (/* binding */ faCompass),
+/* harmony export */   "faCompress": () => (/* binding */ faCompress),
+/* harmony export */   "faCompressAlt": () => (/* binding */ faCompressAlt),
+/* harmony export */   "faCompressArrowsAlt": () => (/* binding */ faCompressArrowsAlt),
+/* harmony export */   "faConciergeBell": () => (/* binding */ faConciergeBell),
+/* harmony export */   "faCookie": () => (/* binding */ faCookie),
+/* harmony export */   "faCookieBite": () => (/* binding */ faCookieBite),
+/* harmony export */   "faCopy": () => (/* binding */ faCopy),
+/* harmony export */   "faCopyright": () => (/* binding */ faCopyright),
+/* harmony export */   "faCouch": () => (/* binding */ faCouch),
+/* harmony export */   "faCreditCard": () => (/* binding */ faCreditCard),
+/* harmony export */   "faCrop": () => (/* binding */ faCrop),
+/* harmony export */   "faCropAlt": () => (/* binding */ faCropAlt),
+/* harmony export */   "faCross": () => (/* binding */ faCross),
+/* harmony export */   "faCrosshairs": () => (/* binding */ faCrosshairs),
+/* harmony export */   "faCrow": () => (/* binding */ faCrow),
+/* harmony export */   "faCrown": () => (/* binding */ faCrown),
+/* harmony export */   "faCrutch": () => (/* binding */ faCrutch),
+/* harmony export */   "faCube": () => (/* binding */ faCube),
+/* harmony export */   "faCubes": () => (/* binding */ faCubes),
+/* harmony export */   "faCut": () => (/* binding */ faCut),
+/* harmony export */   "faDatabase": () => (/* binding */ faDatabase),
+/* harmony export */   "faDeaf": () => (/* binding */ faDeaf),
+/* harmony export */   "faDemocrat": () => (/* binding */ faDemocrat),
+/* harmony export */   "faDesktop": () => (/* binding */ faDesktop),
+/* harmony export */   "faDharmachakra": () => (/* binding */ faDharmachakra),
+/* harmony export */   "faDiagnoses": () => (/* binding */ faDiagnoses),
+/* harmony export */   "faDice": () => (/* binding */ faDice),
+/* harmony export */   "faDiceD20": () => (/* binding */ faDiceD20),
+/* harmony export */   "faDiceD6": () => (/* binding */ faDiceD6),
+/* harmony export */   "faDiceFive": () => (/* binding */ faDiceFive),
+/* harmony export */   "faDiceFour": () => (/* binding */ faDiceFour),
+/* harmony export */   "faDiceOne": () => (/* binding */ faDiceOne),
+/* harmony export */   "faDiceSix": () => (/* binding */ faDiceSix),
+/* harmony export */   "faDiceThree": () => (/* binding */ faDiceThree),
+/* harmony export */   "faDiceTwo": () => (/* binding */ faDiceTwo),
+/* harmony export */   "faDigitalTachograph": () => (/* binding */ faDigitalTachograph),
+/* harmony export */   "faDirections": () => (/* binding */ faDirections),
+/* harmony export */   "faDisease": () => (/* binding */ faDisease),
+/* harmony export */   "faDivide": () => (/* binding */ faDivide),
+/* harmony export */   "faDizzy": () => (/* binding */ faDizzy),
+/* harmony export */   "faDna": () => (/* binding */ faDna),
+/* harmony export */   "faDog": () => (/* binding */ faDog),
+/* harmony export */   "faDollarSign": () => (/* binding */ faDollarSign),
+/* harmony export */   "faDolly": () => (/* binding */ faDolly),
+/* harmony export */   "faDollyFlatbed": () => (/* binding */ faDollyFlatbed),
+/* harmony export */   "faDonate": () => (/* binding */ faDonate),
+/* harmony export */   "faDoorClosed": () => (/* binding */ faDoorClosed),
+/* harmony export */   "faDoorOpen": () => (/* binding */ faDoorOpen),
+/* harmony export */   "faDotCircle": () => (/* binding */ faDotCircle),
+/* harmony export */   "faDove": () => (/* binding */ faDove),
+/* harmony export */   "faDownload": () => (/* binding */ faDownload),
+/* harmony export */   "faDraftingCompass": () => (/* binding */ faDraftingCompass),
+/* harmony export */   "faDragon": () => (/* binding */ faDragon),
+/* harmony export */   "faDrawPolygon": () => (/* binding */ faDrawPolygon),
+/* harmony export */   "faDrum": () => (/* binding */ faDrum),
+/* harmony export */   "faDrumSteelpan": () => (/* binding */ faDrumSteelpan),
+/* harmony export */   "faDrumstickBite": () => (/* binding */ faDrumstickBite),
+/* harmony export */   "faDumbbell": () => (/* binding */ faDumbbell),
+/* harmony export */   "faDumpster": () => (/* binding */ faDumpster),
+/* harmony export */   "faDumpsterFire": () => (/* binding */ faDumpsterFire),
+/* harmony export */   "faDungeon": () => (/* binding */ faDungeon),
+/* harmony export */   "faEdit": () => (/* binding */ faEdit),
+/* harmony export */   "faEgg": () => (/* binding */ faEgg),
+/* harmony export */   "faEject": () => (/* binding */ faEject),
+/* harmony export */   "faEllipsisH": () => (/* binding */ faEllipsisH),
+/* harmony export */   "faEllipsisV": () => (/* binding */ faEllipsisV),
+/* harmony export */   "faEnvelope": () => (/* binding */ faEnvelope),
+/* harmony export */   "faEnvelopeOpen": () => (/* binding */ faEnvelopeOpen),
+/* harmony export */   "faEnvelopeOpenText": () => (/* binding */ faEnvelopeOpenText),
+/* harmony export */   "faEnvelopeSquare": () => (/* binding */ faEnvelopeSquare),
+/* harmony export */   "faEquals": () => (/* binding */ faEquals),
+/* harmony export */   "faEraser": () => (/* binding */ faEraser),
+/* harmony export */   "faEthernet": () => (/* binding */ faEthernet),
+/* harmony export */   "faEuroSign": () => (/* binding */ faEuroSign),
+/* harmony export */   "faExchangeAlt": () => (/* binding */ faExchangeAlt),
+/* harmony export */   "faExclamation": () => (/* binding */ faExclamation),
+/* harmony export */   "faExclamationCircle": () => (/* binding */ faExclamationCircle),
+/* harmony export */   "faExclamationTriangle": () => (/* binding */ faExclamationTriangle),
+/* harmony export */   "faExpand": () => (/* binding */ faExpand),
+/* harmony export */   "faExpandAlt": () => (/* binding */ faExpandAlt),
+/* harmony export */   "faExpandArrowsAlt": () => (/* binding */ faExpandArrowsAlt),
+/* harmony export */   "faExternalLinkAlt": () => (/* binding */ faExternalLinkAlt),
+/* harmony export */   "faExternalLinkSquareAlt": () => (/* binding */ faExternalLinkSquareAlt),
+/* harmony export */   "faEye": () => (/* binding */ faEye),
+/* harmony export */   "faEyeDropper": () => (/* binding */ faEyeDropper),
+/* harmony export */   "faEyeSlash": () => (/* binding */ faEyeSlash),
+/* harmony export */   "faFan": () => (/* binding */ faFan),
+/* harmony export */   "faFastBackward": () => (/* binding */ faFastBackward),
+/* harmony export */   "faFastForward": () => (/* binding */ faFastForward),
+/* harmony export */   "faFaucet": () => (/* binding */ faFaucet),
+/* harmony export */   "faFax": () => (/* binding */ faFax),
+/* harmony export */   "faFeather": () => (/* binding */ faFeather),
+/* harmony export */   "faFeatherAlt": () => (/* binding */ faFeatherAlt),
+/* harmony export */   "faFemale": () => (/* binding */ faFemale),
+/* harmony export */   "faFighterJet": () => (/* binding */ faFighterJet),
+/* harmony export */   "faFile": () => (/* binding */ faFile),
+/* harmony export */   "faFileAlt": () => (/* binding */ faFileAlt),
+/* harmony export */   "faFileArchive": () => (/* binding */ faFileArchive),
+/* harmony export */   "faFileAudio": () => (/* binding */ faFileAudio),
+/* harmony export */   "faFileCode": () => (/* binding */ faFileCode),
+/* harmony export */   "faFileContract": () => (/* binding */ faFileContract),
+/* harmony export */   "faFileCsv": () => (/* binding */ faFileCsv),
+/* harmony export */   "faFileDownload": () => (/* binding */ faFileDownload),
+/* harmony export */   "faFileExcel": () => (/* binding */ faFileExcel),
+/* harmony export */   "faFileExport": () => (/* binding */ faFileExport),
+/* harmony export */   "faFileImage": () => (/* binding */ faFileImage),
+/* harmony export */   "faFileImport": () => (/* binding */ faFileImport),
+/* harmony export */   "faFileInvoice": () => (/* binding */ faFileInvoice),
+/* harmony export */   "faFileInvoiceDollar": () => (/* binding */ faFileInvoiceDollar),
+/* harmony export */   "faFileMedical": () => (/* binding */ faFileMedical),
+/* harmony export */   "faFileMedicalAlt": () => (/* binding */ faFileMedicalAlt),
+/* harmony export */   "faFilePdf": () => (/* binding */ faFilePdf),
+/* harmony export */   "faFilePowerpoint": () => (/* binding */ faFilePowerpoint),
+/* harmony export */   "faFilePrescription": () => (/* binding */ faFilePrescription),
+/* harmony export */   "faFileSignature": () => (/* binding */ faFileSignature),
+/* harmony export */   "faFileUpload": () => (/* binding */ faFileUpload),
+/* harmony export */   "faFileVideo": () => (/* binding */ faFileVideo),
+/* harmony export */   "faFileWord": () => (/* binding */ faFileWord),
+/* harmony export */   "faFill": () => (/* binding */ faFill),
+/* harmony export */   "faFillDrip": () => (/* binding */ faFillDrip),
+/* harmony export */   "faFilm": () => (/* binding */ faFilm),
+/* harmony export */   "faFilter": () => (/* binding */ faFilter),
+/* harmony export */   "faFingerprint": () => (/* binding */ faFingerprint),
+/* harmony export */   "faFire": () => (/* binding */ faFire),
+/* harmony export */   "faFireAlt": () => (/* binding */ faFireAlt),
+/* harmony export */   "faFireExtinguisher": () => (/* binding */ faFireExtinguisher),
+/* harmony export */   "faFirstAid": () => (/* binding */ faFirstAid),
+/* harmony export */   "faFish": () => (/* binding */ faFish),
+/* harmony export */   "faFistRaised": () => (/* binding */ faFistRaised),
+/* harmony export */   "faFlag": () => (/* binding */ faFlag),
+/* harmony export */   "faFlagCheckered": () => (/* binding */ faFlagCheckered),
+/* harmony export */   "faFlagUsa": () => (/* binding */ faFlagUsa),
+/* harmony export */   "faFlask": () => (/* binding */ faFlask),
+/* harmony export */   "faFlushed": () => (/* binding */ faFlushed),
+/* harmony export */   "faFolder": () => (/* binding */ faFolder),
+/* harmony export */   "faFolderMinus": () => (/* binding */ faFolderMinus),
+/* harmony export */   "faFolderOpen": () => (/* binding */ faFolderOpen),
+/* harmony export */   "faFolderPlus": () => (/* binding */ faFolderPlus),
+/* harmony export */   "faFont": () => (/* binding */ faFont),
+/* harmony export */   "faFontAwesomeLogoFull": () => (/* binding */ faFontAwesomeLogoFull),
+/* harmony export */   "faFootballBall": () => (/* binding */ faFootballBall),
+/* harmony export */   "faForward": () => (/* binding */ faForward),
+/* harmony export */   "faFrog": () => (/* binding */ faFrog),
+/* harmony export */   "faFrown": () => (/* binding */ faFrown),
+/* harmony export */   "faFrownOpen": () => (/* binding */ faFrownOpen),
+/* harmony export */   "faFunnelDollar": () => (/* binding */ faFunnelDollar),
+/* harmony export */   "faFutbol": () => (/* binding */ faFutbol),
+/* harmony export */   "faGamepad": () => (/* binding */ faGamepad),
+/* harmony export */   "faGasPump": () => (/* binding */ faGasPump),
+/* harmony export */   "faGavel": () => (/* binding */ faGavel),
+/* harmony export */   "faGem": () => (/* binding */ faGem),
+/* harmony export */   "faGenderless": () => (/* binding */ faGenderless),
+/* harmony export */   "faGhost": () => (/* binding */ faGhost),
+/* harmony export */   "faGift": () => (/* binding */ faGift),
+/* harmony export */   "faGifts": () => (/* binding */ faGifts),
+/* harmony export */   "faGlassCheers": () => (/* binding */ faGlassCheers),
+/* harmony export */   "faGlassMartini": () => (/* binding */ faGlassMartini),
+/* harmony export */   "faGlassMartiniAlt": () => (/* binding */ faGlassMartiniAlt),
+/* harmony export */   "faGlassWhiskey": () => (/* binding */ faGlassWhiskey),
+/* harmony export */   "faGlasses": () => (/* binding */ faGlasses),
+/* harmony export */   "faGlobe": () => (/* binding */ faGlobe),
+/* harmony export */   "faGlobeAfrica": () => (/* binding */ faGlobeAfrica),
+/* harmony export */   "faGlobeAmericas": () => (/* binding */ faGlobeAmericas),
+/* harmony export */   "faGlobeAsia": () => (/* binding */ faGlobeAsia),
+/* harmony export */   "faGlobeEurope": () => (/* binding */ faGlobeEurope),
+/* harmony export */   "faGolfBall": () => (/* binding */ faGolfBall),
+/* harmony export */   "faGopuram": () => (/* binding */ faGopuram),
+/* harmony export */   "faGraduationCap": () => (/* binding */ faGraduationCap),
+/* harmony export */   "faGreaterThan": () => (/* binding */ faGreaterThan),
+/* harmony export */   "faGreaterThanEqual": () => (/* binding */ faGreaterThanEqual),
+/* harmony export */   "faGrimace": () => (/* binding */ faGrimace),
+/* harmony export */   "faGrin": () => (/* binding */ faGrin),
+/* harmony export */   "faGrinAlt": () => (/* binding */ faGrinAlt),
+/* harmony export */   "faGrinBeam": () => (/* binding */ faGrinBeam),
+/* harmony export */   "faGrinBeamSweat": () => (/* binding */ faGrinBeamSweat),
+/* harmony export */   "faGrinHearts": () => (/* binding */ faGrinHearts),
+/* harmony export */   "faGrinSquint": () => (/* binding */ faGrinSquint),
+/* harmony export */   "faGrinSquintTears": () => (/* binding */ faGrinSquintTears),
+/* harmony export */   "faGrinStars": () => (/* binding */ faGrinStars),
+/* harmony export */   "faGrinTears": () => (/* binding */ faGrinTears),
+/* harmony export */   "faGrinTongue": () => (/* binding */ faGrinTongue),
+/* harmony export */   "faGrinTongueSquint": () => (/* binding */ faGrinTongueSquint),
+/* harmony export */   "faGrinTongueWink": () => (/* binding */ faGrinTongueWink),
+/* harmony export */   "faGrinWink": () => (/* binding */ faGrinWink),
+/* harmony export */   "faGripHorizontal": () => (/* binding */ faGripHorizontal),
+/* harmony export */   "faGripLines": () => (/* binding */ faGripLines),
+/* harmony export */   "faGripLinesVertical": () => (/* binding */ faGripLinesVertical),
+/* harmony export */   "faGripVertical": () => (/* binding */ faGripVertical),
+/* harmony export */   "faGuitar": () => (/* binding */ faGuitar),
+/* harmony export */   "faHSquare": () => (/* binding */ faHSquare),
+/* harmony export */   "faHamburger": () => (/* binding */ faHamburger),
+/* harmony export */   "faHammer": () => (/* binding */ faHammer),
+/* harmony export */   "faHamsa": () => (/* binding */ faHamsa),
+/* harmony export */   "faHandHolding": () => (/* binding */ faHandHolding),
+/* harmony export */   "faHandHoldingHeart": () => (/* binding */ faHandHoldingHeart),
+/* harmony export */   "faHandHoldingMedical": () => (/* binding */ faHandHoldingMedical),
+/* harmony export */   "faHandHoldingUsd": () => (/* binding */ faHandHoldingUsd),
+/* harmony export */   "faHandHoldingWater": () => (/* binding */ faHandHoldingWater),
+/* harmony export */   "faHandLizard": () => (/* binding */ faHandLizard),
+/* harmony export */   "faHandMiddleFinger": () => (/* binding */ faHandMiddleFinger),
+/* harmony export */   "faHandPaper": () => (/* binding */ faHandPaper),
+/* harmony export */   "faHandPeace": () => (/* binding */ faHandPeace),
+/* harmony export */   "faHandPointDown": () => (/* binding */ faHandPointDown),
+/* harmony export */   "faHandPointLeft": () => (/* binding */ faHandPointLeft),
+/* harmony export */   "faHandPointRight": () => (/* binding */ faHandPointRight),
+/* harmony export */   "faHandPointUp": () => (/* binding */ faHandPointUp),
+/* harmony export */   "faHandPointer": () => (/* binding */ faHandPointer),
+/* harmony export */   "faHandRock": () => (/* binding */ faHandRock),
+/* harmony export */   "faHandScissors": () => (/* binding */ faHandScissors),
+/* harmony export */   "faHandSparkles": () => (/* binding */ faHandSparkles),
+/* harmony export */   "faHandSpock": () => (/* binding */ faHandSpock),
+/* harmony export */   "faHands": () => (/* binding */ faHands),
+/* harmony export */   "faHandsHelping": () => (/* binding */ faHandsHelping),
+/* harmony export */   "faHandsWash": () => (/* binding */ faHandsWash),
+/* harmony export */   "faHandshake": () => (/* binding */ faHandshake),
+/* harmony export */   "faHandshakeAltSlash": () => (/* binding */ faHandshakeAltSlash),
+/* harmony export */   "faHandshakeSlash": () => (/* binding */ faHandshakeSlash),
+/* harmony export */   "faHanukiah": () => (/* binding */ faHanukiah),
+/* harmony export */   "faHardHat": () => (/* binding */ faHardHat),
+/* harmony export */   "faHashtag": () => (/* binding */ faHashtag),
+/* harmony export */   "faHatCowboy": () => (/* binding */ faHatCowboy),
+/* harmony export */   "faHatCowboySide": () => (/* binding */ faHatCowboySide),
+/* harmony export */   "faHatWizard": () => (/* binding */ faHatWizard),
+/* harmony export */   "faHdd": () => (/* binding */ faHdd),
+/* harmony export */   "faHeadSideCough": () => (/* binding */ faHeadSideCough),
+/* harmony export */   "faHeadSideCoughSlash": () => (/* binding */ faHeadSideCoughSlash),
+/* harmony export */   "faHeadSideMask": () => (/* binding */ faHeadSideMask),
+/* harmony export */   "faHeadSideVirus": () => (/* binding */ faHeadSideVirus),
+/* harmony export */   "faHeading": () => (/* binding */ faHeading),
+/* harmony export */   "faHeadphones": () => (/* binding */ faHeadphones),
+/* harmony export */   "faHeadphonesAlt": () => (/* binding */ faHeadphonesAlt),
+/* harmony export */   "faHeadset": () => (/* binding */ faHeadset),
+/* harmony export */   "faHeart": () => (/* binding */ faHeart),
+/* harmony export */   "faHeartBroken": () => (/* binding */ faHeartBroken),
+/* harmony export */   "faHeartbeat": () => (/* binding */ faHeartbeat),
+/* harmony export */   "faHelicopter": () => (/* binding */ faHelicopter),
+/* harmony export */   "faHighlighter": () => (/* binding */ faHighlighter),
+/* harmony export */   "faHiking": () => (/* binding */ faHiking),
+/* harmony export */   "faHippo": () => (/* binding */ faHippo),
+/* harmony export */   "faHistory": () => (/* binding */ faHistory),
+/* harmony export */   "faHockeyPuck": () => (/* binding */ faHockeyPuck),
+/* harmony export */   "faHollyBerry": () => (/* binding */ faHollyBerry),
+/* harmony export */   "faHome": () => (/* binding */ faHome),
+/* harmony export */   "faHorse": () => (/* binding */ faHorse),
+/* harmony export */   "faHorseHead": () => (/* binding */ faHorseHead),
+/* harmony export */   "faHospital": () => (/* binding */ faHospital),
+/* harmony export */   "faHospitalAlt": () => (/* binding */ faHospitalAlt),
+/* harmony export */   "faHospitalSymbol": () => (/* binding */ faHospitalSymbol),
+/* harmony export */   "faHospitalUser": () => (/* binding */ faHospitalUser),
+/* harmony export */   "faHotTub": () => (/* binding */ faHotTub),
+/* harmony export */   "faHotdog": () => (/* binding */ faHotdog),
+/* harmony export */   "faHotel": () => (/* binding */ faHotel),
+/* harmony export */   "faHourglass": () => (/* binding */ faHourglass),
+/* harmony export */   "faHourglassEnd": () => (/* binding */ faHourglassEnd),
+/* harmony export */   "faHourglassHalf": () => (/* binding */ faHourglassHalf),
+/* harmony export */   "faHourglassStart": () => (/* binding */ faHourglassStart),
+/* harmony export */   "faHouseDamage": () => (/* binding */ faHouseDamage),
+/* harmony export */   "faHouseUser": () => (/* binding */ faHouseUser),
+/* harmony export */   "faHryvnia": () => (/* binding */ faHryvnia),
+/* harmony export */   "faICursor": () => (/* binding */ faICursor),
+/* harmony export */   "faIceCream": () => (/* binding */ faIceCream),
+/* harmony export */   "faIcicles": () => (/* binding */ faIcicles),
+/* harmony export */   "faIcons": () => (/* binding */ faIcons),
+/* harmony export */   "faIdBadge": () => (/* binding */ faIdBadge),
+/* harmony export */   "faIdCard": () => (/* binding */ faIdCard),
+/* harmony export */   "faIdCardAlt": () => (/* binding */ faIdCardAlt),
+/* harmony export */   "faIgloo": () => (/* binding */ faIgloo),
+/* harmony export */   "faImage": () => (/* binding */ faImage),
+/* harmony export */   "faImages": () => (/* binding */ faImages),
+/* harmony export */   "faInbox": () => (/* binding */ faInbox),
+/* harmony export */   "faIndent": () => (/* binding */ faIndent),
+/* harmony export */   "faIndustry": () => (/* binding */ faIndustry),
+/* harmony export */   "faInfinity": () => (/* binding */ faInfinity),
+/* harmony export */   "faInfo": () => (/* binding */ faInfo),
+/* harmony export */   "faInfoCircle": () => (/* binding */ faInfoCircle),
+/* harmony export */   "faItalic": () => (/* binding */ faItalic),
+/* harmony export */   "faJedi": () => (/* binding */ faJedi),
+/* harmony export */   "faJoint": () => (/* binding */ faJoint),
+/* harmony export */   "faJournalWhills": () => (/* binding */ faJournalWhills),
+/* harmony export */   "faKaaba": () => (/* binding */ faKaaba),
+/* harmony export */   "faKey": () => (/* binding */ faKey),
+/* harmony export */   "faKeyboard": () => (/* binding */ faKeyboard),
+/* harmony export */   "faKhanda": () => (/* binding */ faKhanda),
+/* harmony export */   "faKiss": () => (/* binding */ faKiss),
+/* harmony export */   "faKissBeam": () => (/* binding */ faKissBeam),
+/* harmony export */   "faKissWinkHeart": () => (/* binding */ faKissWinkHeart),
+/* harmony export */   "faKiwiBird": () => (/* binding */ faKiwiBird),
+/* harmony export */   "faLandmark": () => (/* binding */ faLandmark),
+/* harmony export */   "faLanguage": () => (/* binding */ faLanguage),
+/* harmony export */   "faLaptop": () => (/* binding */ faLaptop),
+/* harmony export */   "faLaptopCode": () => (/* binding */ faLaptopCode),
+/* harmony export */   "faLaptopHouse": () => (/* binding */ faLaptopHouse),
+/* harmony export */   "faLaptopMedical": () => (/* binding */ faLaptopMedical),
+/* harmony export */   "faLaugh": () => (/* binding */ faLaugh),
+/* harmony export */   "faLaughBeam": () => (/* binding */ faLaughBeam),
+/* harmony export */   "faLaughSquint": () => (/* binding */ faLaughSquint),
+/* harmony export */   "faLaughWink": () => (/* binding */ faLaughWink),
+/* harmony export */   "faLayerGroup": () => (/* binding */ faLayerGroup),
+/* harmony export */   "faLeaf": () => (/* binding */ faLeaf),
+/* harmony export */   "faLemon": () => (/* binding */ faLemon),
+/* harmony export */   "faLessThan": () => (/* binding */ faLessThan),
+/* harmony export */   "faLessThanEqual": () => (/* binding */ faLessThanEqual),
+/* harmony export */   "faLevelDownAlt": () => (/* binding */ faLevelDownAlt),
+/* harmony export */   "faLevelUpAlt": () => (/* binding */ faLevelUpAlt),
+/* harmony export */   "faLifeRing": () => (/* binding */ faLifeRing),
+/* harmony export */   "faLightbulb": () => (/* binding */ faLightbulb),
+/* harmony export */   "faLink": () => (/* binding */ faLink),
+/* harmony export */   "faLiraSign": () => (/* binding */ faLiraSign),
+/* harmony export */   "faList": () => (/* binding */ faList),
+/* harmony export */   "faListAlt": () => (/* binding */ faListAlt),
+/* harmony export */   "faListOl": () => (/* binding */ faListOl),
+/* harmony export */   "faListUl": () => (/* binding */ faListUl),
+/* harmony export */   "faLocationArrow": () => (/* binding */ faLocationArrow),
+/* harmony export */   "faLock": () => (/* binding */ faLock),
+/* harmony export */   "faLockOpen": () => (/* binding */ faLockOpen),
+/* harmony export */   "faLongArrowAltDown": () => (/* binding */ faLongArrowAltDown),
+/* harmony export */   "faLongArrowAltLeft": () => (/* binding */ faLongArrowAltLeft),
+/* harmony export */   "faLongArrowAltRight": () => (/* binding */ faLongArrowAltRight),
+/* harmony export */   "faLongArrowAltUp": () => (/* binding */ faLongArrowAltUp),
+/* harmony export */   "faLowVision": () => (/* binding */ faLowVision),
+/* harmony export */   "faLuggageCart": () => (/* binding */ faLuggageCart),
+/* harmony export */   "faLungs": () => (/* binding */ faLungs),
+/* harmony export */   "faLungsVirus": () => (/* binding */ faLungsVirus),
+/* harmony export */   "faMagic": () => (/* binding */ faMagic),
+/* harmony export */   "faMagnet": () => (/* binding */ faMagnet),
+/* harmony export */   "faMailBulk": () => (/* binding */ faMailBulk),
+/* harmony export */   "faMale": () => (/* binding */ faMale),
+/* harmony export */   "faMap": () => (/* binding */ faMap),
+/* harmony export */   "faMapMarked": () => (/* binding */ faMapMarked),
+/* harmony export */   "faMapMarkedAlt": () => (/* binding */ faMapMarkedAlt),
+/* harmony export */   "faMapMarker": () => (/* binding */ faMapMarker),
+/* harmony export */   "faMapMarkerAlt": () => (/* binding */ faMapMarkerAlt),
+/* harmony export */   "faMapPin": () => (/* binding */ faMapPin),
+/* harmony export */   "faMapSigns": () => (/* binding */ faMapSigns),
+/* harmony export */   "faMarker": () => (/* binding */ faMarker),
+/* harmony export */   "faMars": () => (/* binding */ faMars),
+/* harmony export */   "faMarsDouble": () => (/* binding */ faMarsDouble),
+/* harmony export */   "faMarsStroke": () => (/* binding */ faMarsStroke),
+/* harmony export */   "faMarsStrokeH": () => (/* binding */ faMarsStrokeH),
+/* harmony export */   "faMarsStrokeV": () => (/* binding */ faMarsStrokeV),
+/* harmony export */   "faMask": () => (/* binding */ faMask),
+/* harmony export */   "faMedal": () => (/* binding */ faMedal),
+/* harmony export */   "faMedkit": () => (/* binding */ faMedkit),
+/* harmony export */   "faMeh": () => (/* binding */ faMeh),
+/* harmony export */   "faMehBlank": () => (/* binding */ faMehBlank),
+/* harmony export */   "faMehRollingEyes": () => (/* binding */ faMehRollingEyes),
+/* harmony export */   "faMemory": () => (/* binding */ faMemory),
+/* harmony export */   "faMenorah": () => (/* binding */ faMenorah),
+/* harmony export */   "faMercury": () => (/* binding */ faMercury),
+/* harmony export */   "faMeteor": () => (/* binding */ faMeteor),
+/* harmony export */   "faMicrochip": () => (/* binding */ faMicrochip),
+/* harmony export */   "faMicrophone": () => (/* binding */ faMicrophone),
+/* harmony export */   "faMicrophoneAlt": () => (/* binding */ faMicrophoneAlt),
+/* harmony export */   "faMicrophoneAltSlash": () => (/* binding */ faMicrophoneAltSlash),
+/* harmony export */   "faMicrophoneSlash": () => (/* binding */ faMicrophoneSlash),
+/* harmony export */   "faMicroscope": () => (/* binding */ faMicroscope),
+/* harmony export */   "faMinus": () => (/* binding */ faMinus),
+/* harmony export */   "faMinusCircle": () => (/* binding */ faMinusCircle),
+/* harmony export */   "faMinusSquare": () => (/* binding */ faMinusSquare),
+/* harmony export */   "faMitten": () => (/* binding */ faMitten),
+/* harmony export */   "faMobile": () => (/* binding */ faMobile),
+/* harmony export */   "faMobileAlt": () => (/* binding */ faMobileAlt),
+/* harmony export */   "faMoneyBill": () => (/* binding */ faMoneyBill),
+/* harmony export */   "faMoneyBillAlt": () => (/* binding */ faMoneyBillAlt),
+/* harmony export */   "faMoneyBillWave": () => (/* binding */ faMoneyBillWave),
+/* harmony export */   "faMoneyBillWaveAlt": () => (/* binding */ faMoneyBillWaveAlt),
+/* harmony export */   "faMoneyCheck": () => (/* binding */ faMoneyCheck),
+/* harmony export */   "faMoneyCheckAlt": () => (/* binding */ faMoneyCheckAlt),
+/* harmony export */   "faMonument": () => (/* binding */ faMonument),
+/* harmony export */   "faMoon": () => (/* binding */ faMoon),
+/* harmony export */   "faMortarPestle": () => (/* binding */ faMortarPestle),
+/* harmony export */   "faMosque": () => (/* binding */ faMosque),
+/* harmony export */   "faMotorcycle": () => (/* binding */ faMotorcycle),
+/* harmony export */   "faMountain": () => (/* binding */ faMountain),
+/* harmony export */   "faMouse": () => (/* binding */ faMouse),
+/* harmony export */   "faMousePointer": () => (/* binding */ faMousePointer),
+/* harmony export */   "faMugHot": () => (/* binding */ faMugHot),
+/* harmony export */   "faMusic": () => (/* binding */ faMusic),
+/* harmony export */   "faNetworkWired": () => (/* binding */ faNetworkWired),
+/* harmony export */   "faNeuter": () => (/* binding */ faNeuter),
+/* harmony export */   "faNewspaper": () => (/* binding */ faNewspaper),
+/* harmony export */   "faNotEqual": () => (/* binding */ faNotEqual),
+/* harmony export */   "faNotesMedical": () => (/* binding */ faNotesMedical),
+/* harmony export */   "faObjectGroup": () => (/* binding */ faObjectGroup),
+/* harmony export */   "faObjectUngroup": () => (/* binding */ faObjectUngroup),
+/* harmony export */   "faOilCan": () => (/* binding */ faOilCan),
+/* harmony export */   "faOm": () => (/* binding */ faOm),
+/* harmony export */   "faOtter": () => (/* binding */ faOtter),
+/* harmony export */   "faOutdent": () => (/* binding */ faOutdent),
+/* harmony export */   "faPager": () => (/* binding */ faPager),
+/* harmony export */   "faPaintBrush": () => (/* binding */ faPaintBrush),
+/* harmony export */   "faPaintRoller": () => (/* binding */ faPaintRoller),
+/* harmony export */   "faPalette": () => (/* binding */ faPalette),
+/* harmony export */   "faPallet": () => (/* binding */ faPallet),
+/* harmony export */   "faPaperPlane": () => (/* binding */ faPaperPlane),
+/* harmony export */   "faPaperclip": () => (/* binding */ faPaperclip),
+/* harmony export */   "faParachuteBox": () => (/* binding */ faParachuteBox),
+/* harmony export */   "faParagraph": () => (/* binding */ faParagraph),
+/* harmony export */   "faParking": () => (/* binding */ faParking),
+/* harmony export */   "faPassport": () => (/* binding */ faPassport),
+/* harmony export */   "faPastafarianism": () => (/* binding */ faPastafarianism),
+/* harmony export */   "faPaste": () => (/* binding */ faPaste),
+/* harmony export */   "faPause": () => (/* binding */ faPause),
+/* harmony export */   "faPauseCircle": () => (/* binding */ faPauseCircle),
+/* harmony export */   "faPaw": () => (/* binding */ faPaw),
+/* harmony export */   "faPeace": () => (/* binding */ faPeace),
+/* harmony export */   "faPen": () => (/* binding */ faPen),
+/* harmony export */   "faPenAlt": () => (/* binding */ faPenAlt),
+/* harmony export */   "faPenFancy": () => (/* binding */ faPenFancy),
+/* harmony export */   "faPenNib": () => (/* binding */ faPenNib),
+/* harmony export */   "faPenSquare": () => (/* binding */ faPenSquare),
+/* harmony export */   "faPencilAlt": () => (/* binding */ faPencilAlt),
+/* harmony export */   "faPencilRuler": () => (/* binding */ faPencilRuler),
+/* harmony export */   "faPeopleArrows": () => (/* binding */ faPeopleArrows),
+/* harmony export */   "faPeopleCarry": () => (/* binding */ faPeopleCarry),
+/* harmony export */   "faPepperHot": () => (/* binding */ faPepperHot),
+/* harmony export */   "faPercent": () => (/* binding */ faPercent),
+/* harmony export */   "faPercentage": () => (/* binding */ faPercentage),
+/* harmony export */   "faPersonBooth": () => (/* binding */ faPersonBooth),
+/* harmony export */   "faPhone": () => (/* binding */ faPhone),
+/* harmony export */   "faPhoneAlt": () => (/* binding */ faPhoneAlt),
+/* harmony export */   "faPhoneSlash": () => (/* binding */ faPhoneSlash),
+/* harmony export */   "faPhoneSquare": () => (/* binding */ faPhoneSquare),
+/* harmony export */   "faPhoneSquareAlt": () => (/* binding */ faPhoneSquareAlt),
+/* harmony export */   "faPhoneVolume": () => (/* binding */ faPhoneVolume),
+/* harmony export */   "faPhotoVideo": () => (/* binding */ faPhotoVideo),
+/* harmony export */   "faPiggyBank": () => (/* binding */ faPiggyBank),
+/* harmony export */   "faPills": () => (/* binding */ faPills),
+/* harmony export */   "faPizzaSlice": () => (/* binding */ faPizzaSlice),
+/* harmony export */   "faPlaceOfWorship": () => (/* binding */ faPlaceOfWorship),
+/* harmony export */   "faPlane": () => (/* binding */ faPlane),
+/* harmony export */   "faPlaneArrival": () => (/* binding */ faPlaneArrival),
+/* harmony export */   "faPlaneDeparture": () => (/* binding */ faPlaneDeparture),
+/* harmony export */   "faPlaneSlash": () => (/* binding */ faPlaneSlash),
+/* harmony export */   "faPlay": () => (/* binding */ faPlay),
+/* harmony export */   "faPlayCircle": () => (/* binding */ faPlayCircle),
+/* harmony export */   "faPlug": () => (/* binding */ faPlug),
+/* harmony export */   "faPlus": () => (/* binding */ faPlus),
+/* harmony export */   "faPlusCircle": () => (/* binding */ faPlusCircle),
+/* harmony export */   "faPlusSquare": () => (/* binding */ faPlusSquare),
+/* harmony export */   "faPodcast": () => (/* binding */ faPodcast),
+/* harmony export */   "faPoll": () => (/* binding */ faPoll),
+/* harmony export */   "faPollH": () => (/* binding */ faPollH),
+/* harmony export */   "faPoo": () => (/* binding */ faPoo),
+/* harmony export */   "faPooStorm": () => (/* binding */ faPooStorm),
+/* harmony export */   "faPoop": () => (/* binding */ faPoop),
+/* harmony export */   "faPortrait": () => (/* binding */ faPortrait),
+/* harmony export */   "faPoundSign": () => (/* binding */ faPoundSign),
+/* harmony export */   "faPowerOff": () => (/* binding */ faPowerOff),
+/* harmony export */   "faPray": () => (/* binding */ faPray),
+/* harmony export */   "faPrayingHands": () => (/* binding */ faPrayingHands),
+/* harmony export */   "faPrescription": () => (/* binding */ faPrescription),
+/* harmony export */   "faPrescriptionBottle": () => (/* binding */ faPrescriptionBottle),
+/* harmony export */   "faPrescriptionBottleAlt": () => (/* binding */ faPrescriptionBottleAlt),
+/* harmony export */   "faPrint": () => (/* binding */ faPrint),
+/* harmony export */   "faProcedures": () => (/* binding */ faProcedures),
+/* harmony export */   "faProjectDiagram": () => (/* binding */ faProjectDiagram),
+/* harmony export */   "faPumpMedical": () => (/* binding */ faPumpMedical),
+/* harmony export */   "faPumpSoap": () => (/* binding */ faPumpSoap),
+/* harmony export */   "faPuzzlePiece": () => (/* binding */ faPuzzlePiece),
+/* harmony export */   "faQrcode": () => (/* binding */ faQrcode),
+/* harmony export */   "faQuestion": () => (/* binding */ faQuestion),
+/* harmony export */   "faQuestionCircle": () => (/* binding */ faQuestionCircle),
+/* harmony export */   "faQuidditch": () => (/* binding */ faQuidditch),
+/* harmony export */   "faQuoteLeft": () => (/* binding */ faQuoteLeft),
+/* harmony export */   "faQuoteRight": () => (/* binding */ faQuoteRight),
+/* harmony export */   "faQuran": () => (/* binding */ faQuran),
+/* harmony export */   "faRadiation": () => (/* binding */ faRadiation),
+/* harmony export */   "faRadiationAlt": () => (/* binding */ faRadiationAlt),
+/* harmony export */   "faRainbow": () => (/* binding */ faRainbow),
+/* harmony export */   "faRandom": () => (/* binding */ faRandom),
+/* harmony export */   "faReceipt": () => (/* binding */ faReceipt),
+/* harmony export */   "faRecordVinyl": () => (/* binding */ faRecordVinyl),
+/* harmony export */   "faRecycle": () => (/* binding */ faRecycle),
+/* harmony export */   "faRedo": () => (/* binding */ faRedo),
+/* harmony export */   "faRedoAlt": () => (/* binding */ faRedoAlt),
+/* harmony export */   "faRegistered": () => (/* binding */ faRegistered),
+/* harmony export */   "faRemoveFormat": () => (/* binding */ faRemoveFormat),
+/* harmony export */   "faReply": () => (/* binding */ faReply),
+/* harmony export */   "faReplyAll": () => (/* binding */ faReplyAll),
+/* harmony export */   "faRepublican": () => (/* binding */ faRepublican),
+/* harmony export */   "faRestroom": () => (/* binding */ faRestroom),
+/* harmony export */   "faRetweet": () => (/* binding */ faRetweet),
+/* harmony export */   "faRibbon": () => (/* binding */ faRibbon),
+/* harmony export */   "faRing": () => (/* binding */ faRing),
+/* harmony export */   "faRoad": () => (/* binding */ faRoad),
+/* harmony export */   "faRobot": () => (/* binding */ faRobot),
+/* harmony export */   "faRocket": () => (/* binding */ faRocket),
+/* harmony export */   "faRoute": () => (/* binding */ faRoute),
+/* harmony export */   "faRss": () => (/* binding */ faRss),
+/* harmony export */   "faRssSquare": () => (/* binding */ faRssSquare),
+/* harmony export */   "faRubleSign": () => (/* binding */ faRubleSign),
+/* harmony export */   "faRuler": () => (/* binding */ faRuler),
+/* harmony export */   "faRulerCombined": () => (/* binding */ faRulerCombined),
+/* harmony export */   "faRulerHorizontal": () => (/* binding */ faRulerHorizontal),
+/* harmony export */   "faRulerVertical": () => (/* binding */ faRulerVertical),
+/* harmony export */   "faRunning": () => (/* binding */ faRunning),
+/* harmony export */   "faRupeeSign": () => (/* binding */ faRupeeSign),
+/* harmony export */   "faSadCry": () => (/* binding */ faSadCry),
+/* harmony export */   "faSadTear": () => (/* binding */ faSadTear),
+/* harmony export */   "faSatellite": () => (/* binding */ faSatellite),
+/* harmony export */   "faSatelliteDish": () => (/* binding */ faSatelliteDish),
+/* harmony export */   "faSave": () => (/* binding */ faSave),
+/* harmony export */   "faSchool": () => (/* binding */ faSchool),
+/* harmony export */   "faScrewdriver": () => (/* binding */ faScrewdriver),
+/* harmony export */   "faScroll": () => (/* binding */ faScroll),
+/* harmony export */   "faSdCard": () => (/* binding */ faSdCard),
+/* harmony export */   "faSearch": () => (/* binding */ faSearch),
+/* harmony export */   "faSearchDollar": () => (/* binding */ faSearchDollar),
+/* harmony export */   "faSearchLocation": () => (/* binding */ faSearchLocation),
+/* harmony export */   "faSearchMinus": () => (/* binding */ faSearchMinus),
+/* harmony export */   "faSearchPlus": () => (/* binding */ faSearchPlus),
+/* harmony export */   "faSeedling": () => (/* binding */ faSeedling),
+/* harmony export */   "faServer": () => (/* binding */ faServer),
+/* harmony export */   "faShapes": () => (/* binding */ faShapes),
+/* harmony export */   "faShare": () => (/* binding */ faShare),
+/* harmony export */   "faShareAlt": () => (/* binding */ faShareAlt),
+/* harmony export */   "faShareAltSquare": () => (/* binding */ faShareAltSquare),
+/* harmony export */   "faShareSquare": () => (/* binding */ faShareSquare),
+/* harmony export */   "faShekelSign": () => (/* binding */ faShekelSign),
+/* harmony export */   "faShieldAlt": () => (/* binding */ faShieldAlt),
+/* harmony export */   "faShieldVirus": () => (/* binding */ faShieldVirus),
+/* harmony export */   "faShip": () => (/* binding */ faShip),
+/* harmony export */   "faShippingFast": () => (/* binding */ faShippingFast),
+/* harmony export */   "faShoePrints": () => (/* binding */ faShoePrints),
+/* harmony export */   "faShoppingBag": () => (/* binding */ faShoppingBag),
+/* harmony export */   "faShoppingBasket": () => (/* binding */ faShoppingBasket),
+/* harmony export */   "faShoppingCart": () => (/* binding */ faShoppingCart),
+/* harmony export */   "faShower": () => (/* binding */ faShower),
+/* harmony export */   "faShuttleVan": () => (/* binding */ faShuttleVan),
+/* harmony export */   "faSign": () => (/* binding */ faSign),
+/* harmony export */   "faSignInAlt": () => (/* binding */ faSignInAlt),
+/* harmony export */   "faSignLanguage": () => (/* binding */ faSignLanguage),
+/* harmony export */   "faSignOutAlt": () => (/* binding */ faSignOutAlt),
+/* harmony export */   "faSignal": () => (/* binding */ faSignal),
+/* harmony export */   "faSignature": () => (/* binding */ faSignature),
+/* harmony export */   "faSimCard": () => (/* binding */ faSimCard),
+/* harmony export */   "faSink": () => (/* binding */ faSink),
+/* harmony export */   "faSitemap": () => (/* binding */ faSitemap),
+/* harmony export */   "faSkating": () => (/* binding */ faSkating),
+/* harmony export */   "faSkiing": () => (/* binding */ faSkiing),
+/* harmony export */   "faSkiingNordic": () => (/* binding */ faSkiingNordic),
+/* harmony export */   "faSkull": () => (/* binding */ faSkull),
+/* harmony export */   "faSkullCrossbones": () => (/* binding */ faSkullCrossbones),
+/* harmony export */   "faSlash": () => (/* binding */ faSlash),
+/* harmony export */   "faSleigh": () => (/* binding */ faSleigh),
+/* harmony export */   "faSlidersH": () => (/* binding */ faSlidersH),
+/* harmony export */   "faSmile": () => (/* binding */ faSmile),
+/* harmony export */   "faSmileBeam": () => (/* binding */ faSmileBeam),
+/* harmony export */   "faSmileWink": () => (/* binding */ faSmileWink),
+/* harmony export */   "faSmog": () => (/* binding */ faSmog),
+/* harmony export */   "faSmoking": () => (/* binding */ faSmoking),
+/* harmony export */   "faSmokingBan": () => (/* binding */ faSmokingBan),
+/* harmony export */   "faSms": () => (/* binding */ faSms),
+/* harmony export */   "faSnowboarding": () => (/* binding */ faSnowboarding),
+/* harmony export */   "faSnowflake": () => (/* binding */ faSnowflake),
+/* harmony export */   "faSnowman": () => (/* binding */ faSnowman),
+/* harmony export */   "faSnowplow": () => (/* binding */ faSnowplow),
+/* harmony export */   "faSoap": () => (/* binding */ faSoap),
+/* harmony export */   "faSocks": () => (/* binding */ faSocks),
+/* harmony export */   "faSolarPanel": () => (/* binding */ faSolarPanel),
+/* harmony export */   "faSort": () => (/* binding */ faSort),
+/* harmony export */   "faSortAlphaDown": () => (/* binding */ faSortAlphaDown),
+/* harmony export */   "faSortAlphaDownAlt": () => (/* binding */ faSortAlphaDownAlt),
+/* harmony export */   "faSortAlphaUp": () => (/* binding */ faSortAlphaUp),
+/* harmony export */   "faSortAlphaUpAlt": () => (/* binding */ faSortAlphaUpAlt),
+/* harmony export */   "faSortAmountDown": () => (/* binding */ faSortAmountDown),
+/* harmony export */   "faSortAmountDownAlt": () => (/* binding */ faSortAmountDownAlt),
+/* harmony export */   "faSortAmountUp": () => (/* binding */ faSortAmountUp),
+/* harmony export */   "faSortAmountUpAlt": () => (/* binding */ faSortAmountUpAlt),
+/* harmony export */   "faSortDown": () => (/* binding */ faSortDown),
+/* harmony export */   "faSortNumericDown": () => (/* binding */ faSortNumericDown),
+/* harmony export */   "faSortNumericDownAlt": () => (/* binding */ faSortNumericDownAlt),
+/* harmony export */   "faSortNumericUp": () => (/* binding */ faSortNumericUp),
+/* harmony export */   "faSortNumericUpAlt": () => (/* binding */ faSortNumericUpAlt),
+/* harmony export */   "faSortUp": () => (/* binding */ faSortUp),
+/* harmony export */   "faSpa": () => (/* binding */ faSpa),
+/* harmony export */   "faSpaceShuttle": () => (/* binding */ faSpaceShuttle),
+/* harmony export */   "faSpellCheck": () => (/* binding */ faSpellCheck),
+/* harmony export */   "faSpider": () => (/* binding */ faSpider),
+/* harmony export */   "faSpinner": () => (/* binding */ faSpinner),
+/* harmony export */   "faSplotch": () => (/* binding */ faSplotch),
+/* harmony export */   "faSprayCan": () => (/* binding */ faSprayCan),
+/* harmony export */   "faSquare": () => (/* binding */ faSquare),
+/* harmony export */   "faSquareFull": () => (/* binding */ faSquareFull),
+/* harmony export */   "faSquareRootAlt": () => (/* binding */ faSquareRootAlt),
+/* harmony export */   "faStamp": () => (/* binding */ faStamp),
+/* harmony export */   "faStar": () => (/* binding */ faStar),
+/* harmony export */   "faStarAndCrescent": () => (/* binding */ faStarAndCrescent),
+/* harmony export */   "faStarHalf": () => (/* binding */ faStarHalf),
+/* harmony export */   "faStarHalfAlt": () => (/* binding */ faStarHalfAlt),
+/* harmony export */   "faStarOfDavid": () => (/* binding */ faStarOfDavid),
+/* harmony export */   "faStarOfLife": () => (/* binding */ faStarOfLife),
+/* harmony export */   "faStepBackward": () => (/* binding */ faStepBackward),
+/* harmony export */   "faStepForward": () => (/* binding */ faStepForward),
+/* harmony export */   "faStethoscope": () => (/* binding */ faStethoscope),
+/* harmony export */   "faStickyNote": () => (/* binding */ faStickyNote),
+/* harmony export */   "faStop": () => (/* binding */ faStop),
+/* harmony export */   "faStopCircle": () => (/* binding */ faStopCircle),
+/* harmony export */   "faStopwatch": () => (/* binding */ faStopwatch),
+/* harmony export */   "faStopwatch20": () => (/* binding */ faStopwatch20),
+/* harmony export */   "faStore": () => (/* binding */ faStore),
+/* harmony export */   "faStoreAlt": () => (/* binding */ faStoreAlt),
+/* harmony export */   "faStoreAltSlash": () => (/* binding */ faStoreAltSlash),
+/* harmony export */   "faStoreSlash": () => (/* binding */ faStoreSlash),
+/* harmony export */   "faStream": () => (/* binding */ faStream),
+/* harmony export */   "faStreetView": () => (/* binding */ faStreetView),
+/* harmony export */   "faStrikethrough": () => (/* binding */ faStrikethrough),
+/* harmony export */   "faStroopwafel": () => (/* binding */ faStroopwafel),
+/* harmony export */   "faSubscript": () => (/* binding */ faSubscript),
+/* harmony export */   "faSubway": () => (/* binding */ faSubway),
+/* harmony export */   "faSuitcase": () => (/* binding */ faSuitcase),
+/* harmony export */   "faSuitcaseRolling": () => (/* binding */ faSuitcaseRolling),
+/* harmony export */   "faSun": () => (/* binding */ faSun),
+/* harmony export */   "faSuperscript": () => (/* binding */ faSuperscript),
+/* harmony export */   "faSurprise": () => (/* binding */ faSurprise),
+/* harmony export */   "faSwatchbook": () => (/* binding */ faSwatchbook),
+/* harmony export */   "faSwimmer": () => (/* binding */ faSwimmer),
+/* harmony export */   "faSwimmingPool": () => (/* binding */ faSwimmingPool),
+/* harmony export */   "faSynagogue": () => (/* binding */ faSynagogue),
+/* harmony export */   "faSync": () => (/* binding */ faSync),
+/* harmony export */   "faSyncAlt": () => (/* binding */ faSyncAlt),
+/* harmony export */   "faSyringe": () => (/* binding */ faSyringe),
+/* harmony export */   "faTable": () => (/* binding */ faTable),
+/* harmony export */   "faTableTennis": () => (/* binding */ faTableTennis),
+/* harmony export */   "faTablet": () => (/* binding */ faTablet),
+/* harmony export */   "faTabletAlt": () => (/* binding */ faTabletAlt),
+/* harmony export */   "faTablets": () => (/* binding */ faTablets),
+/* harmony export */   "faTachometerAlt": () => (/* binding */ faTachometerAlt),
+/* harmony export */   "faTag": () => (/* binding */ faTag),
+/* harmony export */   "faTags": () => (/* binding */ faTags),
+/* harmony export */   "faTape": () => (/* binding */ faTape),
+/* harmony export */   "faTasks": () => (/* binding */ faTasks),
+/* harmony export */   "faTaxi": () => (/* binding */ faTaxi),
+/* harmony export */   "faTeeth": () => (/* binding */ faTeeth),
+/* harmony export */   "faTeethOpen": () => (/* binding */ faTeethOpen),
+/* harmony export */   "faTemperatureHigh": () => (/* binding */ faTemperatureHigh),
+/* harmony export */   "faTemperatureLow": () => (/* binding */ faTemperatureLow),
+/* harmony export */   "faTenge": () => (/* binding */ faTenge),
+/* harmony export */   "faTerminal": () => (/* binding */ faTerminal),
+/* harmony export */   "faTextHeight": () => (/* binding */ faTextHeight),
+/* harmony export */   "faTextWidth": () => (/* binding */ faTextWidth),
+/* harmony export */   "faTh": () => (/* binding */ faTh),
+/* harmony export */   "faThLarge": () => (/* binding */ faThLarge),
+/* harmony export */   "faThList": () => (/* binding */ faThList),
+/* harmony export */   "faTheaterMasks": () => (/* binding */ faTheaterMasks),
+/* harmony export */   "faThermometer": () => (/* binding */ faThermometer),
+/* harmony export */   "faThermometerEmpty": () => (/* binding */ faThermometerEmpty),
+/* harmony export */   "faThermometerFull": () => (/* binding */ faThermometerFull),
+/* harmony export */   "faThermometerHalf": () => (/* binding */ faThermometerHalf),
+/* harmony export */   "faThermometerQuarter": () => (/* binding */ faThermometerQuarter),
+/* harmony export */   "faThermometerThreeQuarters": () => (/* binding */ faThermometerThreeQuarters),
+/* harmony export */   "faThumbsDown": () => (/* binding */ faThumbsDown),
+/* harmony export */   "faThumbsUp": () => (/* binding */ faThumbsUp),
+/* harmony export */   "faThumbtack": () => (/* binding */ faThumbtack),
+/* harmony export */   "faTicketAlt": () => (/* binding */ faTicketAlt),
+/* harmony export */   "faTimes": () => (/* binding */ faTimes),
+/* harmony export */   "faTimesCircle": () => (/* binding */ faTimesCircle),
+/* harmony export */   "faTint": () => (/* binding */ faTint),
+/* harmony export */   "faTintSlash": () => (/* binding */ faTintSlash),
+/* harmony export */   "faTired": () => (/* binding */ faTired),
+/* harmony export */   "faToggleOff": () => (/* binding */ faToggleOff),
+/* harmony export */   "faToggleOn": () => (/* binding */ faToggleOn),
+/* harmony export */   "faToilet": () => (/* binding */ faToilet),
+/* harmony export */   "faToiletPaper": () => (/* binding */ faToiletPaper),
+/* harmony export */   "faToiletPaperSlash": () => (/* binding */ faToiletPaperSlash),
+/* harmony export */   "faToolbox": () => (/* binding */ faToolbox),
+/* harmony export */   "faTools": () => (/* binding */ faTools),
+/* harmony export */   "faTooth": () => (/* binding */ faTooth),
+/* harmony export */   "faTorah": () => (/* binding */ faTorah),
+/* harmony export */   "faToriiGate": () => (/* binding */ faToriiGate),
+/* harmony export */   "faTractor": () => (/* binding */ faTractor),
+/* harmony export */   "faTrademark": () => (/* binding */ faTrademark),
+/* harmony export */   "faTrafficLight": () => (/* binding */ faTrafficLight),
+/* harmony export */   "faTrailer": () => (/* binding */ faTrailer),
+/* harmony export */   "faTrain": () => (/* binding */ faTrain),
+/* harmony export */   "faTram": () => (/* binding */ faTram),
+/* harmony export */   "faTransgender": () => (/* binding */ faTransgender),
+/* harmony export */   "faTransgenderAlt": () => (/* binding */ faTransgenderAlt),
+/* harmony export */   "faTrash": () => (/* binding */ faTrash),
+/* harmony export */   "faTrashAlt": () => (/* binding */ faTrashAlt),
+/* harmony export */   "faTrashRestore": () => (/* binding */ faTrashRestore),
+/* harmony export */   "faTrashRestoreAlt": () => (/* binding */ faTrashRestoreAlt),
+/* harmony export */   "faTree": () => (/* binding */ faTree),
+/* harmony export */   "faTrophy": () => (/* binding */ faTrophy),
+/* harmony export */   "faTruck": () => (/* binding */ faTruck),
+/* harmony export */   "faTruckLoading": () => (/* binding */ faTruckLoading),
+/* harmony export */   "faTruckMonster": () => (/* binding */ faTruckMonster),
+/* harmony export */   "faTruckMoving": () => (/* binding */ faTruckMoving),
+/* harmony export */   "faTruckPickup": () => (/* binding */ faTruckPickup),
+/* harmony export */   "faTshirt": () => (/* binding */ faTshirt),
+/* harmony export */   "faTty": () => (/* binding */ faTty),
+/* harmony export */   "faTv": () => (/* binding */ faTv),
+/* harmony export */   "faUmbrella": () => (/* binding */ faUmbrella),
+/* harmony export */   "faUmbrellaBeach": () => (/* binding */ faUmbrellaBeach),
+/* harmony export */   "faUnderline": () => (/* binding */ faUnderline),
+/* harmony export */   "faUndo": () => (/* binding */ faUndo),
+/* harmony export */   "faUndoAlt": () => (/* binding */ faUndoAlt),
+/* harmony export */   "faUniversalAccess": () => (/* binding */ faUniversalAccess),
+/* harmony export */   "faUniversity": () => (/* binding */ faUniversity),
+/* harmony export */   "faUnlink": () => (/* binding */ faUnlink),
+/* harmony export */   "faUnlock": () => (/* binding */ faUnlock),
+/* harmony export */   "faUnlockAlt": () => (/* binding */ faUnlockAlt),
+/* harmony export */   "faUpload": () => (/* binding */ faUpload),
+/* harmony export */   "faUser": () => (/* binding */ faUser),
+/* harmony export */   "faUserAlt": () => (/* binding */ faUserAlt),
+/* harmony export */   "faUserAltSlash": () => (/* binding */ faUserAltSlash),
+/* harmony export */   "faUserAstronaut": () => (/* binding */ faUserAstronaut),
+/* harmony export */   "faUserCheck": () => (/* binding */ faUserCheck),
+/* harmony export */   "faUserCircle": () => (/* binding */ faUserCircle),
+/* harmony export */   "faUserClock": () => (/* binding */ faUserClock),
+/* harmony export */   "faUserCog": () => (/* binding */ faUserCog),
+/* harmony export */   "faUserEdit": () => (/* binding */ faUserEdit),
+/* harmony export */   "faUserFriends": () => (/* binding */ faUserFriends),
+/* harmony export */   "faUserGraduate": () => (/* binding */ faUserGraduate),
+/* harmony export */   "faUserInjured": () => (/* binding */ faUserInjured),
+/* harmony export */   "faUserLock": () => (/* binding */ faUserLock),
+/* harmony export */   "faUserMd": () => (/* binding */ faUserMd),
+/* harmony export */   "faUserMinus": () => (/* binding */ faUserMinus),
+/* harmony export */   "faUserNinja": () => (/* binding */ faUserNinja),
+/* harmony export */   "faUserNurse": () => (/* binding */ faUserNurse),
+/* harmony export */   "faUserPlus": () => (/* binding */ faUserPlus),
+/* harmony export */   "faUserSecret": () => (/* binding */ faUserSecret),
+/* harmony export */   "faUserShield": () => (/* binding */ faUserShield),
+/* harmony export */   "faUserSlash": () => (/* binding */ faUserSlash),
+/* harmony export */   "faUserTag": () => (/* binding */ faUserTag),
+/* harmony export */   "faUserTie": () => (/* binding */ faUserTie),
+/* harmony export */   "faUserTimes": () => (/* binding */ faUserTimes),
+/* harmony export */   "faUsers": () => (/* binding */ faUsers),
+/* harmony export */   "faUsersCog": () => (/* binding */ faUsersCog),
+/* harmony export */   "faUsersSlash": () => (/* binding */ faUsersSlash),
+/* harmony export */   "faUtensilSpoon": () => (/* binding */ faUtensilSpoon),
+/* harmony export */   "faUtensils": () => (/* binding */ faUtensils),
+/* harmony export */   "faVectorSquare": () => (/* binding */ faVectorSquare),
+/* harmony export */   "faVenus": () => (/* binding */ faVenus),
+/* harmony export */   "faVenusDouble": () => (/* binding */ faVenusDouble),
+/* harmony export */   "faVenusMars": () => (/* binding */ faVenusMars),
+/* harmony export */   "faVest": () => (/* binding */ faVest),
+/* harmony export */   "faVestPatches": () => (/* binding */ faVestPatches),
+/* harmony export */   "faVial": () => (/* binding */ faVial),
+/* harmony export */   "faVials": () => (/* binding */ faVials),
+/* harmony export */   "faVideo": () => (/* binding */ faVideo),
+/* harmony export */   "faVideoSlash": () => (/* binding */ faVideoSlash),
+/* harmony export */   "faVihara": () => (/* binding */ faVihara),
+/* harmony export */   "faVirus": () => (/* binding */ faVirus),
+/* harmony export */   "faVirusSlash": () => (/* binding */ faVirusSlash),
+/* harmony export */   "faViruses": () => (/* binding */ faViruses),
+/* harmony export */   "faVoicemail": () => (/* binding */ faVoicemail),
+/* harmony export */   "faVolleyballBall": () => (/* binding */ faVolleyballBall),
+/* harmony export */   "faVolumeDown": () => (/* binding */ faVolumeDown),
+/* harmony export */   "faVolumeMute": () => (/* binding */ faVolumeMute),
+/* harmony export */   "faVolumeOff": () => (/* binding */ faVolumeOff),
+/* harmony export */   "faVolumeUp": () => (/* binding */ faVolumeUp),
+/* harmony export */   "faVoteYea": () => (/* binding */ faVoteYea),
+/* harmony export */   "faVrCardboard": () => (/* binding */ faVrCardboard),
+/* harmony export */   "faWalking": () => (/* binding */ faWalking),
+/* harmony export */   "faWallet": () => (/* binding */ faWallet),
+/* harmony export */   "faWarehouse": () => (/* binding */ faWarehouse),
+/* harmony export */   "faWater": () => (/* binding */ faWater),
+/* harmony export */   "faWaveSquare": () => (/* binding */ faWaveSquare),
+/* harmony export */   "faWeight": () => (/* binding */ faWeight),
+/* harmony export */   "faWeightHanging": () => (/* binding */ faWeightHanging),
+/* harmony export */   "faWheelchair": () => (/* binding */ faWheelchair),
+/* harmony export */   "faWifi": () => (/* binding */ faWifi),
+/* harmony export */   "faWind": () => (/* binding */ faWind),
+/* harmony export */   "faWindowClose": () => (/* binding */ faWindowClose),
+/* harmony export */   "faWindowMaximize": () => (/* binding */ faWindowMaximize),
+/* harmony export */   "faWindowMinimize": () => (/* binding */ faWindowMinimize),
+/* harmony export */   "faWindowRestore": () => (/* binding */ faWindowRestore),
+/* harmony export */   "faWineBottle": () => (/* binding */ faWineBottle),
+/* harmony export */   "faWineGlass": () => (/* binding */ faWineGlass),
+/* harmony export */   "faWineGlassAlt": () => (/* binding */ faWineGlassAlt),
+/* harmony export */   "faWonSign": () => (/* binding */ faWonSign),
+/* harmony export */   "faWrench": () => (/* binding */ faWrench),
+/* harmony export */   "faXRay": () => (/* binding */ faXRay),
+/* harmony export */   "faYenSign": () => (/* binding */ faYenSign),
+/* harmony export */   "faYinYang": () => (/* binding */ faYinYang)
 /* harmony export */ });
-/* unused harmony exports fas, prefix, faAd, faAddressBook, faAddressCard, faAdjust, faAirFreshener, faAlignCenter, faAlignJustify, faAlignLeft, faAlignRight, faAllergies, faAmbulance, faAmericanSignLanguageInterpreting, faAnchor, faAngleDoubleDown, faAngleDoubleRight, faAngleDoubleUp, faAngleDown, faAngleUp, faAngry, faAnkh, faAppleAlt, faArchive, faArchway, faArrowAltCircleDown, faArrowAltCircleLeft, faArrowAltCircleRight, faArrowAltCircleUp, faArrowCircleDown, faArrowCircleLeft, faArrowCircleRight, faArrowCircleUp, faArrowDown, faArrowLeft, faArrowRight, faArrowUp, faArrowsAlt, faArrowsAltH, faArrowsAltV, faAssistiveListeningSystems, faAsterisk, faAt, faAtlas, faAtom, faAudioDescription, faAward, faBaby, faBabyCarriage, faBackspace, faBackward, faBacon, faBacteria, faBacterium, faBahai, faBalanceScale, faBalanceScaleLeft, faBalanceScaleRight, faBan, faBandAid, faBarcode, faBaseballBall, faBasketballBall, faBath, faBatteryEmpty, faBatteryFull, faBatteryHalf, faBatteryQuarter, faBatteryThreeQuarters, faBed, faBeer, faBell, faBellSlash, faBezierCurve, faBible, faBicycle, faBiking, faBinoculars, faBiohazard, faBirthdayCake, faBlender, faBlenderPhone, faBlind, faBlog, faBold, faBolt, faBomb, faBone, faBong, faBook, faBookDead, faBookMedical, faBookOpen, faBookReader, faBookmark, faBorderAll, faBorderNone, faBorderStyle, faBowlingBall, faBox, faBoxOpen, faBoxTissue, faBoxes, faBraille, faBrain, faBreadSlice, faBriefcase, faBriefcaseMedical, faBroadcastTower, faBroom, faBrush, faBug, faBuilding, faBullhorn, faBullseye, faBurn, faBus, faBusAlt, faBusinessTime, faCalculator, faCalendar, faCalendarAlt, faCalendarDay, faCalendarMinus, faCalendarPlus, faCalendarTimes, faCalendarWeek, faCamera, faCameraRetro, faCampground, faCandyCane, faCannabis, faCapsules, faCar, faCarAlt, faCarBattery, faCarCrash, faCarSide, faCaravan, faCaretDown, faCaretLeft, faCaretRight, faCaretSquareDown, faCaretSquareLeft, faCaretSquareRight, faCaretSquareUp, faCaretUp, faCarrot, faCartArrowDown, faCartPlus, faCashRegister, faCat, faCertificate, faChair, faChalkboard, faChalkboardTeacher, faChargingStation, faChartArea, faChartBar, faChartLine, faChartPie, faCheckCircle, faCheckDouble, faCheckSquare, faCheese, faChess, faChessBishop, faChessBoard, faChessKing, faChessKnight, faChessPawn, faChessQueen, faChessRook, faChevronCircleDown, faChevronCircleLeft, faChevronCircleRight, faChevronCircleUp, faChevronDown, faChevronLeft, faChevronRight, faChevronUp, faChild, faChurch, faCircle, faCircleNotch, faCity, faClinicMedical, faClipboard, faClipboardCheck, faClipboardList, faClock, faClone, faClosedCaptioning, faCloud, faCloudDownloadAlt, faCloudMeatball, faCloudMoon, faCloudMoonRain, faCloudRain, faCloudShowersHeavy, faCloudSun, faCloudSunRain, faCloudUploadAlt, faCocktail, faCode, faCodeBranch, faCoffee, faCog, faCogs, faCoins, faColumns, faComment, faCommentAlt, faCommentDollar, faCommentDots, faCommentMedical, faCommentSlash, faComments, faCommentsDollar, faCompactDisc, faCompass, faCompress, faCompressAlt, faCompressArrowsAlt, faConciergeBell, faCookie, faCookieBite, faCopy, faCopyright, faCouch, faCreditCard, faCrop, faCropAlt, faCross, faCrosshairs, faCrow, faCrown, faCrutch, faCube, faCubes, faCut, faDatabase, faDeaf, faDemocrat, faDesktop, faDharmachakra, faDiagnoses, faDice, faDiceD20, faDiceD6, faDiceFive, faDiceFour, faDiceOne, faDiceSix, faDiceThree, faDiceTwo, faDigitalTachograph, faDirections, faDisease, faDivide, faDizzy, faDna, faDog, faDollarSign, faDolly, faDollyFlatbed, faDonate, faDoorClosed, faDoorOpen, faDotCircle, faDove, faDownload, faDraftingCompass, faDragon, faDrawPolygon, faDrum, faDrumSteelpan, faDrumstickBite, faDumbbell, faDumpster, faDumpsterFire, faDungeon, faEdit, faEgg, faEject, faEllipsisH, faEllipsisV, faEnvelope, faEnvelopeOpen, faEnvelopeOpenText, faEnvelopeSquare, faEquals, faEraser, faEthernet, faEuroSign, faExchangeAlt, faExclamation, faExclamationCircle, faExclamationTriangle, faExpand, faExpandAlt, faExpandArrowsAlt, faExternalLinkAlt, faExternalLinkSquareAlt, faEye, faEyeDropper, faEyeSlash, faFan, faFastBackward, faFastForward, faFaucet, faFax, faFeather, faFeatherAlt, faFemale, faFighterJet, faFile, faFileAlt, faFileArchive, faFileAudio, faFileCode, faFileContract, faFileCsv, faFileDownload, faFileExcel, faFileExport, faFileImage, faFileImport, faFileInvoice, faFileInvoiceDollar, faFileMedical, faFileMedicalAlt, faFilePdf, faFilePowerpoint, faFilePrescription, faFileSignature, faFileUpload, faFileVideo, faFileWord, faFill, faFillDrip, faFilm, faFingerprint, faFire, faFireAlt, faFireExtinguisher, faFirstAid, faFish, faFistRaised, faFlag, faFlagCheckered, faFlagUsa, faFlask, faFlushed, faFolder, faFolderMinus, faFolderOpen, faFolderPlus, faFont, faFontAwesomeLogoFull, faFootballBall, faForward, faFrog, faFrown, faFrownOpen, faFunnelDollar, faFutbol, faGamepad, faGasPump, faGavel, faGem, faGenderless, faGhost, faGift, faGifts, faGlassCheers, faGlassMartini, faGlassMartiniAlt, faGlassWhiskey, faGlasses, faGlobe, faGlobeAfrica, faGlobeAmericas, faGlobeAsia, faGlobeEurope, faGolfBall, faGopuram, faGraduationCap, faGreaterThan, faGreaterThanEqual, faGrimace, faGrin, faGrinAlt, faGrinBeam, faGrinBeamSweat, faGrinHearts, faGrinSquint, faGrinSquintTears, faGrinStars, faGrinTears, faGrinTongue, faGrinTongueSquint, faGrinTongueWink, faGrinWink, faGripHorizontal, faGripLines, faGripLinesVertical, faGripVertical, faGuitar, faHSquare, faHamburger, faHammer, faHamsa, faHandHolding, faHandHoldingHeart, faHandHoldingMedical, faHandHoldingUsd, faHandHoldingWater, faHandLizard, faHandMiddleFinger, faHandPaper, faHandPeace, faHandPointDown, faHandPointLeft, faHandPointRight, faHandPointUp, faHandPointer, faHandRock, faHandScissors, faHandSparkles, faHandSpock, faHands, faHandsHelping, faHandsWash, faHandshake, faHandshakeAltSlash, faHandshakeSlash, faHanukiah, faHardHat, faHashtag, faHatCowboy, faHatCowboySide, faHatWizard, faHdd, faHeadSideCough, faHeadSideCoughSlash, faHeadSideMask, faHeadSideVirus, faHeading, faHeadphones, faHeadphonesAlt, faHeadset, faHeartBroken, faHeartbeat, faHelicopter, faHighlighter, faHiking, faHippo, faHistory, faHockeyPuck, faHollyBerry, faHome, faHorse, faHorseHead, faHospital, faHospitalAlt, faHospitalSymbol, faHospitalUser, faHotTub, faHotdog, faHotel, faHourglass, faHourglassEnd, faHourglassHalf, faHourglassStart, faHouseDamage, faHouseUser, faHryvnia, faICursor, faIceCream, faIcicles, faIcons, faIdBadge, faIdCard, faIdCardAlt, faIgloo, faImage, faImages, faInbox, faIndent, faIndustry, faInfinity, faInfo, faInfoCircle, faItalic, faJedi, faJoint, faJournalWhills, faKaaba, faKey, faKeyboard, faKhanda, faKiss, faKissBeam, faKissWinkHeart, faKiwiBird, faLandmark, faLanguage, faLaptop, faLaptopCode, faLaptopHouse, faLaptopMedical, faLaugh, faLaughBeam, faLaughSquint, faLaughWink, faLayerGroup, faLeaf, faLemon, faLessThan, faLessThanEqual, faLevelDownAlt, faLevelUpAlt, faLifeRing, faLightbulb, faLink, faLiraSign, faList, faListAlt, faListOl, faListUl, faLocationArrow, faLock, faLockOpen, faLongArrowAltDown, faLongArrowAltLeft, faLongArrowAltRight, faLongArrowAltUp, faLowVision, faLuggageCart, faLungs, faLungsVirus, faMagic, faMagnet, faMailBulk, faMale, faMap, faMapMarked, faMapMarkedAlt, faMapMarker, faMapMarkerAlt, faMapPin, faMapSigns, faMarker, faMars, faMarsDouble, faMarsStroke, faMarsStrokeH, faMarsStrokeV, faMask, faMedal, faMedkit, faMeh, faMehBlank, faMehRollingEyes, faMemory, faMenorah, faMercury, faMeteor, faMicrochip, faMicrophone, faMicrophoneAlt, faMicrophoneAltSlash, faMicrophoneSlash, faMicroscope, faMinus, faMinusCircle, faMinusSquare, faMitten, faMobile, faMobileAlt, faMoneyBill, faMoneyBillAlt, faMoneyBillWave, faMoneyBillWaveAlt, faMoneyCheck, faMoneyCheckAlt, faMonument, faMoon, faMortarPestle, faMosque, faMotorcycle, faMountain, faMouse, faMousePointer, faMugHot, faMusic, faNetworkWired, faNeuter, faNewspaper, faNotEqual, faNotesMedical, faObjectGroup, faObjectUngroup, faOilCan, faOm, faOtter, faOutdent, faPager, faPaintBrush, faPaintRoller, faPalette, faPallet, faPaperPlane, faPaperclip, faParachuteBox, faParagraph, faParking, faPassport, faPastafarianism, faPaste, faPause, faPauseCircle, faPaw, faPeace, faPen, faPenAlt, faPenFancy, faPenNib, faPenSquare, faPencilAlt, faPencilRuler, faPeopleArrows, faPeopleCarry, faPepperHot, faPercent, faPercentage, faPersonBooth, faPhone, faPhoneAlt, faPhoneSlash, faPhoneSquare, faPhoneSquareAlt, faPhoneVolume, faPhotoVideo, faPiggyBank, faPills, faPizzaSlice, faPlaceOfWorship, faPlane, faPlaneArrival, faPlaneDeparture, faPlaneSlash, faPlay, faPlayCircle, faPlug, faPlusCircle, faPlusSquare, faPodcast, faPoll, faPollH, faPoo, faPooStorm, faPoop, faPortrait, faPoundSign, faPowerOff, faPray, faPrayingHands, faPrescription, faPrescriptionBottle, faPrescriptionBottleAlt, faPrint, faProcedures, faProjectDiagram, faPumpMedical, faPumpSoap, faPuzzlePiece, faQrcode, faQuestion, faQuestionCircle, faQuidditch, faQuoteLeft, faQuoteRight, faQuran, faRadiation, faRadiationAlt, faRainbow, faRandom, faReceipt, faRecordVinyl, faRecycle, faRedo, faRedoAlt, faRegistered, faRemoveFormat, faReply, faReplyAll, faRepublican, faRestroom, faRetweet, faRibbon, faRing, faRoad, faRobot, faRocket, faRoute, faRss, faRssSquare, faRubleSign, faRuler, faRulerCombined, faRulerHorizontal, faRulerVertical, faRunning, faRupeeSign, faSadCry, faSadTear, faSatellite, faSatelliteDish, faSave, faSchool, faScrewdriver, faScroll, faSdCard, faSearchDollar, faSearchLocation, faSearchMinus, faSearchPlus, faSeedling, faServer, faShapes, faShare, faShareAlt, faShareAltSquare, faShareSquare, faShekelSign, faShieldAlt, faShieldVirus, faShip, faShippingFast, faShoePrints, faShoppingBag, faShoppingBasket, faShoppingCart, faShower, faShuttleVan, faSign, faSignInAlt, faSignLanguage, faSignOutAlt, faSignal, faSignature, faSimCard, faSink, faSitemap, faSkating, faSkiing, faSkiingNordic, faSkull, faSkullCrossbones, faSlash, faSleigh, faSlidersH, faSmile, faSmileBeam, faSmileWink, faSmog, faSmoking, faSmokingBan, faSms, faSnowboarding, faSnowflake, faSnowman, faSnowplow, faSoap, faSocks, faSolarPanel, faSort, faSortAlphaDown, faSortAlphaDownAlt, faSortAlphaUp, faSortAlphaUpAlt, faSortAmountDown, faSortAmountDownAlt, faSortAmountUp, faSortAmountUpAlt, faSortDown, faSortNumericDown, faSortNumericDownAlt, faSortNumericUp, faSortNumericUpAlt, faSortUp, faSpa, faSpaceShuttle, faSpellCheck, faSpider, faSpinner, faSplotch, faSprayCan, faSquare, faSquareFull, faSquareRootAlt, faStamp, faStar, faStarAndCrescent, faStarHalf, faStarHalfAlt, faStarOfDavid, faStarOfLife, faStepBackward, faStepForward, faStethoscope, faStickyNote, faStop, faStopCircle, faStopwatch, faStopwatch20, faStore, faStoreAlt, faStoreAltSlash, faStoreSlash, faStream, faStreetView, faStrikethrough, faStroopwafel, faSubscript, faSubway, faSuitcase, faSuitcaseRolling, faSun, faSuperscript, faSurprise, faSwatchbook, faSwimmer, faSwimmingPool, faSynagogue, faSync, faSyncAlt, faSyringe, faTable, faTableTennis, faTablet, faTabletAlt, faTablets, faTachometerAlt, faTag, faTags, faTape, faTasks, faTaxi, faTeeth, faTeethOpen, faTemperatureHigh, faTemperatureLow, faTenge, faTerminal, faTextHeight, faTextWidth, faTh, faThLarge, faThList, faTheaterMasks, faThermometer, faThermometerEmpty, faThermometerFull, faThermometerHalf, faThermometerQuarter, faThermometerThreeQuarters, faThumbsDown, faThumbsUp, faThumbtack, faTicketAlt, faTimesCircle, faTint, faTintSlash, faTired, faToggleOff, faToggleOn, faToilet, faToiletPaper, faToiletPaperSlash, faToolbox, faTools, faTooth, faTorah, faToriiGate, faTractor, faTrademark, faTrafficLight, faTrailer, faTrain, faTram, faTransgender, faTransgenderAlt, faTrash, faTrashAlt, faTrashRestore, faTrashRestoreAlt, faTree, faTrophy, faTruck, faTruckLoading, faTruckMonster, faTruckMoving, faTruckPickup, faTshirt, faTty, faTv, faUmbrella, faUmbrellaBeach, faUnderline, faUndo, faUndoAlt, faUniversalAccess, faUniversity, faUnlink, faUnlock, faUnlockAlt, faUpload, faUser, faUserAlt, faUserAltSlash, faUserAstronaut, faUserCheck, faUserCircle, faUserClock, faUserCog, faUserEdit, faUserFriends, faUserGraduate, faUserInjured, faUserLock, faUserMd, faUserMinus, faUserNinja, faUserNurse, faUserPlus, faUserSecret, faUserShield, faUserSlash, faUserTag, faUserTie, faUserTimes, faUsers, faUsersCog, faUsersSlash, faUtensilSpoon, faUtensils, faVectorSquare, faVenus, faVenusDouble, faVenusMars, faVest, faVestPatches, faVial, faVials, faVideo, faVideoSlash, faVihara, faVirus, faVirusSlash, faViruses, faVoicemail, faVolleyballBall, faVolumeDown, faVolumeMute, faVolumeOff, faVolumeUp, faVoteYea, faVrCardboard, faWalking, faWallet, faWarehouse, faWater, faWaveSquare, faWeight, faWeightHanging, faWheelchair, faWifi, faWind, faWindowClose, faWindowMaximize, faWindowMinimize, faWindowRestore, faWineBottle, faWineGlass, faWineGlassAlt, faWonSign, faWrench, faXRay, faYenSign, faYinYang */
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -6045,16 +7041,21 @@ var _iconsCache = {
 
 /***/ }),
 
-/***/ 7814:
+/***/ "./node_modules/@fortawesome/react-fontawesome/index.es.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@fortawesome/react-fontawesome/index.es.js ***!
+  \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "G": () => (/* binding */ FontAwesomeIcon)
+/* harmony export */   "FontAwesomeIcon": () => (/* binding */ FontAwesomeIcon)
 /* harmony export */ });
-/* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8947);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5697);
+/* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fortawesome/fontawesome-svg-core */ "./node_modules/@fortawesome/fontawesome-svg-core/index.es.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3545);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 
 
@@ -6306,7 +7307,7 @@ function convert(createElement, element) {
 var PRODUCTION = false;
 
 try {
-  PRODUCTION = "production" === 'production';
+  PRODUCTION = "development" === 'production';
 } catch (e) {}
 
 function log () {
@@ -6450,169 +7451,904 @@ var convertCurry = convert.bind(null, (react__WEBPACK_IMPORTED_MODULE_2___defaul
 
 /***/ }),
 
-/***/ 6810:
+/***/ "./src/components/Badge.js":
+/*!*********************************!*\
+  !*** ./src/components/Badge.js ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3545);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1650);
-const Div=styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({displayName:"Container__Div",componentId:"sc-jp4ets-0"})(["padding:",";"],props=>props.padding);const Container=({children,className,padding})=>{return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Div,{className:`container ${className||""}`,padding:padding||"40px"},children);};/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Container);
-
-/***/ }),
-
-/***/ 9410:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "Z": () => (/* binding */ components_Layout)
-});
-
-// EXTERNAL MODULE: external "/Users/ashley/Developer/meal-planning-app/node_modules/react/index.js"
-var index_js_ = __webpack_require__(3545);
-// EXTERNAL MODULE: ./.cache/gatsby-browser-entry.js + 4 modules
-var gatsby_browser_entry = __webpack_require__(2031);
-// EXTERNAL MODULE: ./node_modules/@fortawesome/react-fontawesome/index.es.js
-var index_es = __webpack_require__(7814);
-;// CONCATENATED MODULE: ./src/components/Footer.js
-const Footer=()=>{return/*#__PURE__*/index_js_.createElement("footer",null,/*#__PURE__*/index_js_.createElement(index_es/* FontAwesomeIcon */.G,{icon:"heart"}),/*#__PURE__*/index_js_.createElement("p",null,"Created by ",/*#__PURE__*/index_js_.createElement("a",{href:"https://ashleyterstriep.com",target:"_blank",rel:"noreferrer"},"Ashley Terstriep")," using ",/*#__PURE__*/index_js_.createElement("a",{href:"https://spoonacular.com/food-api",target:"_blank",rel:"noreferrer"},"Spoonacular API")));};/* harmony default export */ const components_Footer = (Footer);
-// EXTERNAL MODULE: ./node_modules/@fortawesome/fontawesome-svg-core/index.es.js
-var fontawesome_svg_core_index_es = __webpack_require__(8947);
-// EXTERNAL MODULE: ./node_modules/@fortawesome/free-solid-svg-icons/index.es.js
-var free_solid_svg_icons_index_es = __webpack_require__(1436);
-;// CONCATENATED MODULE: ./src/components/Layout.js
-fontawesome_svg_core_index_es.library.add(free_solid_svg_icons_index_es/* faHeart */.m6i,free_solid_svg_icons_index_es/* faSearch */.wn1,free_solid_svg_icons_index_es/* faAngleLeft */.EyR,free_solid_svg_icons_index_es/* faAngleRight */.yOZ,free_solid_svg_icons_index_es/* faBars */.xiG,free_solid_svg_icons_index_es/* faCalendarCheck */.Ry6,free_solid_svg_icons_index_es/* faTimes */.NBC,free_solid_svg_icons_index_es/* faFilter */.G_j,free_solid_svg_icons_index_es/* faAngleDoubleLeft */.UXu);const Layout=({children,className,hideSidebar})=>{const{0:hasSidebar,1:setHasSidebar}=(0,index_js_.useState)(true);// If sidebar is visible, add class to wrapper div
-const layoutClass=hasSidebar?`page-wrapper has-sidebar ${className}`:`page-wrapper ${className}`;const MenuToggle=()=>{const{0:menuActive,1:setMenuActive}=(0,index_js_.useState)(false);const triggerMenu=e=>{document.getElementById("sidebar-inner").classList.toggle("active");setMenuActive(!menuActive);};const icon=menuActive?"times":"bars";return/*#__PURE__*/index_js_.createElement("span",{className:"menu-toggle"},/*#__PURE__*/index_js_.createElement(index_es/* FontAwesomeIcon */.G,{icon:icon,onClick:e=>triggerMenu(e)}));};// Sidebar markup
-const Sidebar=()=>{if(hasSidebar){return/*#__PURE__*/index_js_.createElement("div",{className:"sidebar"},/*#__PURE__*/index_js_.createElement(MenuToggle,null),/*#__PURE__*/index_js_.createElement("div",{className:"sidebar-inner",id:"sidebar-inner"},/*#__PURE__*/index_js_.createElement("ul",{className:"sidebar-menu clear-list"},/*#__PURE__*/index_js_.createElement("li",{className:"sidebar-hoverable"},/*#__PURE__*/index_js_.createElement(gatsby_browser_entry.Link,{to:"/"},/*#__PURE__*/index_js_.createElement(index_es/* FontAwesomeIcon */.G,{icon:"search",className:"mobile-menu-icon"})," ",/*#__PURE__*/index_js_.createElement("span",{className:"menu-item-text"},"All Recipes"))),/*#__PURE__*/index_js_.createElement("li",{className:"sidebar-hoverable"},/*#__PURE__*/index_js_.createElement(gatsby_browser_entry.Link,{to:"/saved"},/*#__PURE__*/index_js_.createElement(index_es/* FontAwesomeIcon */.G,{icon:"heart",className:"mobile-menu-icon"})," ",/*#__PURE__*/index_js_.createElement("span",{className:"menu-item-text"},"Saved Recipes"))),/*#__PURE__*/index_js_.createElement("li",{className:"sidebar-hoverable"},/*#__PURE__*/index_js_.createElement(gatsby_browser_entry.Link,{to:"/meal-plan"},/*#__PURE__*/index_js_.createElement(index_es/* FontAwesomeIcon */.G,{icon:"calendar-check",className:"mobile-menu-icon"})," ",/*#__PURE__*/index_js_.createElement("span",{className:"menu-item-text"},"Meal Plan"))))));}else{return null;}};(0,index_js_.useEffect)(()=>{// Hide sidebar if prop is set
-if(hideSidebar){setHasSidebar(false);}},[hideSidebar]);return/*#__PURE__*/index_js_.createElement("div",{className:layoutClass},/*#__PURE__*/index_js_.createElement(Sidebar,null),/*#__PURE__*/index_js_.createElement("main",null,children),/*#__PURE__*/index_js_.createElement(components_Footer,null));};/* harmony default export */ const components_Layout = (Layout);
-
-/***/ }),
-
-/***/ 2010:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "Z": () => (/* binding */ MealPlanModal)
-});
-
-// EXTERNAL MODULE: external "/Users/ashley/Developer/meal-planning-app/node_modules/react/index.js"
-var index_js_ = __webpack_require__(3545);
-var index_js_default = /*#__PURE__*/__webpack_require__.n(index_js_);
-// EXTERNAL MODULE: ./node_modules/styled-components/dist/styled-components.esm.js + 4 modules
-var styled_components_esm = __webpack_require__(1650);
-// EXTERNAL MODULE: ./src/components/Container.js
-var Container = __webpack_require__(6810);
-// EXTERNAL MODULE: ./node_modules/@fortawesome/react-fontawesome/index.es.js
-var index_es = __webpack_require__(7814);
-;// CONCATENATED MODULE: ./src/components/Modal.js
-const Title=styled_components_esm["default"].h3.withConfig({displayName:"Modal__Title",componentId:"sc-ijtc2-0"})(["margin-top:0;"]);function Modal({id,className,children,title,setAdded}){const handleClick=()=>{document.getElementById("meal-plan-modal").style.display="none";if(setAdded){setAdded(false);}};return/*#__PURE__*/index_js_default().createElement("div",{id:id,className:`modal-wrapper ${className}`},/*#__PURE__*/index_js_default().createElement("div",{className:"modal-overlay",onClick:()=>handleClick()}),/*#__PURE__*/index_js_default().createElement(Container/* default */.Z,{className:"modal-inner",padding:"30px"},/*#__PURE__*/index_js_default().createElement(Title,{className:"modal-title"},title,/*#__PURE__*/index_js_default().createElement("span",{id:"modal-close",onClick:()=>handleClick()},/*#__PURE__*/index_js_default().createElement(index_es/* FontAwesomeIcon */.G,{icon:"times"}))),children));}
-// EXTERNAL MODULE: ./.cache/gatsby-browser-entry.js + 4 modules
-var gatsby_browser_entry = __webpack_require__(2031);
-;// CONCATENATED MODULE: ./src/components/recipes/MealPlanModal.js
-function MealPlanModal({recipe,addRecipe,active}){const{0:day,1:setDay}=(0,index_js_.useState)("Monday");const{0:added,1:setAdded}=(0,index_js_.useState)(false);const days=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];const Days=()=>{return/*#__PURE__*/index_js_default().createElement("select",{name:"daySelect",value:day,onChange:event=>setDay(event.target.value)},days.map((day,index)=>{return/*#__PURE__*/index_js_default().createElement("option",{key:index,value:day},day);}));};const ModalContent=()=>{if(added===true){return/*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment,null,/*#__PURE__*/index_js_default().createElement("p",null,/*#__PURE__*/index_js_default().createElement("strong",null,recipe.title)," has been added to your meal plan."),/*#__PURE__*/index_js_default().createElement(gatsby_browser_entry.Link,{to:"/meal-plan",className:"button"},"View Meal Plan"));}return/*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment,null,/*#__PURE__*/index_js_default().createElement("p",null,"Select a day of the week to add ",/*#__PURE__*/index_js_default().createElement("strong",null,recipe.title)," to your meal plan:"),/*#__PURE__*/index_js_default().createElement("form",null,/*#__PURE__*/index_js_default().createElement(Days,null),/*#__PURE__*/index_js_default().createElement("button",{onClick:event=>handleClick(event)},"Add to Meal Plan")));};const handleClick=event=>{event.preventDefault();addRecipe(recipe,day);setDay("Monday");setAdded(true);};return/*#__PURE__*/index_js_default().createElement(Modal,{className:"meal-plan-modal",title:"Add to meal plan",id:"meal-plan-modal",setAdded:setAdded},/*#__PURE__*/index_js_default().createElement(ModalContent,null));}
-
-/***/ }),
-
-/***/ 4816:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "Z": () => (/* binding */ RecipeActions)
-});
-
-// EXTERNAL MODULE: external "/Users/ashley/Developer/meal-planning-app/node_modules/react/index.js"
-var index_js_ = __webpack_require__(3545);
-var index_js_default = /*#__PURE__*/__webpack_require__.n(index_js_);
-// EXTERNAL MODULE: ./src/hooks/useSavedRecipes.js
-var useSavedRecipes = __webpack_require__(5972);
-;// CONCATENATED MODULE: ./src/hooks/useCheckSavedRecipe.js
-const useCheckSavedRecipe=recipe=>{const{0:isSaved,1:setIsSaved}=(0,index_js_.useState)(false);const[savedRecipes,setSavedRecipes]=(0,useSavedRecipes/* default */.Z)([]);(0,index_js_.useEffect)(()=>{if(savedRecipes.length>0){const index=savedRecipes.findIndex(item=>item.id===recipe.id);if(index>=0){setIsSaved(true);}}},[savedRecipes,recipe.id]);return isSaved;};/* harmony default export */ const hooks_useCheckSavedRecipe = (useCheckSavedRecipe);
-// EXTERNAL MODULE: ./src/hooks/useMealPlan.js
-var useMealPlan = __webpack_require__(6117);
-;// CONCATENATED MODULE: ./src/hooks/useCheckMealPlan.js
-const useCheckMealPlan=recipe=>{const{0:isAdded,1:setIsAdded}=(0,index_js_.useState)(false);const[mealPlan,setMealPlan]=(0,useMealPlan/* default */.Z)([]);(0,index_js_.useEffect)(()=>{if(Object.keys(mealPlan).length>0){for(const prop in mealPlan){const index=mealPlan[prop].findIndex(item=>item.id===recipe.id);if(index>=0){setIsAdded(true);}}}},[mealPlan,recipe.id]);return isAdded;};/* harmony default export */ const hooks_useCheckMealPlan = (useCheckMealPlan);
-// EXTERNAL MODULE: ./src/components/recipes/MealPlanModal.js + 1 modules
-var MealPlanModal = __webpack_require__(2010);
-// EXTERNAL MODULE: ./node_modules/@fortawesome/react-fontawesome/index.es.js
-var index_es = __webpack_require__(7814);
-// EXTERNAL MODULE: ./node_modules/@fortawesome/free-solid-svg-icons/index.es.js
-var free_solid_svg_icons_index_es = __webpack_require__(1436);
-;// CONCATENATED MODULE: ./src/components/recipes/RecipeActions.js
-function RecipeActions({recipe,actions=['add','save'],saveRecipe,addRecipe,labels}){const{0:saved,1:setSaved}=(0,index_js_.useState)(false);const{0:added,1:setAdded}=(0,index_js_.useState)(false);let isSaved=hooks_useCheckSavedRecipe(recipe)?true:false;let isAdded=hooks_useCheckMealPlan(recipe)?true:false;const handleAddRecipe=(recipe,day)=>{addRecipe(recipe,day);setAdded(true);};const ActionSaveRecipe=({active})=>{const handleClick=()=>{saveRecipe(recipe);setSaved(!saved);};let icon=active&&labels?/*#__PURE__*/index_js_default().createElement(index_es/* FontAwesomeIcon */.G,{icon:free_solid_svg_icons_index_es/* faCheck */.LEp}):/*#__PURE__*/index_js_default().createElement(index_es/* FontAwesomeIcon */.G,{icon:free_solid_svg_icons_index_es/* faHeart */.m6i});let text=active?"Recipe Saved":"Save Recipe";let buttonClass=active?"active":"";const Label=()=>{if(labels){return/*#__PURE__*/index_js_default().createElement("span",{className:"recipe-action-text"},text);}return null;};if(actions.includes('save')){return/*#__PURE__*/index_js_default().createElement("button",{id:"save-recipe",className:`recipe-action ${buttonClass}`,onClick:handleClick},/*#__PURE__*/index_js_default().createElement("span",{className:"action-icon"},icon),/*#__PURE__*/index_js_default().createElement(Label,null));}return null;};const ActionAddRecipe=({active})=>{const handleClick=()=>{document.getElementById("meal-plan-modal").style.display="flex";};let icon=active?/*#__PURE__*/index_js_default().createElement(index_es/* FontAwesomeIcon */.G,{icon:free_solid_svg_icons_index_es/* faCheck */.LEp}):/*#__PURE__*/index_js_default().createElement(index_es/* FontAwesomeIcon */.G,{icon:free_solid_svg_icons_index_es/* faPlus */.r8p});let text=active?"Added to Meal Plan":"Add to Meal Plan";let buttonClass=active?"active":"";const Label=()=>{if(labels){return/*#__PURE__*/index_js_default().createElement("span",{className:"recipe-action-text"},text);}return null;};if(actions.includes('add')){return/*#__PURE__*/index_js_default().createElement("button",{id:"add-recipe",className:`recipe-action ${buttonClass}`,onClick:handleClick},/*#__PURE__*/index_js_default().createElement("span",{className:"action-icon"},icon),/*#__PURE__*/index_js_default().createElement(Label,null));}return null;};(0,index_js_.useEffect)(()=>{setSaved(isSaved);setAdded(isAdded);},[isSaved,isAdded]);if(actions){return/*#__PURE__*/index_js_default().createElement("div",{className:"recipe-actions-container"},/*#__PURE__*/index_js_default().createElement(MealPlanModal/* default */.Z,{recipe:recipe,addRecipe:handleAddRecipe}),/*#__PURE__*/index_js_default().createElement(ActionSaveRecipe,{active:saved}),/*#__PURE__*/index_js_default().createElement(ActionAddRecipe,{active:added}));}return null;}
-
-/***/ }),
-
-/***/ 5764:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "Z": () => (/* binding */ RecipeContainer)
-});
-
-// EXTERNAL MODULE: external "/Users/ashley/Developer/meal-planning-app/node_modules/react/index.js"
-var index_js_ = __webpack_require__(3545);
-var index_js_default = /*#__PURE__*/__webpack_require__.n(index_js_);
-// EXTERNAL MODULE: ./.cache/gatsby-browser-entry.js + 4 modules
-var gatsby_browser_entry = __webpack_require__(2031);
-// EXTERNAL MODULE: ./src/components/recipes/RecipeActions.js + 2 modules
-var RecipeActions = __webpack_require__(4816);
-;// CONCATENATED MODULE: ./src/components/Badge.js
-const Badge=({children,className})=>{return/*#__PURE__*/index_js_.createElement("span",{className:`badge ${className}`},children);};/* harmony default export */ const components_Badge = (Badge);
-;// CONCATENATED MODULE: ./src/components/recipes/RecipeContainer.js
-function RecipeContainer({recipe,day,draggable=false,onDragStart="",children,actions=['add','save'],addRecipe,saveRecipe}){const RecipeContainerDiv=({children})=>{if(draggable){return/*#__PURE__*/index_js_default().createElement("div",{draggable:draggable,onDragStart:e=>onDragStart(e,recipe,day),className:"recipe-container",recipe_id:recipe.id,id:recipe.id},children);}return/*#__PURE__*/index_js_default().createElement("div",{className:"recipe-container",recipe_id:recipe.id,id:recipe.id},children);};return/*#__PURE__*/index_js_default().createElement(RecipeContainerDiv,null,/*#__PURE__*/index_js_default().createElement(RecipeActions/* default */.Z,{recipe:recipe,actions:actions,saveRecipe:saveRecipe,addRecipe:()=>addRecipe(recipe)}),/*#__PURE__*/index_js_default().createElement(gatsby_browser_entry.Link,{to:`/recipe?${recipe.id}`,state:{activeRecipe:recipe.id}},/*#__PURE__*/index_js_default().createElement("div",{className:"image-wrapper"},/*#__PURE__*/index_js_default().createElement("img",{src:recipe.image,alt:recipe.title}))),/*#__PURE__*/index_js_default().createElement("div",{className:"recipe-details",padding:"0"},/*#__PURE__*/index_js_default().createElement("div",{className:"dish-types"},recipe.dishTypes.map((type,index)=>{return/*#__PURE__*/index_js_default().createElement(components_Badge,{key:index},type);})),/*#__PURE__*/index_js_default().createElement(gatsby_browser_entry.Link,{to:`/recipe?${recipe.id}`,state:{activeRecipe:recipe.id}},/*#__PURE__*/index_js_default().createElement("h3",null,recipe.title)),children));}
-
-/***/ }),
-
-/***/ 6117:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (/* binding */ useMealPlan)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3545);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-const isBrowser=typeof window!=="undefined";function useMealPlan(recipe){const{0:mealPlan,1:setMealPlan}=(0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(()=>{const initialPlan=isBrowser?JSON.parse(localStorage.getItem("mealPlan")):[];return initialPlan||[];});const addRecipe=(recipe,day,mealPlan)=>{if(mealPlan[day]){setMealPlan({...mealPlan,[day]:[...mealPlan[day],recipe]});}else{setMealPlan({...mealPlan,[day]:[recipe]});}};const updateMealPlan=(recipe,day,action="add")=>{if(action==="add"){addRecipe(recipe,day,mealPlan);}else if(action==="delete"){const updatedMealPlan=mealPlan[day].filter(item=>item.id!==recipe.id);setMealPlan({...mealPlan,[day]:[...updatedMealPlan]});}else if(action==="update"){let updatedMealPlan=mealPlan[day.previous].filter(item=>item.id!==recipe.id);updatedMealPlan={...mealPlan,[day.previous]:[...updatedMealPlan]};addRecipe(recipe,day.new,updatedMealPlan);}};(0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(()=>{localStorage.setItem("mealPlan",JSON.stringify(mealPlan));},[mealPlan]);return[mealPlan,updateMealPlan];}
-
-/***/ }),
-
-/***/ 5972:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (/* binding */ useSavedRecipes)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3545);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-const isBrowser=typeof window!=="undefined";function useSavedRecipes(){const{0:initialState,1:setInitialState}=(0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(()=>{return isBrowser?JSON.parse(localStorage.getItem("savedRecipes")):[];});const{0:savedRecipes,1:setSavedRecipes}=(0,react__WEBPACK_IMPORTED_MODULE_0__.useReducer)(reducer,initialState);function reducer(savedRecipes,recipe){const index=savedRecipes.findIndex(item=>item.id===recipe.id);if(index<0){return[...savedRecipes,recipe];}else if(index>=0){return savedRecipes.filter(item=>recipe.id!==item.id);}return savedRecipes;}(0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(()=>{localStorage.setItem("savedRecipes",JSON.stringify(savedRecipes));},[savedRecipes]);return[savedRecipes,setSavedRecipes];}
-
-/***/ }),
-
-/***/ 2698:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3545);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(1650);
-/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4593);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9410);
-/* harmony import */ var _components_Container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6810);
-/* harmony import */ var _components_recipes_RecipeContainer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5764);
-/* harmony import */ var _hooks_useMealPlan__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6117);
-const PageTitle=styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].h1.withConfig({displayName:"meal-plan__PageTitle",componentId:"sc-i2wdgo-0"})(["margin-top:0;"]);const MealPlanPage=()=>{const[mealPlan,setMealPlan]=(0,_hooks_useMealPlan__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z)([]);const allowDrop=e=>{e.preventDefault();};const drag=(e,recipe,day)=>{e.dataTransfer.setData("recipe",JSON.stringify(recipe));e.dataTransfer.setData("day",day);};const drop=e=>{e.preventDefault();const recipe=JSON.parse(e.dataTransfer.getData("recipe"));const day=e.dataTransfer.getData("day");const newDay=e.currentTarget.getAttribute("day");e.currentTarget.append(document.getElementById(recipe.id));setMealPlan(recipe,{previous:day,new:newDay},"update");};const MealPlanGrid=()=>{const days=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];return days.map(day=>{if(mealPlan[day]){return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div",{key:day,day:day,className:"day-container",onDrop:e=>drop(e),onDragOver:e=>allowDrop(e)},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2",null,day),mealPlan[day].map(recipe=>{return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_recipes_RecipeContainer__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z,{draggable:true,day:day,onDragStart:drag,actions:false,recipe:recipe,key:recipe.id},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span",{role:"button",id:"delete-recipe",onClick:e=>setMealPlan(recipe,day,"delete")},"Delete"));}));}else{return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div",{key:day,day:day,className:"day-container",onDrop:e=>drop(e),onDragOver:e=>allowDrop(e)},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2",null,day));}});};return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z,null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_helmet__WEBPACK_IMPORTED_MODULE_1__.Helmet,null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("body",{className:"meal-plan"}),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("title",null,"Meal Plan"),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta",{name:"icon",href:"../images/favicon.png"})),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Container__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z,{padding:"20px 40px 40px"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(PageTitle,null,"Meal Plan"),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div",{className:"meal-plan-container"},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(MealPlanGrid,null))));};/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MealPlanPage);
+
+
+const Badge = ({
+  children,
+  className
+}) => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+    className: `badge ${className}`
+  }, children);
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Badge);
+
+/***/ }),
+
+/***/ "./src/components/Container.js":
+/*!*************************************!*\
+  !*** ./src/components/Container.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+
+
+const Div = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].div.withConfig({
+  displayName: "Container__Div"
+})(["padding:", ";"], props => props.padding);
+
+const Container = ({
+  children,
+  className,
+  padding
+}) => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Div, {
+    className: `container ${className || ""}`,
+    padding: padding || "40px"
+  }, children);
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Container);
+
+/***/ }),
+
+/***/ "./src/components/Footer.js":
+/*!**********************************!*\
+  !*** ./src/components/Footer.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+
+
+
+const Footer = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+    icon: "heart"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, "Created by ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    href: "https://ashleyterstriep.com",
+    target: "_blank",
+    rel: "noreferrer"
+  }, "Ashley Terstriep"), " using ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    href: "https://spoonacular.com/food-api",
+    target: "_blank",
+    rel: "noreferrer"
+  }, "Spoonacular API")));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
+
+/***/ }),
+
+/***/ "./src/components/Layout.js":
+/*!**********************************!*\
+  !*** ./src/components/Layout.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var normalize_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! normalize.css */ "./node_modules/normalize.css/normalize.css");
+/* harmony import */ var normalize_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(normalize_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../stylesheets/main.scss */ "./src/stylesheets/main.scss");
+/* harmony import */ var _stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_stylesheets_main_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Footer */ "./src/components/Footer.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fortawesome/fontawesome-svg-core */ "./node_modules/@fortawesome/fontawesome-svg-core/index.es.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+
+
+
+
+
+
+
+
+
+_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_6__.library.add(_fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faHeart, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faSearch, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faAngleLeft, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faAngleRight, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faBars, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faCalendarCheck, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faTimes, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faFilter, _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faAngleDoubleLeft);
+
+const Layout = ({
+  children,
+  className,
+  hideSidebar
+}) => {
+  const {
+    0: hasSidebar,
+    1: setHasSidebar
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true); // If sidebar is visible, add class to wrapper div
+
+  const layoutClass = hasSidebar ? `page-wrapper has-sidebar ${className}` : `page-wrapper ${className}`;
+
+  const MenuToggle = () => {
+    const {
+      0: menuActive,
+      1: setMenuActive
+    } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+
+    const triggerMenu = e => {
+      document.getElementById("sidebar-inner").classList.toggle("active");
+      setMenuActive(!menuActive);
+    };
+
+    const icon = menuActive ? "times" : "bars";
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+      className: "menu-toggle"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_5__.FontAwesomeIcon, {
+      icon: icon,
+      onClick: e => triggerMenu(e)
+    }));
+  }; // Sidebar markup
+
+
+  const Sidebar = () => {
+    if (hasSidebar) {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "sidebar"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(MenuToggle, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+        className: "sidebar-inner",
+        id: "sidebar-inner"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
+        className: "sidebar-menu clear-list"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+        className: "sidebar-hoverable"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        to: "/"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_5__.FontAwesomeIcon, {
+        icon: "search",
+        className: "mobile-menu-icon"
+      }), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: "menu-item-text"
+      }, "All Recipes"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+        className: "sidebar-hoverable"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        to: "/saved"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_5__.FontAwesomeIcon, {
+        icon: "heart",
+        className: "mobile-menu-icon"
+      }), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: "menu-item-text"
+      }, "Saved Recipes"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+        className: "sidebar-hoverable"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+        to: "/meal-plan"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_5__.FontAwesomeIcon, {
+        icon: "calendar-check",
+        className: "mobile-menu-icon"
+      }), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("span", {
+        className: "menu-item-text"
+      }, "Meal Plan"))))));
+    } else {
+      return null;
+    }
+  };
+
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    // Hide sidebar if prop is set
+    if (hideSidebar) {
+      setHasSidebar(false);
+    }
+  }, [hideSidebar]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: layoutClass
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Sidebar, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("main", null, children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Footer__WEBPACK_IMPORTED_MODULE_4__["default"], null));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
+
+/***/ }),
+
+/***/ "./src/components/Modal.js":
+/*!*********************************!*\
+  !*** ./src/components/Modal.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Modal)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+/* harmony import */ var _Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Container */ "./src/components/Container.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+
+
+
+
+const Title = styled_components__WEBPACK_IMPORTED_MODULE_3__["default"].h3.withConfig({
+  displayName: "Modal__Title"
+})(["margin-top:0;"]);
+function Modal({
+  id,
+  className,
+  children,
+  title,
+  setAdded
+}) {
+  const handleClick = () => {
+    document.getElementById("meal-plan-modal").style.display = "none";
+
+    if (setAdded) {
+      setAdded(false);
+    }
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    id: id,
+    className: `modal-wrapper ${className}`
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "modal-overlay",
+    onClick: () => handleClick()
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Container__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    className: "modal-inner",
+    padding: "30px"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Title, {
+    className: "modal-title"
+  }, title, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+    id: "modal-close",
+    onClick: () => handleClick()
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_2__.FontAwesomeIcon, {
+    icon: "times"
+  }))), children));
+}
+
+/***/ }),
+
+/***/ "./src/components/recipes/MealPlanModal.js":
+/*!*************************************************!*\
+  !*** ./src/components/recipes/MealPlanModal.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ MealPlanModal)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../Modal */ "./src/components/Modal.js");
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+
+
+
+function MealPlanModal({
+  recipe,
+  addRecipe,
+  active
+}) {
+  const {
+    0: day,
+    1: setDay
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("Monday");
+  const {
+    0: added,
+    1: setAdded
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+  const Days = () => {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("select", {
+      name: "daySelect",
+      value: day,
+      onChange: event => setDay(event.target.value)
+    }, days.map((day, index) => {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("option", {
+        key: index,
+        value: day
+      }, day);
+    }));
+  };
+
+  const ModalContent = () => {
+    if (added === true) {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, recipe.title), " has been added to your meal plan."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_2__.Link, {
+        to: "/meal-plan",
+        className: "button"
+      }, "View Meal Plan"));
+    }
+
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", null, "Select a day of the week to add ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, recipe.title), " to your meal plan:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Days, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+      onClick: event => handleClick(event)
+    }, "Add to Meal Plan")));
+  };
+
+  const handleClick = event => {
+    event.preventDefault();
+    addRecipe(recipe, day);
+    setDay("Monday");
+    setAdded(true);
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Modal__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    className: "meal-plan-modal",
+    title: "Add to meal plan",
+    id: "meal-plan-modal",
+    setAdded: setAdded
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ModalContent, null));
+}
+
+/***/ }),
+
+/***/ "./src/components/recipes/RecipeActions.js":
+/*!*************************************************!*\
+  !*** ./src/components/recipes/RecipeActions.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ RecipeActions)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _hooks_useCheckSavedRecipe__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../hooks/useCheckSavedRecipe */ "./src/hooks/useCheckSavedRecipe.js");
+/* harmony import */ var _hooks_useCheckMealPlan__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../hooks/useCheckMealPlan */ "./src/hooks/useCheckMealPlan.js");
+/* harmony import */ var _MealPlanModal__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./MealPlanModal */ "./src/components/recipes/MealPlanModal.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.es.js");
+
+
+
+
+
+
+function RecipeActions({
+  recipe,
+  actions = ['add', 'save'],
+  saveRecipe,
+  addRecipe,
+  labels
+}) {
+  const {
+    0: saved,
+    1: setSaved
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const {
+    0: added,
+    1: setAdded
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  let isSaved = (0,_hooks_useCheckSavedRecipe__WEBPACK_IMPORTED_MODULE_1__["default"])(recipe) ? true : false;
+  let isAdded = (0,_hooks_useCheckMealPlan__WEBPACK_IMPORTED_MODULE_2__["default"])(recipe) ? true : false;
+
+  const handleAddRecipe = (recipe, day) => {
+    addRecipe(recipe, day);
+    setAdded(true);
+  };
+
+  const ActionSaveRecipe = ({
+    active
+  }) => {
+    const handleClick = () => {
+      saveRecipe(recipe);
+      setSaved(!saved);
+    };
+
+    let icon = active && labels ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__.FontAwesomeIcon, {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__.faCheck
+    }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__.FontAwesomeIcon, {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__.faHeart
+    });
+    let text = active ? "Recipe Saved" : "Save Recipe";
+    let buttonClass = active ? "active" : "";
+
+    const Label = () => {
+      if (labels) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+          className: "recipe-action-text"
+        }, text);
+      }
+
+      return null;
+    };
+
+    if (actions.includes('save')) {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+        id: "save-recipe",
+        className: `recipe-action ${buttonClass}`,
+        onClick: handleClick
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+        className: "action-icon"
+      }, icon), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Label, null));
+    }
+
+    return null;
+  };
+
+  const ActionAddRecipe = ({
+    active
+  }) => {
+    const handleClick = () => {
+      document.getElementById("meal-plan-modal").style.display = "flex";
+    };
+
+    let icon = active ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__.FontAwesomeIcon, {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__.faCheck
+    }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_4__.FontAwesomeIcon, {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_5__.faPlus
+    });
+    let text = active ? "Added to Meal Plan" : "Add to Meal Plan";
+    let buttonClass = active ? "active" : "";
+
+    const Label = () => {
+      if (labels) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+          className: "recipe-action-text"
+        }, text);
+      }
+
+      return null;
+    };
+
+    if (actions.includes('add')) {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("button", {
+        id: "add-recipe",
+        className: `recipe-action ${buttonClass}`,
+        onClick: handleClick
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+        className: "action-icon"
+      }, icon), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Label, null));
+    }
+
+    return null;
+  };
+
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    setSaved(isSaved);
+    setAdded(isAdded);
+  }, [isSaved, isAdded]);
+
+  if (actions) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "recipe-actions-container"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_MealPlanModal__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      recipe: recipe,
+      addRecipe: handleAddRecipe
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ActionSaveRecipe, {
+      active: saved
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(ActionAddRecipe, {
+      active: added
+    }));
+  }
+
+  return null;
+}
+
+/***/ }),
+
+/***/ "./src/components/recipes/RecipeContainer.js":
+/*!***************************************************!*\
+  !*** ./src/components/recipes/RecipeContainer.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ RecipeContainer)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _RecipeActions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./RecipeActions */ "./src/components/recipes/RecipeActions.js");
+/* harmony import */ var _Badge__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../Badge */ "./src/components/Badge.js");
+
+
+
+
+function RecipeContainer({
+  recipe,
+  day,
+  draggable = false,
+  onDragStart = "",
+  children,
+  actions = ['add', 'save'],
+  addRecipe,
+  saveRecipe
+}) {
+  const RecipeContainerDiv = ({
+    children
+  }) => {
+    if (draggable) {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+        draggable: draggable,
+        onDragStart: e => onDragStart(e, recipe, day),
+        className: "recipe-container",
+        recipe_id: recipe.id,
+        id: recipe.id
+      }, children);
+    }
+
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      className: "recipe-container",
+      recipe_id: recipe.id,
+      id: recipe.id
+    }, children);
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(RecipeContainerDiv, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_RecipeActions__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    recipe: recipe,
+    actions: actions,
+    saveRecipe: saveRecipe,
+    addRecipe: () => addRecipe(recipe)
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: `/recipe?${recipe.id}`,
+    state: {
+      activeRecipe: recipe.id
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "image-wrapper"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+    src: recipe.image,
+    alt: recipe.title
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "recipe-details",
+    padding: "0"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "dish-types"
+  }, recipe.dishTypes.map((type, index) => {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Badge__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      key: index
+    }, type);
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: `/recipe?${recipe.id}`,
+    state: {
+      activeRecipe: recipe.id
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, recipe.title)), children));
+}
+
+/***/ }),
+
+/***/ "./src/hooks/useCheckMealPlan.js":
+/*!***************************************!*\
+  !*** ./src/hooks/useCheckMealPlan.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _useMealPlan__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./useMealPlan */ "./src/hooks/useMealPlan.js");
+
+
+
+const useCheckMealPlan = recipe => {
+  const {
+    0: isAdded,
+    1: setIsAdded
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [mealPlan, setMealPlan] = (0,_useMealPlan__WEBPACK_IMPORTED_MODULE_1__["default"])([]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    if (Object.keys(mealPlan).length > 0) {
+      for (const prop in mealPlan) {
+        const index = mealPlan[prop].findIndex(item => item.id === recipe.id);
+
+        if (index >= 0) {
+          setIsAdded(true);
+        }
+      }
+    }
+  }, [mealPlan, recipe.id]);
+  return isAdded;
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useCheckMealPlan);
+
+/***/ }),
+
+/***/ "./src/hooks/useCheckSavedRecipe.js":
+/*!******************************************!*\
+  !*** ./src/hooks/useCheckSavedRecipe.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _useSavedRecipes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./useSavedRecipes */ "./src/hooks/useSavedRecipes.js");
+
+
+
+const useCheckSavedRecipe = recipe => {
+  const {
+    0: isSaved,
+    1: setIsSaved
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const [savedRecipes, setSavedRecipes] = (0,_useSavedRecipes__WEBPACK_IMPORTED_MODULE_1__["default"])([]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    if (savedRecipes.length > 0) {
+      const index = savedRecipes.findIndex(item => item.id === recipe.id);
+
+      if (index >= 0) {
+        setIsSaved(true);
+      }
+    }
+  }, [savedRecipes, recipe.id]);
+  return isSaved;
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useCheckSavedRecipe);
+
+/***/ }),
+
+/***/ "./src/hooks/useMealPlan.js":
+/*!**********************************!*\
+  !*** ./src/hooks/useMealPlan.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ useMealPlan)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+const isBrowser = typeof window !== "undefined";
+function useMealPlan(recipe) {
+  const {
+    0: mealPlan,
+    1: setMealPlan
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(() => {
+    const initialPlan = isBrowser ? JSON.parse(localStorage.getItem("mealPlan")) : [];
+    return initialPlan || [];
+  });
+
+  const addRecipe = (recipe, day, mealPlan) => {
+    if (mealPlan[day]) {
+      setMealPlan({ ...mealPlan,
+        [day]: [...mealPlan[day], recipe]
+      });
+    } else {
+      setMealPlan({ ...mealPlan,
+        [day]: [recipe]
+      });
+    }
+  };
+
+  const updateMealPlan = (recipe, day, action = "add") => {
+    if (action === "add") {
+      addRecipe(recipe, day, mealPlan);
+    } else if (action === "delete") {
+      const updatedMealPlan = mealPlan[day].filter(item => item.id !== recipe.id);
+      setMealPlan({ ...mealPlan,
+        [day]: [...updatedMealPlan]
+      });
+    } else if (action === "update") {
+      let updatedMealPlan = mealPlan[day.previous].filter(item => item.id !== recipe.id);
+      updatedMealPlan = { ...mealPlan,
+        [day.previous]: [...updatedMealPlan]
+      };
+      addRecipe(recipe, day.new, updatedMealPlan);
+    }
+  };
+
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    localStorage.setItem("mealPlan", JSON.stringify(mealPlan));
+  }, [mealPlan]);
+  return [mealPlan, updateMealPlan];
+}
+
+/***/ }),
+
+/***/ "./src/hooks/useSavedRecipes.js":
+/*!**************************************!*\
+  !*** ./src/hooks/useSavedRecipes.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ useSavedRecipes)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+const isBrowser = typeof window !== "undefined";
+function useSavedRecipes() {
+  const {
+    0: initialState,
+    1: setInitialState
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(() => {
+    return isBrowser ? JSON.parse(localStorage.getItem("savedRecipes")) : [];
+  });
+  const {
+    0: savedRecipes,
+    1: setSavedRecipes
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useReducer)(reducer, initialState);
+
+  function reducer(savedRecipes, recipe) {
+    const index = savedRecipes.findIndex(item => item.id === recipe.id);
+
+    if (index < 0) {
+      return [...savedRecipes, recipe];
+    } else if (index >= 0) {
+      return savedRecipes.filter(item => recipe.id !== item.id);
+    }
+
+    return savedRecipes;
+  }
+
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    localStorage.setItem("savedRecipes", JSON.stringify(savedRecipes));
+  }, [savedRecipes]);
+  return [savedRecipes, setSavedRecipes];
+}
+
+/***/ }),
+
+/***/ "./src/pages/meal-plan.js":
+/*!********************************!*\
+  !*** ./src/pages/meal-plan.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-helmet */ "./node_modules/react-helmet/es/Helmet.js");
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./src/components/Layout.js");
+/* harmony import */ var _components_Container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Container */ "./src/components/Container.js");
+/* harmony import */ var _components_recipes_RecipeContainer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/recipes/RecipeContainer */ "./src/components/recipes/RecipeContainer.js");
+/* harmony import */ var _hooks_useMealPlan__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../hooks/useMealPlan */ "./src/hooks/useMealPlan.js");
+
+
+
+
+
+
+
+const PageTitle = styled_components__WEBPACK_IMPORTED_MODULE_6__["default"].h1.withConfig({
+  displayName: "meal-plan__PageTitle"
+})(["margin-top:0;"]);
+
+const MealPlanPage = () => {
+  const [mealPlan, setMealPlan] = (0,_hooks_useMealPlan__WEBPACK_IMPORTED_MODULE_5__["default"])([]);
+
+  const allowDrop = e => {
+    e.preventDefault();
+  };
+
+  const drag = (e, recipe, day) => {
+    e.dataTransfer.setData("recipe", JSON.stringify(recipe));
+    e.dataTransfer.setData("day", day);
+  };
+
+  const drop = e => {
+    e.preventDefault();
+    const recipe = JSON.parse(e.dataTransfer.getData("recipe"));
+    const day = e.dataTransfer.getData("day");
+    const newDay = e.currentTarget.getAttribute("day");
+    e.currentTarget.append(document.getElementById(recipe.id));
+    setMealPlan(recipe, {
+      previous: day,
+      new: newDay
+    }, "update");
+  };
+
+  const MealPlanGrid = () => {
+    const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+    return days.map(day => {
+      if (mealPlan[day]) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+          key: day,
+          day: day,
+          className: "day-container",
+          onDrop: e => drop(e),
+          onDragOver: e => allowDrop(e)
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, day), mealPlan[day].map(recipe => {
+          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_recipes_RecipeContainer__WEBPACK_IMPORTED_MODULE_4__["default"], {
+            draggable: true,
+            day: day,
+            onDragStart: drag,
+            actions: false,
+            recipe: recipe,
+            key: recipe.id
+          }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
+            role: "button",
+            id: "delete-recipe",
+            onClick: e => setMealPlan(recipe, day, "delete")
+          }, "Delete"));
+        }));
+      } else {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+          key: day,
+          day: day,
+          className: "day-container",
+          onDrop: e => drop(e),
+          onDragOver: e => allowDrop(e)
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, day));
+      }
+    });
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_helmet__WEBPACK_IMPORTED_MODULE_1__.Helmet, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("body", {
+    className: "meal-plan"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("title", null, "Meal Plan"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("meta", {
+    name: "icon",
+    href: "../images/favicon.png"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Container__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    padding: "20px 40px 40px"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(PageTitle, null, "Meal Plan"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "meal-plan-container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(MealPlanGrid, null))));
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MealPlanPage);
+
+/***/ }),
+
+/***/ "./src/stylesheets/main.scss":
+/*!***********************************!*\
+  !*** ./src/stylesheets/main.scss ***!
+  \***********************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./node_modules/normalize.css/normalize.css":
+/*!**************************************************!*\
+  !*** ./node_modules/normalize.css/normalize.css ***!
+  \**************************************************/
+/***/ (() => {
+
+
 
 /***/ })
 

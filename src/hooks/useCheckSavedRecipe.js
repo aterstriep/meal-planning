@@ -7,7 +7,7 @@ const useCheckSavedRecipe = (recipe) => {
     const [savedRecipes, setSavedRecipes] = useSavedRecipes([]);
 
     useEffect(() => {
-        if(savedRecipes.length > 0) {
+        if(savedRecipes) {
             const index = savedRecipes.findIndex((item) => item.id === recipe.id);
             if (index >= 0) {
                 setIsSaved(true);
