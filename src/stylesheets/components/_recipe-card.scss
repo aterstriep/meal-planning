@@ -27,6 +27,12 @@
     }
 
     @include breakpoint(sm) {
+
+        h2.recipe_card-title {
+            margin: 0 0 40px -20px;
+            width: calc(100% + 40px);
+            padding: 5px 20px;
+        }
         
         .recipe_info {
             grid-template-columns: 1fr 1fr;

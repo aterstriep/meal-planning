@@ -1,7 +1,6 @@
 footer {
     grid-column: 2 / span 1;
     display: flex;
-    align-items: center;
     gap: 5px;
     padding: 10px 40px;
     background-color: $primary;
@@ -10,7 +9,7 @@ footer {
     svg.svg-inline--fa.fa-heart.fa-w-16 {
         margin-top: 1px;
         color: $dark;
-        height: 14px;
+        height: 21px;
         width: 14px;
     }
 

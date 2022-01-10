@@ -8256,20 +8256,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
 const isBrowser = typeof window !== "undefined";
-let initialState = [];
 function useSavedRecipes() {
-  // const [initialState, setInitialState] = useState(() => {
-  //     if(isBrowser && localStorage.getItem("savedRecipes")) {
-  //         return JSON.parse(localStorage.getItem("savedRecipes"));
-  //     } else {
-  //         return [];
-  //     }
-  // });
+  const {
+    0: initialState,
+    1: setInitialState
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(() => {
+    if (isBrowser && localStorage.getItem("savedRecipes")) {
+      return JSON.parse(localStorage.getItem("savedRecipes"));
+    } else {
+      return [];
+    }
+  });
   const {
     0: savedRecipes,
     1: setSavedRecipes
   } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useReducer)(reducer, initialState);
-  console.log(initialState);
 
   function reducer(savedRecipes, recipe) {
     const index = savedRecipes.findIndex(item => item.id === recipe.id);
@@ -8283,9 +8284,6 @@ function useSavedRecipes() {
     return savedRecipes;
   }
 
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-    initialState = JSON.parse(localStorage.getItem("savedRecipes")) || [];
-  });
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     localStorage.setItem("savedRecipes", JSON.stringify(savedRecipes));
   }, [savedRecipes]);
