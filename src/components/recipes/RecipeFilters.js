@@ -84,12 +84,6 @@ export default function RecipeFilters({setQuery, query}) {
         )
     }
 
-    useEffect(() => {
-        if (document.getElementById("filter-form")) {
-            document.getElementById("recipe-filters").style.minHeight = document.getElementById("filter-form").offsetHeight + "px";
-        }
-    }, [FormButtons])
-
     return (
         <div className="recipe-filters" id="recipe-filters" >
             <form className="filter-form" id="filter-form">

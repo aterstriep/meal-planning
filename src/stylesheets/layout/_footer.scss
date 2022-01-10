@@ -28,7 +28,8 @@ footer {
     }
 
     @include breakpoint(sm) {
-        grid-column: auto;
+        grid-column: 1 / span 2;
         padding: 10px 20px;
+        z-index: 9999;
     }
 }
