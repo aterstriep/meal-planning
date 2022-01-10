@@ -24,29 +24,24 @@ const RecipesPage = ({location}) => {
 
     useEffect(() => {
 
-        const recipeId = location.state.activeRecipe || false;
+        const recipeId = location.search.split("?recipe=")[1];
 
-        if(recipeId) {
-            fetch(`/.netlify/functions/recipes/${recipeId}/information`, {
-                headers: {
-                    parameters: JSON.stringify({
-                        addRecipeInformation: true,
-                    })
+        fetch(`/.netlify/functions/recipes/${recipeId}/information`, {
+            headers: {
+                parameters: JSON.stringify({
+                    addRecipeInformation: true,
+                })
+            }
+        })
+            .then(
+                response => response.json()
+            )
+            .then(
+                data => {
+                    setRecipe(data);
+                    setIsLoaded(true);
                 }
-            })
-                .then(
-                    response => response.json()
-                )
-                .then(
-                    data => {
-                        setRecipe(data);
-                        localStorage.setItem("activeRecipe", JSON.stringify(data));
-                        setIsLoaded(true);
-                    }
-                );
-        } else {
-            setRecipe(JSON.parse(localStorage.getItem("activeRecipe")));
-        }
+            );
 
     }, []);
 

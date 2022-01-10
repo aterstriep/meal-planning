@@ -31,7 +31,7 @@ export default function RecipeContainer({ recipe, day, draggable = false, onDrag
                 addRecipe={() => addRecipe(recipe)}
             />
 
-            <Link to={`/recipe?${recipe.id}`} state={{ activeRecipe: recipe.id }}>
+            <Link to={`/recipe?recipe=${recipe.id}`} state={{ activeRecipe: recipe.id }}>
                 <div className="image-wrapper">
                     <img src={recipe.image} alt={recipe.title} />
                 </div>
@@ -44,7 +44,7 @@ export default function RecipeContainer({ recipe, day, draggable = false, onDrag
                     })}
                 </div>
 
-                <Link to={`/recipe?${recipe.id}`} state={{ activeRecipe: recipe.id }}><h3>{recipe.title}</h3></Link>
+                <Link to={`/recipe?recipe=${recipe.id}`} state={{ activeRecipe: recipe.id }}><h3>{recipe.title}</h3></Link>
 
                 {children}
                 

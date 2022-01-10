@@ -13,7 +13,6 @@ export default function RecipeFilters({setQuery, query}) {
     const dishTypes = ['Breakfast', 'Brunch', 'Lunch', 'Dinner', 'Dessert', 'Appetizer', 'Side Dish', 'Main Course', 'Salad', 'Soup', 'Snack', 'Bread', 'Beverage', 'Drink'];
     const intolerancesOptions = ["Dairy", "Egg", "Gluten", "Grain", "Peanut", "Seafood", "Shellfish", "Wheat"];
     
-
     const handleTypeChange = (e) => {
         setType(e.currentTarget.value);
     }
@@ -56,10 +55,17 @@ export default function RecipeFilters({setQuery, query}) {
         }
 
         const Reset = () => {
+            
+            const handleClick = () => {
+                setQuery();
+                setSearch("");
+                setType("");
+                setIntolerances("");
+            }
 
             return (
                 <button
-                    onClick={(e) => setQuery()}
+                    onClick={handleClick}
                     id="clear-filters"
                     className="clear-filters button-secondary"
                     aria-label="Reset Recipes"
