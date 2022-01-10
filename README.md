@@ -2,6 +2,6 @@
 
 This app utilizes the [Spoonacular](https://spoonacular.com/food-api) recipe API to allow users to save recipes from the database and create a weekly meal plan.
 
-Created with React and Gatsby.
+Created with React and Gatsby. Deployed using Netlify.
 
-*This project is currently in progress.*
+[View Project](https://mealplanapp.netlify.app/)
