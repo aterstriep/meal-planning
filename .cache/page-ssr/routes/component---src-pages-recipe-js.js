@@ -8094,7 +8094,7 @@ const useCheckSavedRecipe = recipe => {
   } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
   const [savedRecipes, setSavedRecipes] = (0,_useSavedRecipes__WEBPACK_IMPORTED_MODULE_1__["default"])([]);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-    if (savedRecipes.length > 0) {
+    if (savedRecipes) {
       const index = savedRecipes.findIndex(item => item.id === recipe.id);
 
       if (index >= 0) {
@@ -8185,17 +8185,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
 const isBrowser = typeof window !== "undefined";
+let initialState = [];
 function useSavedRecipes() {
-  const {
-    0: initialState,
-    1: setInitialState
-  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(() => {
-    return isBrowser ? JSON.parse(localStorage.getItem("savedRecipes")) : [];
-  });
+  // const [initialState, setInitialState] = useState(() => {
+  //     if(isBrowser && localStorage.getItem("savedRecipes")) {
+  //         return JSON.parse(localStorage.getItem("savedRecipes"));
+  //     } else {
+  //         return [];
+  //     }
+  // });
   const {
     0: savedRecipes,
     1: setSavedRecipes
   } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useReducer)(reducer, initialState);
+  console.log(initialState);
 
   function reducer(savedRecipes, recipe) {
     const index = savedRecipes.findIndex(item => item.id === recipe.id);
@@ -8209,6 +8212,9 @@ function useSavedRecipes() {
     return savedRecipes;
   }
 
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    initialState = JSON.parse(localStorage.getItem("savedRecipes")) || [];
+  });
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
     localStorage.setItem("savedRecipes", JSON.stringify(savedRecipes));
   }, [savedRecipes]);
@@ -8267,23 +8273,17 @@ const RecipesPage = ({
   };
 
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
-    const recipeId = location.state.activeRecipe || false;
-
-    if (recipeId) {
-      fetch(`/.netlify/functions/recipes/${recipeId}/information`, {
-        headers: {
-          parameters: JSON.stringify({
-            addRecipeInformation: true
-          })
-        }
-      }).then(response => response.json()).then(data => {
-        setRecipe(data);
-        localStorage.setItem("activeRecipe", JSON.stringify(data));
-        setIsLoaded(true);
-      });
-    } else {
-      setRecipe(JSON.parse(localStorage.getItem("activeRecipe")));
-    }
+    const recipeId = location.search.split("?recipe=")[1];
+    fetch(`/.netlify/functions/recipes/${recipeId}/information`, {
+      headers: {
+        parameters: JSON.stringify({
+          addRecipeInformation: true
+        })
+      }
+    }).then(response => response.json()).then(data => {
+      setRecipe(data);
+      setIsLoaded(true);
+    });
   }, []);
 
   if (isLoaded) {
