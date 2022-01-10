@@ -51,7 +51,6 @@ const RecipesPage = ({location}) => {
                 <Helmet>
                     <body className="single-recipe" />
                     <title>{recipe.title}</title>
-                    <meta name="icon" href="../images/favicon.png" />
                 </Helmet>
                 <Layout>
                     <Container>

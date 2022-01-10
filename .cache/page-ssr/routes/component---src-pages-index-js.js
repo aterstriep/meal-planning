@@ -8631,10 +8631,7 @@ const IndexPage = () => {
   }, [query]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_helmet__WEBPACK_IMPORTED_MODULE_6__.Helmet, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("body", {
     className: "index"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("title", null, "Meal Planning App"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("meta", {
-    name: "icon",
-    href: "../images/favicon.png"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_recipes_RecipeFilters__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("title", null, "Meal Planning App")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_recipes_RecipeFilters__WEBPACK_IMPORTED_MODULE_4__["default"], {
     setQuery: updateQuery,
     query: query
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_Container__WEBPACK_IMPORTED_MODULE_2__["default"], {

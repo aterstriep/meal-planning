@@ -27,7 +27,6 @@ const SavedRecipesPage = () => {
             <Helmet>
                 <body className="saved-recipes" />
                 <title>Saved Recipes</title>
-                <meta name="icon" href="../images/favicon.png" />
             </Helmet>
             <Container padding="20px 40px 40px">
                 <PageTitle>Saved Recipes</PageTitle>

@@ -18,6 +18,10 @@ var plugins = [{
       name: 'gatsby-plugin-fontawesome-css',
       plugin: require('/Users/ashley/Developer/meal-planning-app/node_modules/gatsby-plugin-fontawesome-css/gatsby-ssr'),
       options: {"plugins":[]},
+    },{
+      name: 'gatsby-plugin-manifest',
+      plugin: require('/Users/ashley/Developer/meal-planning-app/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      options: {"plugins":[],"icon":"src/images/favicon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"e9cefa5fbb406a68de8febc43e14cf32"},
     }]
 /* global plugins */
 // During bootstrap, we write requires at top of this file which looks like:

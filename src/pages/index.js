@@ -97,7 +97,6 @@ const IndexPage = () => {
       <Helmet>
         <body className="index" />
         <title>Meal Planning App</title>
-        <meta name="icon" href="../images/favicon.png" />
       </Helmet>
       <RecipeFilters setQuery={updateQuery} query={query} />
       <Container className="recipe-grid-wrap">

@@ -71,7 +71,6 @@ const MealPlanPage = () => {
             <Helmet>
                 <body className="meal-plan" />
                 <title>Meal Plan</title>
-                <meta name="icon" href="../images/favicon.png" />
             </Helmet>
             <Container padding="20px 40px 40px">
                 <PageTitle>Meal Plan</PageTitle>
